@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+  <!-- custom download functions -->
+  <include path="../functions.xml"/>
+
+  <!-- root of directory tree where all downloaded and processed data is stored --> 
+  <var-def name="rootDirectory">/home/cyp/fri/jdeveloper/xml2owl/src/main/resources/test/harvest/books</var-def>
+
+  <!-- download book data from amazon -->
+  <call name="download">
+    <call-param name="directory"><template>${rootDirectory}/amazon</template></call-param>
+    <call-param name="startUrl">http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&amp;field-keywords=&amp;x=15&amp;y=22</call-param>
+    <call-param name="listCount">1</call-param>
+    <call-param name="itemXpath">//div[@id='atfResults' or @id='btfResults']//div[@class='data']/h3[@class='title']/a[@class='title']/@href</call-param>
+//span[starts-with(.,'Find')]/../span
+    <call-param name="nextListXpath">//a[@id='pagnNextLink']/@href</call-param>
+    <call-param name="xquery"><![CDATA[
+          declare variable $doc as node() external;
+          let $divBuying := $doc//div[@class='buying']
+          let $title := ($divBuying//span[@id='btAsinTitle']/text())[1]
+          let $authors := (substring-before(normalize-space($doc//span[ends-with(text()[2],'(Author)')]),'(Author)'))[1]
+          let $info := $doc//h2/../div[@class='content']/ul/li
+          let $publisher := data($info/b[starts-with(text(),'Publisher:')]/..)
+          let $isbn10 := ($info/b[starts-with(text(),'ISBN-10:')]/../text())[1]
+          let $isbn13 := ($info/li/b[starts-with(text(),'ISBN-13:')]/../text())[1]
+          let $isbnpns := ($info/b[starts-with(text(),'Page Numbers Source ISBN:')]/../text())[1]
+          let $asin := ($info/b[starts-with(text(),'ASIN:')]/../text())[1]
+          let $price := data($doc//div[@id='priceBlock']//b[@class='priceLarge'])
+          return
+          <book>
+            <isbn10>{data($isbn10)}</isbn10>
+            <isbn13>{data($isbn13)}</isbn13>
+            <isbnpns>{data($isbnpns)}</isbnpns>
+            <asin>{data($asin)}</asin>
+            <title>{normalize-space(data($title))}</title>
+            <author>{string-join(data($authors),', ')}</author>
+            <publisher>{replace(replace($publisher,'^Publisher:',''),'(;.+)|( \(.+)','')}</publisher>
+            <year>{substring($publisher,string-length($publisher)-4,4)}</year>
+            <seller>Amazon</seller>
+            <price>{$price}</price>
+          </book>
+          ]]></call-param>
+  </call>
+
+</config>

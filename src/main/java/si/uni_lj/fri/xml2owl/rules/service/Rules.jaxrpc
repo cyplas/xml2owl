@@ -1,0 +1,265 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebService xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webservice">
+   <list n="CHILD_NODES">
+      <url path="../../../../../../../public_html/WEB-INF/wsdl/xml2owlRules.wsdl"/>
+      <url path="types/DeleteRequest.java"/>
+      <url path="types/GetResponse.java"/>
+      <url path="types/ObjectFactory.java"/>
+      <url path="types/RulesFault.java"/>
+      <url path="types/GetRequest.java"/>
+      <url path="Xml2OwlRulesException.java"/>
+      <url path="types/package-info.java"/>
+      <url path="types/ValidateByNameResponse.java"/>
+      <url path="types/AddResponse.java"/>
+      <url path="types/ValidateFullRequest.java"/>
+      <url path="types/ValidateFullResponse.java"/>
+      <url path="types/AddRequest.java"/>
+      <url path="types/DeleteResponse.java"/>
+      <url path="types/ValidateByNameRequest.java"/>
+      <url path="RulesService.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MTOM"/>
+      <list n="BD_">
+         <hash>
+            <value n="BD_DEFAULT_DOCUMENT_WRAPPED" v="false"/>
+            <value n="BD_SOAP_VERSION" v="1.2"/>
+            <value n="BOUND_PORT_TYPE" v="{USE_OWNER_TNS}rules"/>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+            <value n="NAME" v="{http://www.fri.uni-lj.si/xml2owl/rules}rulesSOAP12Binding"/>
+            <list n="OP_BINDINGS">
+               <hash>
+                  <value n="BD_DOCUMENT_WRAPPED" v="false"/>
+                  <value n="BD_RESPONSE_PART" v="part"/>
+                  <value n="BD_SOAP_ACTION" v="http://www.fri.uni-lj.si/xml2owl/rules/addRules"/>
+                  <value n="BD_WSDL_RETURN_NAME" v="addResponse"/>
+                  <value n="BD_WSDL_RETURN_TNS" v="USE_OWNER_TNS"/>
+                  <value n="BOUND_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.AddResponse.addRules.si.uni_lj.fri.xml2owl.rules.service.types.AddRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_DOCUMENT_WRAPPED" v="false"/>
+                  <value n="BD_RESPONSE_PART" v="part"/>
+                  <value n="BD_SOAP_ACTION" v="http://www.fri.uni-lj.si/xml2owl/rules/getRules"/>
+                  <value n="BD_WSDL_RETURN_NAME" v="getResponse"/>
+                  <value n="BD_WSDL_RETURN_TNS" v="USE_OWNER_TNS"/>
+                  <value n="BOUND_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.GetResponse.getRules.si.uni_lj.fri.xml2owl.rules.service.types.GetRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_DOCUMENT_WRAPPED" v="false"/>
+                  <value n="BD_RESPONSE_PART" v="part"/>
+                  <value n="BD_SOAP_ACTION" v="http://www.fri.uni-lj.si/xml2owl/rules/deleteRules"/>
+                  <value n="BD_WSDL_RETURN_NAME" v="deleteResponse"/>
+                  <value n="BD_WSDL_RETURN_TNS" v="USE_OWNER_TNS"/>
+                  <value n="BOUND_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.DeleteResponse.deleteRules.si.uni_lj.fri.xml2owl.rules.service.types.DeleteRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_DOCUMENT_WRAPPED" v="false"/>
+                  <value n="BD_RESPONSE_PART" v="part"/>
+                  <value n="BD_SOAP_ACTION" v="http://www.fri.uni-lj.si/xml2owl/rules/validateFullRules"/>
+                  <value n="BD_WSDL_RETURN_NAME" v="validateFullResponse"/>
+                  <value n="BD_WSDL_RETURN_TNS" v="USE_OWNER_TNS"/>
+                  <value n="BOUND_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.ValidateFullResponse.validateFullRules.si.uni_lj.fri.xml2owl.rules.service.types.ValidateFullRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_DOCUMENT_WRAPPED" v="false"/>
+                  <value n="BD_RESPONSE_PART" v="part"/>
+                  <value n="BD_SOAP_ACTION" v="http://www.fri.uni-lj.si/xml2owl/rules/validateByNameRules"/>
+                  <value n="BD_WSDL_RETURN_NAME" v="validateByNameResponse"/>
+                  <value n="BD_WSDL_RETURN_TNS" v="USE_OWNER_TNS"/>
+                  <value n="BOUND_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.ValidateByNameResponse.validateByNameRules.si.uni_lj.fri.xml2owl.rules.service.types.ValidateByNameRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+         </hash>
+      </list>
+      <list n="BINDING_FILES"/>
+      <value n="GENERATION_OPTION" v="ANNOTATIONS_WSDL"/>
+      <value n="GUID" v="031705eb-0133-1000-802d-7f000101f080"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaWebService"/>
+      <list n="PO_">
+         <hash>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+            <value n="NAME" v="rulesPort"/>
+            <value n="PORT_BINDING_NAME" v="{http://www.fri.uni-lj.si/xml2owl/rules}rulesSOAP12Binding"/>
+            <list n="PORT_OPS">
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.AddResponse.addRules.si.uni_lj.fri.xml2owl.rules.service.types.AddRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.GetResponse.getRules.si.uni_lj.fri.xml2owl.rules.service.types.GetRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.DeleteResponse.deleteRules.si.uni_lj.fri.xml2owl.rules.service.types.DeleteRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.ValidateFullResponse.validateFullRules.si.uni_lj.fri.xml2owl.rules.service.types.ValidateFullRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="si.uni_lj.fri.xml2owl.rules.service.types.ValidateByNameResponse.validateByNameRules.si.uni_lj.fri.xml2owl.rules.service.types.ValidateByNameRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <url n="URL" protocol="http" host="www.example.com" path=""/>
+         </hash>
+      </list>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+            <value n="WSDL2JAVA_DEFAULT_PACKAGE" v="si.uni_lj.fri.xml2owl.rules.service"/>
+            <value n="WSDL2JAVA_ROOT_VALUE_PACKAGE" v="si.uni_lj.fri.xml2owl.rules.service.types"/>
+            <value n="WSDL2JAVA_UNWRAP_PARAMETERS" v="false"/>
+         </hash>
+      </hash>
+      <list n="PT_">
+         <hash>
+            <value n="AUTO_SERVICE_INTERFACE"/>
+            <value n="DEFAULT_NAME" v="true"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+            <value n="NAME" v="{USE_OWNER_TNS}rules"/>
+            <list n="OP_">
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <list n="OP_JAVA_EXCEPTIONS">
+                     <string v="si.uni_lj.fri.xml2owl.rules.service.Xml2OwlRulesException"/>
+                  </list>
+                  <value n="OP_JAVA_NAME" v="addRules"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="part"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="addRequest"/>
+                        <value n="PA_WSDL_PART_NAME" v="part"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.AddRequest"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.AddResponse"/>
+                  <value n="OP_NAME" v="addRules"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <list n="OP_JAVA_EXCEPTIONS">
+                     <string v="si.uni_lj.fri.xml2owl.rules.service.Xml2OwlRulesException"/>
+                  </list>
+                  <value n="OP_JAVA_NAME" v="getRules"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="part"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="getRequest"/>
+                        <value n="PA_WSDL_PART_NAME" v="part"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.GetRequest"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.GetResponse"/>
+                  <value n="OP_NAME" v="getRules"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <list n="OP_JAVA_EXCEPTIONS">
+                     <string v="si.uni_lj.fri.xml2owl.rules.service.Xml2OwlRulesException"/>
+                  </list>
+                  <value n="OP_JAVA_NAME" v="deleteRules"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="part"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="deleteRequest"/>
+                        <value n="PA_WSDL_PART_NAME" v="part"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.DeleteRequest"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.DeleteResponse"/>
+                  <value n="OP_NAME" v="deleteRules"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <list n="OP_JAVA_EXCEPTIONS">
+                     <string v="si.uni_lj.fri.xml2owl.rules.service.Xml2OwlRulesException"/>
+                  </list>
+                  <value n="OP_JAVA_NAME" v="validateFullRules"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="part"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="validateFullRequest"/>
+                        <value n="PA_WSDL_PART_NAME" v="part"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.ValidateFullRequest"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.ValidateFullResponse"/>
+                  <value n="OP_NAME" v="validateFullRules"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <list n="OP_JAVA_EXCEPTIONS">
+                     <string v="si.uni_lj.fri.xml2owl.rules.service.Xml2OwlRulesException"/>
+                  </list>
+                  <value n="OP_JAVA_NAME" v="validateByNameRules"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="part"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="validateByNameRequest"/>
+                        <value n="PA_WSDL_PART_NAME" v="part"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.ValidateByNameRequest"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="si.uni_lj.fri.xml2owl.rules.service.types.ValidateByNameResponse"/>
+                  <value n="OP_NAME" v="validateByNameRules"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <value n="PT_CLASS" v="si.uni_lj.fri.xml2owl.rules.service.RulesService"/>
+         </hash>
+      </list>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <url n="TARGET_PROJECT" path="../../../../../../../xml2owlRules.jpr"/>
+      <value n="TOPDOWN_GENERATION_OPTION" v="JAVA"/>
+      <list n="WS_DEPENDENT_VALUE_TYPES"/>
+      <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+      <url n="WS_REFERENCE_WSDL" path="../../../../../../../public_html/WEB-INF/wsdl/xml2owlRules.wsdl"/>
+      <value n="WS_TARGET_NAMESPACE" v="http://www.fri.uni-lj.si/xml2owl/rules"/>
+      <value n="WS_URI" v="rules"/>
+      <url n="WS_WSDL_FILE" path="../../../../../../../public_html/WEB-INF/wsdl/xml2owlRules.wsdl"/>
+      <value n="WS_WSDL_LOC_ON_SEI" v="false"/>
+      <value n="WS_WSDL_LOC_VALUE" v="/WEB-INF/wsdl/xml2owlRules.wsdl"/>
+      <value n="WS_WSDL_LOCATION" v="/home/cyp/fri/jdeveloper/XML2OWL/xml2owlRules/public_html/WEB-INF/wsdl/"/>
+   </hash>
+</jdevws:WebService>

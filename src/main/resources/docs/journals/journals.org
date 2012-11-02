@@ -1,0 +1,37 @@
+| relevance | quartile | frequency | length              | format       | journal                                             |
+|-----------+----------+-----------+---------------------+--------------+-----------------------------------------------------|
+| A         |        2 |         4 | 15-25p(or 6-8p)     | latex/other? | [[http://www.journals.elsevier.com/journal-of-web-semantics/][journal of web semantics]]                            |
+| A         |        2 |         6 | 5000-7500w!         | word!        | [[http://www.uk.sagepub.com/journalsProdDesc.nav?prodId=Journal201676&crossRegion=eur#tabview=title][journal of information science]]                      |
+| B         |        2 |         6 | ???                 | ???          | [[http://www.journals.elsevier.com/information-processing-and-management/][information processing and management]]               |
+| B         |        2 |         9 | <5000w              | pdf?         | [[http://www.elsevier.com/wps/find/journaldescription.cws_home/505646/authorinstructions][computers in industry]]                               |
+| B         |        1 |        12 | <20p(ds)            | latex/other? | [[http://www.elsevier.com/wps/find/journaldescription.cws_home/525448/authorinstructions][knowledge-based systems]]                             |
+| B         |        1 |        12 | <5000w(or <15000w?) | any          | [[http://www.cs.uvm.edu/~kais/][knowledge and information systems]]                   |
+| B         |        2 |        12 | any?                | pdf          | [[http://www.journals.elsevier.com/data-and-knowledge-engineering/][data & knowledge engineering]]                        |
+| B         |        1 |        12 | 14p(ds) or 30p(ss)  | latex/word   | [[http://www.computer.org/portal/web/tkde/about][ieee transactions on knowledge and data engineering]] |
+| B         |        1 |         6 | <25p(ds)!           | latex!       | [[http://vldb.org/vldb_journal/index.php/about][vldb journal]]                                        |
+
+
+| relevance | quartile | frequency | length              | format       | journal                                                                |
+|-----------+----------+-----------+---------------------+--------------+------------------------------------------------------------------------|
+| C         |        1 |       ~75 | <45p(dbl.spc)       | latex/other? | [[http://www.journals.elsevier.com/information-sciences/][information sciences]]                                                   |
+| C         |        1 |        12 | any?                | word/latex-  | [[http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291532-2890/homepage/ProductInformation.html][journal of the american society for information science and technology]] |
+| B         |        1 |        12 | <5000w(or <15000w?) | any          | [[http://www.cs.uvm.edu/~kais/][knowledge and information systems]]                                      |
+| C         |        1 |        12 | any                 | ^3           | [[http://www.journals.elsevier.com/artificial-intelligence/][artificial intelligence]]                                                |
+| C         |        1 |        12 | ???                 | ???          | [[http://www.nari.ee.ethz.ch/commth/trans-it/][ieee transactions on information theory]]                                |
+| B         |        1 |        12 | 14p(dc) or 30p(sc)  | latex/word   | [[http://www.computer.org/portal/web/tkde/about][ieee transactions on knowledge and data engineering]]                    |
+| C         |        1 |         8 | ???                 | ^3           | [[http://www.journals.elsevier.com/information-and-management/][information and management]]                                             |
+| B         |        1 |         6 | <25p(dc)!           | latex!       | [[http://vldb.org/vldb_journal/index.php/about][vldb journal]]                                                           |
+| C         |        1 |         6 | any?                | latex/word-  | [[http://www.springer.com/computer/database+management+%26+information+retrieval/journal/10618][data mining and knowledge discovery]]                                    |
+| C         |        1 |         6 | 2800-5400w          | word/pdf     | [[http://www.computer.org/portal/web/peerreviewmagazines/intelligent][ieee intelligent systems]]                                               |
+| C         |        1 |         4 | various(any?)       | word!        | [[http://www.misq.org/about/][mis quarterly]]                                                          |
+| C         |        1 |         4 | any?                | word/other?  | [[http://www.palgrave-journals.com/jit/about.html][journal of information technology]]                                      |
+| C         |        1 |         4 | <13p(dc)            | pdf          | [[http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=10207][ieee computational intelligence]]                                        |
+| B         |        2 |        12 | any?                | pdf          | [[http://www.journals.elsevier.com/data-and-knowledge-engineering/][data & knowledge engineering]]                                           |
+| C         |        2 |         6 | ???                 | smo          | [[http://eu.wiley.com/WileyCDA/WileyTitle/productCd-ISJ.html][information systems]]                                                    |
+| A         |        2 |         6 | ???                 | ???          | [[http://www.journals.elsevier.com/information-processing-and-management/][information processing and management]]                                  |
+| A         |        2 |         6 | 5000-7500!          | word!        | [[http://www.uk.sagepub.com/journalsProdDesc.nav?prodId=Journal201676&crossRegion=eur#tabview=title][journal of information science]]                                         |
+| C         |        2 |         6 | <8000w(12p)         | word/latex   | [[http://www.palgrave-journals.com/ejis/about.html][european journal of information systems]]                                |
+| A         |        2 |         4 | 15-25p(or 6-8p)     | latex/other? | [[http://www.journals.elsevier.com/journal-of-web-semantics/][journal of web semantics]]                                               |
+| C         |        2 |         4 | <40p                | word/pdf     | [[http://www.jmis-web.org/profile/][journal of management information systems]]                              |
+| B         |          |         9 | <5000w              | any          | [[http://www.elsevier.com/wps/find/journaldescription.cws_home/505646/authorinstructions][computers in industry]]                                                  |
+| B         |        1 |        12 | <20p(ds)            | latex/other? | [[http://www.elsevier.com/wps/find/journaldescription.cws_home/525448/authorinstructions][knowledge-based systems]]                                                |
