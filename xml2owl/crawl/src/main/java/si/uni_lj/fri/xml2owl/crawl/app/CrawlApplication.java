@@ -1,27 +1,76 @@
 package si.uni_lj.fri.xml2owl.crawl.app;
 
-import si.uni_lj.fri.xml2owl.map.application.MapApplication;
+import org.webharvest.definition.ScraperConfiguration;
+import org.webharvest.runtime.Scraper;
+import org.webharvest.runtime.variables.Variable;
+import java.io.*;
 
-/** A top-level testing application which combines webharvest (to extract
-    relevant XML data from the web) and XML2OWL (to use that data for carrying
-    out mappings to OWL). */ 
+/** A class used to crawl the web, gather relevant data and prepare XML input
+ * files suitable for XML2OWL, based on a webharvest.xml configuration file. */ 
 public class CrawlApplication {
 
     /** Application entry point, which just calls run(). */
-    public static void main (String[] args) throws Exception {
-	run(args[0],args[1]);
+    public static void main(String[] args) {
+        run(args[0],args[1]);
     }
 
-    /** Run XML2OWL on the specified source, perhaps first updating the HTML data. */ 
-    public static void run (String source, String redownload) throws Exception {
-     
-        if (Boolean.parseBoolean(redownload)) {
-            WebHarvestApplication webHarvestApplication = new WebHarvestApplication();
-            webHarvestApplication.run(source);
+    /** Download the datafiles and generate the XML input for XML2OWL. */
+    public static void run (String directory, String source) {
+        try {
+            String fullDirectory = directory + "/" + source + "/";
+            delete(new File(fullDirectory + "downloads"));
+            ScraperConfiguration config = 
+                new ScraperConfiguration(fullDirectory + "webharvest.xml");
+            Scraper scraper = new Scraper(config, "data");
+            scraper.setDebug(true);
+            scraper.execute();
         }
-
-        MapApplication mapApplication = new MapApplication();
-        mapApplication.run("test/harvest/books", source);
+        catch (FileNotFoundException e) {
+            System.out.println("Webharvest configuration file not found ...");
+        }
+        catch (IOException e) {
+            System.out.println("IOException took place ...");
+        }
     }
 
-}
+    /** Clear and delete the downloads directory. */
+    private static void delete(File file) 
+    	throws IOException{
+ 
+    	if(file.isDirectory()){
+ 
+            //directory is empty, then delete it
+            if(file.list().length==0){
+ 
+                file.delete();
+                System.out.println("Directory is deleted : " 
+                                   + file.getAbsolutePath());
+ 
+            }else{
+ 
+                //list all the directory contents
+                String files[] = file.list();
+ 
+                for (String temp : files) {
+                    //construct the file structure
+                    File fileDelete = new File(file, temp);
+ 
+                    //recursive delete
+                    delete(fileDelete);
+                }
+ 
+                //check the directory again, if empty then delete it
+                if(file.list().length==0){
+                    file.delete();
+                    System.out.println("Directory is deleted : " 
+                                       + file.getAbsolutePath());
+                }
+            }
+ 
+    	}else{
+            //if file, then delete it
+            file.delete();
+    	}
+    }
+
+} 

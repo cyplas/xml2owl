@@ -34,6 +34,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>commons-email</groupId>
+      <artifactId>commons-email</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <dependency>
       <groupId>si.uni_lj.fri.xml2owl</groupId>
       <artifactId>xml2owl-core</artifactId>
       <version>1.0-SNAPSHOT</version>
@@ -175,26 +180,6 @@
           <target>1.6</target>
         </configuration>
       </plugin>
-      <plugin>  
-	<groupId>org.codehaus.mojo</groupId>  
-	<artifactId>exec-maven-plugin</artifactId>  
-	<version>1.1.1</version>  
-	<executions>  
-	  <execution>  
-	    <phase>test</phase>  
-	    <goals>  
-	      <goal>java</goal>  
-	    </goals>  
-	    <configuration>  
-              <mainClass>si.uni_lj.fri.xml2owl.crawl.app.CrawlApplication</mainClass>
-              <arguments>
-                <argument>bookdepository</argument>
-                <argument>false</argument>
-              </arguments>
-	    </configuration>  
-	  </execution>  
-	</executions>  
-      </plugin>  
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>

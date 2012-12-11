@@ -15,6 +15,7 @@
     <call-param name="listCount">1</call-param>
     <call-param name="itemXpath">//div[@class='module bookSmall']/h3/a/@href</call-param>
     <call-param name="nextListXpath">//div[@id='pagination']//span[@class='linkSurround search previous']/a/@href</call-param>
+    <call-param name="class">books</call-param>
     <call-param name="xquery"><![CDATA[
           declare variable $doc as node() external;
           let $isbn10 := $doc//span[@class='isbn10']/span

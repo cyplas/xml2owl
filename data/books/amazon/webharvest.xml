@@ -16,6 +16,7 @@
     <call-param name="itemXpath">//div[@id='atfResults' or @id='btfResults']//div[@class='data']/h3[@class='title']/a[@class='title']/@href</call-param>
 //span[starts-with(.,'Find')]/../span
     <call-param name="nextListXpath">//a[@id='pagnNextLink']/@href</call-param>
+    <call-param name="class">books</call-param>
     <call-param name="xquery"><![CDATA[
           declare variable $doc as node() external;
           let $divBuying := $doc//div[@class='buying']

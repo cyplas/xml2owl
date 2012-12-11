@@ -52,11 +52,11 @@
             </body>
           </loop>
         </var-def>
-        <file action="write" path="${directory}/books.xml">
+        <file action="write" path="${directory}/xml.xml">
           <template>
-            <![CDATA[<books>]]>
+            <![CDATA[<${class}>]]>
               ${xml}
-            <![CDATA[</books>]]>
+            <![CDATA[</${class}>]]>
           </template>
         </file>
       </empty>
@@ -131,6 +131,7 @@
             <call name="download-lists">
               <call-param name="listUrl"><var name="startUrl"/></call-param>
               <call-param name="directory"><var name="directory"/></call-param>
+              <call-param name="class"><var name="class"/></call-param>
               <call-param name="maxloops"><var name="listCount"/></call-param>
               <call-param name="itemXpath"><var name="itemXpath"/></call-param>
               <call-param name="nextXpath"><var name="nextListXpath"/></call-param>
@@ -140,6 +141,7 @@
         <call name="download-pages">
           <call-param name="links"><var name="links"/></call-param>
           <call-param name="directory"><var name="directory"/></call-param>
+          <call-param name="class"><var name="class"/></call-param>
           <call-param name="xquery"><var name="xquery"/></call-param>
         </call>
       </empty>
