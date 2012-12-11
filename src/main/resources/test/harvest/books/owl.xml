@@ -3,9 +3,9 @@
      xml:base="http://www.w3.org/2002/07/owl"
      xmlns:sl="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:"
      xmlns:books="http://www.fri.uni-lj.si/xml2owl/books.owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:author="http://www.fri.uni-lj.si/xml2owl/books.owl#author="
      xmlns:isbn102="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=159562015"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:isbn103="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=034580404"
      xmlns:isbn10="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=185326041"
@@ -304,6 +304,16 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Barnes -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Barnes">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099564971"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Bartol -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Bartol">
@@ -376,6 +386,16 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Burnett -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Burnett">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853261041"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Butcher -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Butcher">
@@ -396,12 +416,32 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Camus -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Camus">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0679720200"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Capella -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Capella">
         <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610009139"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Capote -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Capote">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141182571"/>
     </Thing>
     
 
@@ -536,6 +576,16 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Dickens -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Dickens">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260045"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Diffenbaugh -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Diffenbaugh">
@@ -606,6 +656,17 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Fitzgerald -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Fitzgerald">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0007368658"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=185326041X"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Flaubert -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Flaubert">
@@ -672,6 +733,16 @@
         <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=3830022012951"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Golding -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Golding">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0399501487"/>
     </Thing>
     
 
@@ -762,6 +833,26 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Joyce -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Joyce">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1840226358"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Kafka -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Kafka">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0486290301"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Kelk -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Kelk">
@@ -842,6 +933,18 @@
         <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616682398"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Lee -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Lee">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099419785"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099549484"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0446310786"/>
     </Thing>
     
 
@@ -962,6 +1065,17 @@
         <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616863001"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Orwell -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Orwell">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141036133"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451524934"/>
     </Thing>
     
 
@@ -1099,6 +1213,16 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Rand -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Rand">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451191145"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Rath -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Rath">
@@ -1117,6 +1241,16 @@
         <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790109"/>
         <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790116"/>
         <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790208"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Salinger -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Salinger">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0316769487"/>
     </Thing>
     
 
@@ -1219,6 +1353,17 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Tolstoy -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Tolstoy">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260622"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853262714"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Tuccillo -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Tuccillo">
@@ -1245,6 +1390,16 @@
         <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610013150"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#author=Wilde -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Wilde">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Author"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:wrote rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260150"/>
     </Thing>
     
 
@@ -1611,6 +1766,111 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0007368658 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0007368658">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0007368658</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780007368655</books:hasIsbn13>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HarperPress</books:hasPublisher>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Great Gatsby</books:hasTitle>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Fitzgerald"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099419785 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099419785">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0099419785</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1989</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780099419785</books:hasIsbn13>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARROW BOOKS LTD</books:hasPublisher>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To Kill a Mockingbird</books:hasTitle>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Lee"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099549484 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099549484">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0099549484</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780099549482</books:hasIsbn13>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARROW BOOKS LTD</books:hasPublisher>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To Kill a Mockingbird</books:hasTitle>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Lee"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099564971 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099564971">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0099564971</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780099564973</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Sense of an Ending</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VINTAGE</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Barnes"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141036133 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141036133">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0141036133</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780141036137</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Farm</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penguin Books Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Orwell"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141182571 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141182571">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0141182571</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780141182575</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Cold Blood: A True Account of a Multiple Murder and Its Consequences</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PENGUIN CLASSICS</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Capote"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0316769487 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0316769487">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0316769487</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780316769488</books:hasIsbn13>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Little, Brown and Company</books:hasPublisher>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Catcher in the Rye</books:hasTitle>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Salinger"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345529057 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345529057">
@@ -1687,6 +1947,21 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0399501487 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0399501487">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0399501487</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780399501487</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lord of the Flies</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penguin Putnam Inc</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Golding"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023491 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023491">
@@ -1732,6 +2007,66 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0446310786 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0446310786">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0446310786</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780446310789</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To Kill a Mockingbird</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warner Books</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Lee"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451191145 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451191145">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0451191145</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780451191144</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atlas Shrugged</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penguin Books Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Rand"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451524934 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451524934">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0451524934</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780451524935</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orwell George : Nineteen Eighty-Four (Sc): Nineteen Eighty-Four : A Novel</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penguin Books Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Orwell"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0486290301 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0486290301">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0486290301</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780486290300</books:hasIsbn13>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dover Publications Inc.</books:hasPublisher>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Metamorphosis</books:hasTitle>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Kafka"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0545265355 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0545265355">
@@ -1743,6 +2078,21 @@
         <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scholastic Press</books:hasPublisher>
         <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Hunger Games Trilogy Boxed Set</books:hasTitle>
         <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Collins"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0679720200 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0679720200">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0679720200</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1989</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9780679720201</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Stranger</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vintage Books</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Camus"/>
     </Thing>
     
 
@@ -1788,6 +2138,111 @@
         <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regnery Publishing</books:hasPublisher>
         <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Amateur</books:hasTitle>
         <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Klein"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1840226358 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1840226358">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1840226358</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9781840226355</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ulysses</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wordsworth Editions Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Joyce"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260045 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260045">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1853260045</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9781853260049</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Great Expectations</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wordsworth Editions Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Dickens"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260150 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260150">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1853260150</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9781853260155</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Picture of Dorian Gray</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wordsworth Editions Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Wilde"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=185326041X -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=185326041X">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">185326041X</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9781853260414</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Great Gatsby</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wordsworth Editions Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Fitzgerald"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260622 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260622">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1853260622</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9781853260629</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">War and Peace</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wordsworth Editions Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Tolstoy"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853261041 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853261041">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1853261041</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9781853261046</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Secret Garden</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wordsworth Editions Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Burnett"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853262714 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853262714">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Book"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasIsbn10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1853262714</books:hasIsbn10>
+        <books:wasPublishedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</books:wasPublishedIn>
+        <books:hasIsbn13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9781853262715</books:hasIsbn13>
+        <books:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anna Karenina</books:hasTitle>
+        <books:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wordsworth Editions Ltd</books:hasPublisher>
+        <books:wasWrittenBy rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#author=Tolstoy"/>
     </Thing>
     
 
@@ -7846,6 +8301,246 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___0 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___0">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.34</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=185326041X"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___1 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___1">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€5.59</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0446310786"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___10 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___10">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.68</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0486290301"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___11 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___11">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€3.25</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260045"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___12 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___12">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.88</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0007368658"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___13 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___13">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€6.64</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0399501487"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___14 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___14">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.30</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099419785"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___15 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___15">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.50</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260150"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___16 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___16">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.08</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451524934"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___17 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___17">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€5.13</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260622"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___18 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___18">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.22</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141182571"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___19 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___19">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.50</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853261041"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___2 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___2">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€8.67</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0679720200"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___3 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___3">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€8.61</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099564971"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___4 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___4">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.29</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141036133"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___5 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___5">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€4.10</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1840226358"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___6 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___6">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€4.73</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0316769487"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___7 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___7">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.91</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451191145"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___8 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___8">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.30</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099549484"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___9 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___9">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€4.53</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853262714"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___0 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___0">
@@ -12502,6 +13197,30 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___448 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___448">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=9616473379"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___449 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___449">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610016557"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___45 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___45">
@@ -12510,6 +13229,126 @@
         <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,20 €</books:hasPrice>
         <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
         <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612414276"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___450 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___450">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610016748"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___451 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___451">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610011927"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___452 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___452">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17,91 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616863001"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___453 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___453">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20,79 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612513368"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___454 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___454">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,42 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789619284797"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___455 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___455">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610015086"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___456 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___456">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612416775"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___457 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___457">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612414283"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___458 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___458">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610015208"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___459 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___459">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,89 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790116"/>
     </Thing>
     
 
@@ -12526,6 +13365,126 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___460 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___460">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610014874"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___461 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___461">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612415693"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___462 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___462">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19,92 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610002499"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___463 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___463">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612590451"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___464 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___464">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30,60 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790109"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___465 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___465">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610015147"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___466 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___466">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789676530606"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___467 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___467">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783850136747"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___468 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___468">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,19 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790208"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___469 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___469">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25,20 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612269012"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___47 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___47">
@@ -12534,6 +13493,126 @@
         <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37,99 €</books:hasPrice>
         <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
         <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612612146"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___470 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___470">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,21 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616863063"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___471 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___471">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616623445"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___472 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___472">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11,00 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612750527"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___473 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___473">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27,50 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783708603889"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___474 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___474">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25,65 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783708602455"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___475 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___475">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610013235"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___476 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___476">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19,71 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789619180549"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___477 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___477">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610010029"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___478 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___478">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,50 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616465716"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___479 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___479">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20,00 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612410496"/>
     </Thing>
     
 
@@ -12550,6 +13629,126 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___480 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___480">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610009603"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___481 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___481">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25,00 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612412388"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___482 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___482">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616788755"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___483 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___483">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16,15 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783708603667"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___484 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___484">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610013075"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___485 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___485">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610014331"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___486 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___486">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26,10 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790031"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___487 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___487">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,19 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790437"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___488 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___488">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37,91 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612611156"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___489 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___489">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9790709006687"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___49 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___49">
@@ -12558,6 +13757,126 @@
         <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8,50 €</books:hasPrice>
         <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
         <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612389680"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___490 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___490">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610013105"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___491 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___491">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610010036"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___492 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___492">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612740788"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___493 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___493">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,20 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612414276"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___494 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___494">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610015055"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___495 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___495">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612612146"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___496 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___496">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783850139601"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___497 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___497">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8,50 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612389680"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___498 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___498">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616682367"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___499 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___499">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610011897"/>
     </Thing>
     
 
@@ -12586,6 +13905,126 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___500 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___500">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31,20 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612415235"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___501 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___501">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,79 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616623445"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___502 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___502">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,70 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9879612414047"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___503 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___503">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35,91 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612441166"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___504 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___504">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=9616473379"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___505 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___505">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610016557"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___506 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___506">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610016748"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___507 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___507">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610011927"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___508 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___508">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17,91 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616863001"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___509 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___509">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20,79 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612513368"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___51 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___51">
@@ -12594,6 +14033,126 @@
         <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
         <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
         <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610011897"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___510 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___510">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,42 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789619284797"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___511 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___511">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610015086"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___512 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___512">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612416775"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___513 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___513">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612414283"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___514 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___514">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610015208"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___515 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___515">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,89 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790116"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___516 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___516">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610014874"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___517 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___517">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612415693"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___518 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___518">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19,92 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610002499"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___519 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___519">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612590451"/>
     </Thing>
     
 
@@ -12610,6 +14169,126 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___520 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___520">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30,60 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790109"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___521 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___521">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610015147"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___522 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___522">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789676530606"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___523 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___523">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783850136747"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___524 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___524">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,19 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790208"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___525 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___525">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25,20 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612269012"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___526 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___526">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,21 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616863063"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___527 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___527">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616623445"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___528 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___528">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11,00 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612750527"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___529 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___529">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27,50 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783708603889"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___53 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___53">
@@ -12618,6 +14297,126 @@
         <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,79 €</books:hasPrice>
         <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
         <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616623445"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___530 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___530">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25,65 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783708602455"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___531 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___531">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610013235"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___532 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___532">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19,71 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789619180549"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___533 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___533">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610010029"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___534 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___534">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,50 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616465716"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___535 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___535">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20,00 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612410496"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___536 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___536">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610009603"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___537 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___537">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25,00 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612412388"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___538 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___538">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616788755"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___539 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___539">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16,15 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783708603667"/>
     </Thing>
     
 
@@ -12634,9 +14433,249 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___540 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___540">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610013075"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___541 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___541">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610014331"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___542 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___542">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26,10 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790031"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___543 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___543">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,19 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616790437"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___544 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___544">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37,91 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612611156"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___545 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___545">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9790709006687"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___546 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___546">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610013105"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___547 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___547">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610010036"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___548 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___548">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612740788"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___549 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___549">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,20 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612414276"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___55 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___55">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35,91 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612441166"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___550 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___550">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610015055"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___551 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___551">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612612146"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___552 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___552">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9783850139601"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___553 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___553">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8,50 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612389680"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___554 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___554">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7,99 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616682367"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___555 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___555">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,90 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789610011897"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___556 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___556">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31,20 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789612415235"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___557 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___557">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13,79 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9789616623445"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___558 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___558">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15,70 €</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimovrste</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn13=9879612414047"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___559 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#sl:knjiga___559">
         <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35,91 €</books:hasPrice>
@@ -13253,13 +15292,6 @@
                     <swrl:AtomList>
                         <rdf:rest>
                             <swrl:AtomList>
-                                <rdf:first>
-                                    <swrl:DatavaluedPropertyAtom>
-                                        <swrl:propertyPredicate rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#hasIsbn13"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                    </swrl:DatavaluedPropertyAtom>
-                                </rdf:first>
                                 <rdf:rest>
                                     <swrl:AtomList>
                                         <rdf:rest>
@@ -13316,6 +15348,13 @@
                                         </rdf:first>
                                     </swrl:AtomList>
                                 </rdf:rest>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#hasIsbn13"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
                             </swrl:AtomList>
                         </rdf:rest>
                         <rdf:first>
