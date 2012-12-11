@@ -1,0 +1,202 @@
+<books>
+<novel>
+   <isbn10>185326041X</isbn10>
+   <isbn13>9781853260414</isbn13>
+   <title>The Great Gatsby</title>
+   <author>F. Scott Fitzgerald</author>
+   <publisher>Wordsworth Editions Ltd</publisher>
+   <year>1999</year>
+   <vendor>Book Depository</vendor>
+   <cost>€2.34</cost>
+</novel>
+<novel>
+   <isbn10>0446310786</isbn10>
+   <isbn13>9780446310789</isbn13>
+   <title>To Kill a Mockingbird</title>
+   <author>Harper Lee</author>
+   <publisher>Warner Books</publisher>
+   <year>2010</year>
+   <vendor>Book Depository</vendor>
+   <cost>€5.59</cost>
+</novel>
+<novel>
+   <isbn10>0679720200</isbn10>
+   <isbn13>9780679720201</isbn13>
+   <title>The Stranger</title>
+   <author>Albert Camus</author>
+   <publisher>Vintage Books</publisher>
+   <year>1989</year>
+   <vendor>Book Depository</vendor>
+   <cost>€8.67</cost>
+</novel>
+<novel>
+   <isbn10>0099564971</isbn10>
+   <isbn13>9780099564973</isbn13>
+   <title>The Sense of an Ending</title>
+   <author>Julian Barnes</author>
+   <publisher>VINTAGE</publisher>
+   <year>2012</year>
+   <vendor>Book Depository</vendor>
+   <cost>€8.61</cost>
+</novel>
+<novel>
+   <isbn10>0141036133</isbn10>
+   <isbn13>9780141036137</isbn13>
+   <title>Animal Farm</title>
+   <author>George Orwell</author>
+   <publisher>Penguin Books Ltd</publisher>
+   <year>2008</year>
+   <vendor>Book Depository</vendor>
+   <cost>€7.29</cost>
+</novel>
+<novel>
+   <isbn10>1840226358</isbn10>
+   <isbn13>9781840226355</isbn13>
+   <title>Ulysses</title>
+   <author>James Joyce</author>
+   <publisher>Wordsworth Editions Ltd</publisher>
+   <year>2010</year>
+   <vendor>Book Depository</vendor>
+   <cost>€4.10</cost>
+</novel>
+<novel>
+   <isbn10>0316769487</isbn10>
+   <isbn13>9780316769488</isbn13>
+   <title>The Catcher in the Rye</title>
+   <author>J. D. Salinger</author>
+   <publisher>Little, Brown and Company</publisher>
+   <year>1991</year>
+   <vendor>Book Depository</vendor>
+   <cost>€4.73</cost>
+</novel>
+<novel>
+   <isbn10>0451191145</isbn10>
+   <isbn13>9780451191144</isbn13>
+   <title>Atlas Shrugged</title>
+   <author>Ayn Rand</author>
+   <publisher>Penguin Books Ltd</publisher>
+   <year>2007</year>
+   <vendor>Book Depository</vendor>
+   <cost>€7.91</cost>
+</novel>
+<novel>
+   <isbn10>0099549484</isbn10>
+   <isbn13>9780099549482</isbn13>
+   <title>To Kill a Mockingbird</title>
+   <author>Harper Lee</author>
+   <publisher>ARROW BOOKS LTD</publisher>
+   <year>2010</year>
+   <vendor>Book Depository</vendor>
+   <cost>€7.30</cost>
+</novel>
+<novel>
+   <isbn10>1853262714</isbn10>
+   <isbn13>9781853262715</isbn13>
+   <title>Anna Karenina</title>
+   <author>L.N. Tolstoy</author>
+   <publisher>Wordsworth Editions Ltd</publisher>
+   <year>1999</year>
+   <vendor>Book Depository</vendor>
+   <cost>€4.53</cost>
+</novel>
+<novel>
+   <isbn10>0486290301</isbn10>
+   <isbn13>9780486290300</isbn13>
+   <title>The Metamorphosis</title>
+   <author>Franz Kafka</author>
+   <publisher>Dover Publications Inc.</publisher>
+   <year>1996</year>
+   <vendor>Book Depository</vendor>
+   <cost>€2.68</cost>
+</novel>
+<novel>
+   <isbn10>1853260045</isbn10>
+   <isbn13>9781853260049</isbn13>
+   <title>Great Expectations</title>
+   <author>Charles Dickens</author>
+   <publisher>Wordsworth Editions Ltd</publisher>
+   <year>1998</year>
+   <vendor>Book Depository</vendor>
+   <cost>€3.25</cost>
+</novel>
+<novel>
+   <isbn10>0007368658</isbn10>
+   <isbn13>9780007368655</isbn13>
+   <title>The Great Gatsby</title>
+   <author>F. Scott Fitzgerald</author>
+   <publisher>HarperPress</publisher>
+   <year>2010</year>
+   <vendor>Book Depository</vendor>
+   <cost>€2.88</cost>
+</novel>
+<novel>
+   <isbn10>0399501487</isbn10>
+   <isbn13>9780399501487</isbn13>
+   <title>Lord of the Flies</title>
+   <author>William Golding</author>
+   <publisher>Penguin Putnam Inc</publisher>
+   <year>2001</year>
+   <vendor>Book Depository</vendor>
+   <cost>€6.64</cost>
+</novel>
+<novel>
+   <isbn10>0099419785</isbn10>
+   <isbn13>9780099419785</isbn13>
+   <title>To Kill a Mockingbird</title>
+   <author>Harper Lee</author>
+   <publisher>ARROW BOOKS LTD</publisher>
+   <year>1989</year>
+   <vendor>Book Depository</vendor>
+   <cost>€7.30</cost>
+</novel>
+<novel>
+   <isbn10>1853260150</isbn10>
+   <isbn13>9781853260155</isbn13>
+   <title>The Picture of Dorian Gray</title>
+   <author>Oscar Wilde</author>
+   <publisher>Wordsworth Editions Ltd</publisher>
+   <year>1999</year>
+   <vendor>Book Depository</vendor>
+   <cost>€2.50</cost>
+</novel>
+<novel>
+   <isbn10>0451524934</isbn10>
+   <isbn13>9780451524935</isbn13>
+   <title>Orwell George : Nineteen Eighty-Four (Sc): Nineteen Eighty-Four : A Novel</title>
+   <author>George Orwell</author>
+   <publisher>Penguin Books Ltd</publisher>
+   <year>1991</year>
+   <vendor>Book Depository</vendor>
+   <cost>€7.08</cost>
+</novel>
+<novel>
+   <isbn10>1853260622</isbn10>
+   <isbn13>9781853260629</isbn13>
+   <title>War and Peace</title>
+   <author>Leo Tolstoy</author>
+   <publisher>Wordsworth Editions Ltd</publisher>
+   <year>1999</year>
+   <vendor>Book Depository</vendor>
+   <cost>€5.13</cost>
+</novel>
+<novel>
+   <isbn10>0141182571</isbn10>
+   <isbn13>9780141182575</isbn13>
+   <title>In Cold Blood: A True Account of a Multiple Murder and Its Consequences</title>
+   <author>Truman Capote</author>
+   <publisher>PENGUIN CLASSICS</publisher>
+   <year>2000</year>
+   <vendor>Book Depository</vendor>
+   <cost>€7.22</cost>
+</novel>
+<novel>
+   <isbn10>1853261041</isbn10>
+   <isbn13>9781853261046</isbn13>
+   <title>The Secret Garden</title>
+   <author>Frances Hodgson Burnett</author>
+   <publisher>Wordsworth Editions Ltd</publisher>
+   <year>1999</year>
+   <vendor>Book Depository</vendor>
+   <cost>€2.50</cost>
+</novel>
+</books>

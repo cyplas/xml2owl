@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+  <!-- custom download functions -->
+  <include path="../functions.xml"/>
+
+  <!-- root of directory tree where all downloaded and processed data is stored --> 
+  <var-def name="rootDirectory">/home/cyp/fri/jdeveloper/xml2owl/src/main/resources/test/harvest/books</var-def>
+
+  <!-- download book data from doria -->
+  <call name="download">
+    <call-param name="directory"><template>${rootDirectory}/doria</template></call-param>
+    <call-param name="startUrl">http://www.doria.si/knjigarna/q/rubrika/394/leposlovje</call-param>
+    <call-param name="listCount">3</call-param>
+    <call-param name="itemXpath">//div[@class='izdelek-sredina']//a[@class='kat-naslov']/@href</call-param>
+    <call-param name="nextListXpath">(//b[text()='>'][1]/../@href)[1]</call-param>
+    <call-param name="xquery"><![CDATA[
+          declare variable $doc as node() external;
+          let $title := $doc/html/head/title
+          let $main := $doc//div[@class='izdelek-sredina']
+          let $isbn := $main//td[normalize-space(text()[1])='ISBN:']/..//strong
+          let $ean := $main//td[normalize-space(text()[1])='EAN:']/..//strong
+          let $koda := $main//td[normalize-space(text()[1])='Koda:']/..//strong
+          let $author := $main//p[normalize-space(text()[1])='Avtor:']//a
+          let $price := $main//p[normalize-space(text()[1])='Cena z DDV:']//b
+          let $year := $main//td[normalize-space(text()[1])='Leto izdaje:']/..//strong
+          return
+          <knjiga>
+            <isbn>{data($isbn)}</isbn>
+            <ean>{data($ean)}</ean>
+            <koda>{data($koda)}</koda>
+            <naslov>{data($title)}</naslov>
+            <avtor>{data($author)}</avtor>
+            <cena>{data($price)}</cena>
+            <prodajalec>Doria</prodajalec>
+            <leto>{data($year)}</leto>
+          </knjiga>
+          ]]></call-param>
+  </call>
+
+</config>

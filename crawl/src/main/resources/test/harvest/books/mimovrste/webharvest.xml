@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+  <!-- custom download functions -->
+  <include path="../functions.xml"/>
+
+  <!-- root of directory tree where all downloaded and processed data is stored --> 
+  <var-def name="rootDirectory">/home/cyp/fri/jdeveloper/xml2owl/src/main/resources/test/harvest/books</var-def>
+
+  <!-- download book data from mimovrste -->
+  <call name="download">
+    <call-param name="directory"><template>${rootDirectory}/mimovrste</template></call-param>
+    <call-param name="startUrl">http://www.mimovrste.com/katalog/726/leposlovje</call-param>
+    <call-param name="listCount">3</call-param>
+    <call-param name="itemXpath">//div[@class='listBox boxDisplay']//h1//a/@href</call-param>
+    <call-param name="nextListXpath">(//span[@class='last']/a[text()='Naslednja'])[1]/@href</call-param>
+    <call-param name="xquery"><![CDATA[
+          declare variable $doc as node() external;
+          let $product := $doc//h1[@class='product-title fn']
+          let $title := ($product/text())[1]
+          let $author := $product/span[@class='avtor']/a
+          let $table := $doc//table[@class='tableView']
+          let $isbn := $table//td[@class='first' and text()='ISBN']/..//strong
+          let $publisher := $table//td[@class='first' and text()='založba']/..//strong
+          let $date := $table//td[@class='first' and text()='leto izdaje']/..//strong
+          let $price := $doc//p[@class='product-price productPrice mainProdPrices']//span[@class='price eur priceData']
+          return
+          <knjiga>
+            <isbn>{replace(data($isbn),'-','')}</isbn>
+            <naslov>{normalize-space(data($title))}</naslov>
+            <avtor>{string-join(data($author),', ')}</avtor>
+            <zalozba>{data($publisher)}</zalozba>
+            <leto>{data($date)}</leto>
+            <prodajalec>Mimovrste</prodajalec>
+            <cena>{data($price)}</cena>
+          </knjiga>
+          ]]></call-param>
+  </call>
+
+</config>

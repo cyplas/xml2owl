@@ -1,0 +1,146 @@
+<books>
+<book>
+   <isbn10>0345803485</isbn10>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title>Fifty Shades of Grey: Book One of the Fifty Shades Trilogy</title>
+   <author>E L James</author>
+   <publisher>Vintage</publisher>
+   <year>2012</year>
+   <seller>Amazon</seller>
+   <price>$9.57</price>
+</book>
+<book>
+   <isbn10>0345803493</isbn10>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title>Fifty Shades Darker: Book Two of the Fifty Shades Trilogy (50 Shades Trilogy)</title>
+   <author>E L James</author>
+   <publisher>Vintage</publisher>
+   <year>2012</year>
+   <seller>Amazon</seller>
+   <price>$9.57</price>
+</book>
+<book>
+   <isbn10/>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title/>
+   <author/>
+   <publisher/>
+   <year/>
+   <seller>Amazon</seller>
+   <price/>
+</book>
+<book>
+   <isbn10/>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title/>
+   <author/>
+   <publisher/>
+   <year/>
+   <seller>Amazon</seller>
+   <price/>
+</book>
+<book>
+   <isbn10>1596987855</isbn10>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title>The Amateur</title>
+   <author>Edward Klein</author>
+   <publisher>Regnery Publishing</publisher>
+   <year>2012</year>
+   <seller>Amazon</seller>
+   <price>$16.77</price>
+</book>
+<book>
+   <isbn10>0345529057</isbn10>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title>A Song of Ice and Fire, Books 1-4 (A Game of Thrones / A Feast for Crows / A Storm of Swords / Clash of Kings)</title>
+   <author>George R.R. Martin</author>
+   <publisher>Bantam</publisher>
+   <year>2011</year>
+   <seller>Amazon</seller>
+   <price>$20.50</price>
+</book>
+<book>
+   <isbn10/>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title/>
+   <author/>
+   <publisher/>
+   <year/>
+   <seller>Amazon</seller>
+   <price/>
+</book>
+<book>
+   <isbn10/>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title/>
+   <author/>
+   <publisher/>
+   <year/>
+   <seller>Amazon</seller>
+   <price/>
+</book>
+<book>
+   <isbn10/>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title/>
+   <author/>
+   <publisher/>
+   <year/>
+   <seller>Amazon</seller>
+   <price/>
+</book>
+<book>
+   <isbn10>0439023513</isbn10>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title>Mockingjay (The Hunger Games, Book 3)</title>
+   <author>Suzanne Collins</author>
+   <publisher>Scholastic Press</publisher>
+   <year>2010</year>
+   <seller>Amazon</seller>
+   <price>$9.80</price>
+</book>
+<book>
+   <isbn10>0439023521</isbn10>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title>The Hunger Games</title>
+   <author>Suzanne Collins</author>
+   <publisher>Scholastic Press</publisher>
+   <year>2010</year>
+   <seller>Amazon</seller>
+   <price>$5.39</price>
+</book>
+<book>
+   <isbn10>0439023491</isbn10>
+   <isbn13/>
+   <isbnpns/>
+   <asin/>
+   <title>Catching Fire (The Hunger Games, Book 2)</title>
+   <author>Suzanne Collins</author>
+   <publisher>Scholastic Press</publisher>
+   <year>2009</year>
+   <seller>Amazon</seller>
+   <price>$10.79</price>
+</book>
+</books>

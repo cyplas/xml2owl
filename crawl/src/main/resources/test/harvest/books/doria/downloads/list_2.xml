@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="verify-v1" content="fKrJJI/Y0V2b8Vl/PRHp5C1DXjz+Fhv3a5XraSwDkCo=" /><title>Leposlovje</title><link href="/css/layout.css" rel="stylesheet" type="text/css" /><link href="/css/pisave.css" rel="stylesheet" type="text/css" /><meta name="keywords" content="knjigarna, spletna knjigarna, spletna galerija, egalerija, eknjigarna, e-knjigarna, galerija, knjige, literatura, književnost, darila, slike, razstave, knjižni program, najbolj brane knjige, knjižne uspešnice, spletna trgovina, trgovine, knjigarne, doria." /><meta name="description" content="Knjigarna - spletna knjigarna in galerija Doria nudi knjige, slike in darilni program " /><script type="text/javascript" src="/jscript/funkcije.js" /><script src="/scripts/ac_runactivecontent.js" type="text/javascript" /><link href="/css/lightbox.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="/jscript/mootools.js" /><script type="text/javascript" src="/jscript/lightbox.js" /></head><body>
+Obračamo liste, odkrivamo nove strani in svetove ... beremo knjige!&quot; /&gt;
+
+<script type="text/javascript"><![CDATA[function spremeni_pot(pot)
+  {
+
+   window.location.href = pot;
+  }]]></script>
+<div id="m0">
+<div id="m0desni"><a href="javascript:void(0);" onclick="spremeni_pot(&apos;?css=vecji&apos;)"><img src="/images/m0-css-plus.gif" width="22" height="30" alt="Povečajte pisavo" /></a><a href="javascript:void(0);" onclick="spremeni_pot(&apos;?css=normalna&apos;)"><img src="/images/m0-css.gif" width="22" height="30" alt="Osnovna velikost" /></a><a href="javascript:void(0);" onclick="spremeni_pot(&apos;?css=manjsi&apos;)"><img src="/images/m0-css-minus.gif" width="18" height="30" alt="Pomanjšajte pisavo" /></a><a href="javascript:void(0);" onclick="window.print();"><img src="/images/m0-print.gif" width="18" height="30" alt="Natisnite stran" /></a><a href="javascript:popup(&apos;/popup-priporoci.php?/knjigarna/q/rubrika/394/leposlovje?stran=2&apos;,&apos;priporoci&apos;,&apos;width=400,height=300,status=1&apos;);"><img src="/images/m0-mail.gif" width="37" height="30" alt="Pošljite stran prijatelju ali znancu" /></a></div>
+<div><a href="/"><img src="/images/m0-knjigarna.gif" alt="Knjigarna" width="90" height="30" border="0" /></a><a href="/splosni-pogoji-poslovanja"><img src="/images/m0-spp.gif" alt="Splošni pogoji spletne knjigarne" width="203" height="30" border="0" /></a><a href="/vizitka"><img src="/images/m0-vizitka.gif" alt="Vizitka e-knjigarne" height="30" border="0" /></a></div></div>
+<div id="m1">
+<div id="m1desni" style="position: relative;">    
+<div style="position: absolute; top: 0px; left: -215px; width: 210px;">
+<form name="form1" method="get" action="/iskalnik">
+<input name="q" type="text" class="iskalnik" id="iskalni-niz" value="Iskanje ..." onclick="this.value=&apos;&apos;" /><input name="button" type="submit" class="gumbnajdi" id="button" value="Najdi" /></form></div></div>
+<div><a href="/"><img src="/images/logotip-spletna-knjigarna.gif" alt="Spletna knjigarna Doria.si" width="252" height="81" border="0" /></a><img src="/images/zemlja.jpg" width="165" height="81" alt="" /><a href="/knjigarna"><img src="/images/m1-knjigarna.jpg" width="137" height="81" alt="Knjigarna - Doria.si" /></a><a href="/knjigarna/q/rubrika/1/Knjigarna"><img src="/images/m1-knjige.jpg" width="67" height="81" alt="Knjige" /></a><a href="/knjigarna/q/rubrika/2/CD&amp;DVD"><img src="/images/m1-cd.jpg" width="74" height="81" alt="CD&amp;DVD" /></a><a href="/knjigarna/q/rubrika/3/E-butik"><img src="/images/m1-butik.jpg" width="76" height="81" alt="E-BUTIK" /></a><a href="/knjigarna/q/rubrika/4/Slike"><img src="/images/m1-slike.jpg" alt="Slike" /></a><a href="/knjigarna/q/rubrika/469/Darila"><img src="/images/m1-darila.jpg" alt="Vodič za darila" /></a></div></div>
+<div style="background-image: url(/images/knjigarna_62.jpg); background-position: top left; background-repeat: repeat-y;">
+<div style="background-image: url(/images/knjigarna_61.jpg); background-position: top right; background-repeat: repeat-y;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" class="lm"><div class="lm"><div class="leva"><div><a href="/"><img src="/images/m2-knjigarna.gif" alt="Knjigarna Doria.si" /></a></div><div><a href="/knjigarna/q/rubrika/1/Knjige"><img src="/images/kat1.gif" alt="Knjige" /></a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/392/dom__igre__prosti_cas">Dom &amp; igre &amp; prosti čas</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/404/druzine_otroci_starsi_vzgoja">Družine, otroci, starši, vzgoja</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/222/duhovnost__religije">Duhovnost &amp; religije</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/260/etnologija">Etnologija</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/395/ezoterika">Ezoterika</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/221/filozofija">Filozofija</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/388/finance__kariera_poslovna_rast">Finance &amp; kariera, poslovna rast</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/398/komunikologija__politika__sociologija">Komunikologija &amp; politika &amp; sociologija</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/394/leposlovje">Leposlovje</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/401/aforizmi__grafiti__humor">Aforizmi &amp; grafiti &amp; humor</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/135/avtobiografije__biografije">Avtobiografije &amp; biografije</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/232/drame">Drame</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/263/faksimile__jubilejne_izdaje">Faksimile &amp; jubilejne izdaje</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/152/izreki__modrosti">Izreki &amp; modrosti</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/203/kratka_proza">Kratka proza</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/124/literarna_teorija__zgodovina">Literarna teorija &amp; zgodovina</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/412/poezija">Poezija</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/194/potopisi">Potopisi</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/405/revije_o_knjizevnosti">Revije o književnosti</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/217/romani">Romani</a></div>
+<div class="nivo3"><a href="/knjigarna/q/rubrika/228/zgodbe">Zgodbe</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/403/ljubezen__odnosi">Ljubezen &amp; odnosi</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/429/meditacija__sprostitev">Meditacija &amp; sprostitev</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/215/mladinske_knjige">Mladinske knjige</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/407/naravoslovje__ekologija">Naravoslovje &amp; ekologija</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/387/osebnostna_rast">Osebnostna rast</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/223/otroske_knjige">Otroške knjige</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/208/prehrana__kulinarika">Prehrana &amp; kulinarika</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/432/psihologija">Psihologija</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/389/racunalnistvo">Računalništvo</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/231/rastline__roze__vrt">Rastline &amp; rože &amp; vrt</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/402/slovarji__jezikoslovje">Slovarji &amp; jezikoslovje</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/408/sport">Šport</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/434/tretje_zivljenjsko_obdobje">Tretje življenjsko obdobje</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/435/tuje_knjige">Tuje knjige</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/440/turistika__vodniki">Turistika &amp; vodniki</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/220/ucbeniki___ucila__ucenje">Učbeniki  &amp; učila &amp; učenje</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/411/umetnost">Umetnost</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/393/zdravje__vitalnost">Zdravje &amp; vitalnost</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/342/zgodovina">Zgodovina</a></div>
+<div class="nivo2"><a href="/knjigarna/q/rubrika/390/zivali__clovek">Živali &amp; človek</a></div>
+<div><a href="/knjigarna/q/rubrika/2/CD &amp; DVD"><img src="/images/kat2.gif" alt="CD &amp; DVD" /></a></div>
+<div><a href="/knjigarna/q/rubrika/3/E-butik"><img src="/images/kat3.gif" alt="E-butik" /></a></div>
+<div><a href="/knjigarna/q/rubrika/469/Slike"><img src="/images/kat469.gif" alt="Slike" /></a></div>
+<div><a href="/knjigarna/q/rubrika/479/Fotografije"><img src="/images/kat479.gif" alt="Fotografije" /></a></div>
+<div><a href="/knjigarna/q/rubrika/4/Vodič za darila"><img src="/images/kat4.gif" alt="Vodič za darila" /></a></div>
+<div><div id="nakljucno" style="margin-left:3px;">
+<p><object width="199" height="236" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" title="" alt="">
+<param name="scale" value="noscale" />
+<param name="wmode" value="transparent" />
+<param name="movie" value="/datoteke/media/skroller_v.swf" />
+<param name="quality" value="high" /><embed width="199" height="236" scale="noscale" quality="high" src="/datoteke/media/skroller_v.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" /></object></p></div></div><div class="modra"><div class="modraGlava"><div class="modraVsebina"><h1 align="center"><font color="#ffccff">Pravljice </font></h1>
+<p align="center"> </p>
+<p align="center"><a href="/knjigarna/q/artikel/5663/kako_je_muren_vladimir_presenetil_svet_"><img class="kat-slika" alt="Kako je muren Vladimir presenetil svet " src="/datoteke/artikli/5663/mala_kako_je_muren_vladimir_presenetil_svet_julia_doria.jpg" /></a></p>
+<p align="center"><a class="kat-naslov" href="/knjigarna/q/artikel/5663/kako_je_muren_vladimir_presenetil_svet_"><strong><font color="#ffffff" size="2">Kako je muren Vladimir presenetil svet</font></strong></a></p>
+<p align="center"><font color="#2761cb" size="2"><strong> </strong></font></p><font color="#ffffff"><font color="#ffffff" size="2"></font></font><h2 align="center"><font color="#ffffff"><font color="#ffffff" size="2"><a href="/knjigarna/q/artikel/5481/deklica_in_kit_"><img class="kat-slika" alt="Deklica in kit " src="/datoteke/artikli/5481/mala_deklica_in_kit_ziva_viviana_doria.jpg" /></a></font></font></h2><font color="#ffffff"></font><h2 align="center"><font color="#ffffff"></font><p><font color="#ffffff"><a class="kat-naslov" href="/knjigarna/q/artikel/5481/deklica_in_kit_"><font color="#ffffff" size="2">Deklica in kit</font></a></font></p>
+<p><font color="#ffffff" /> </p>
+<p><a href="/knjigarna/q/artikel/5661/ko_lunica_ne_spi_"><font color="#ffffff"><img class="kat-slika" alt="Ko lunica ne spi " src="/datoteke/artikli/5661/mala_ko_lunica_ne_spi_ziva_viviana_doria_slikanica.jpg" /></font></a></p>
+<p><a class="kat-naslov" href="/knjigarna/q/artikel/5661/ko_lunica_ne_spi_"><font color="#ffffff" size="2">Ko lunica ne spi</font></a></p>
+<p><font color="#ffffff" size="2" /> </p>
+<p><a href="/knjigarna/q/artikel/2962/kresnicka_in_njena_lucka"><font color="#ffffff"><img class="kat-slika" alt="KRESNIČKA IN NJENA LUČKA" src="/datoteke/artikli/2962/mala_kresnicka-in-njena-lucka-nasl-1.jpg" /></font></a></p>
+<p><a class="kat-naslov" href="/knjigarna/q/artikel/2962/kresnicka_in_njena_lucka"><font color="#ffffff" size="2">KRESNIČKA IN NJENA LUČKA</font></a></p>
+<p><font color="#ffffff" /> </p>
+<p><a href="/knjigarna/q/artikel/5468/mavrica_pripoveduje_-_mavricni_svet_barv_za_otroke__"><font color="#ffffff"><img class="kat-slika" alt="Mavrica pripoveduje - Mavrični svet barv za otroke  " src="/datoteke/artikli/5468/mala_mavrica_pripoveduje_mavricni_svet_barv_za_otroke_naslovnica.jpg" /></font></a></p>
+<p><a class="kat-naslov" href="/knjigarna/q/artikel/5468/mavrica_pripoveduje_-_mavricni_svet_barv_za_otroke__"><font color="#ffffff" size="2">Mavrica pripoveduje - Mavrični svet barv za otroke</font></a></p>
+<p><font color="#ffffff" /> </p>
+<p><a href="/knjigarna/q/artikel/5035/pravljicni_komplet_slikanic_-_kresnicka__netopircek__kuzica"><font color="#ffffff"><img class="kat-slika" alt="Pravljični komplet slikanic - Kresnička * Netopirček * Kužica" src="/datoteke/artikli/5035/mala_pravljicni_komplet.jpg" /></font></a></p>
+<p><a class="kat-naslov" href="/knjigarna/q/artikel/5035/pravljicni_komplet_slikanic_-_kresnicka__netopircek__kuzica"><font color="#ffffff" size="2">Pravljični komplet slikanic - Kresnička * Netopirček * Kužica</font></a></p>
+<p> </p>
+<p><a href="/knjigarna/q/artikel/5972/puppy_pia_and_the_blueberries"><img class="kat-slika" alt="Puppy Pia and the Blueberries" src="/datoteke/artikli/5972/mala_puppy_pia_and_the_blueberries_julia_doria_fairy_tale.jpg" /></a> </p>
+<p><a class="kat-naslov" href="/knjigarna/q/artikel/5972/puppy_pia_and_the_blueberries"><font color="#ffffff" size="2">Puppy Pia and the Blueberries</font></a></p>
+<p> </p></h2></div></div><div class="modraNoga" /></div><div><div id="m0tekst">
+<p><a title="" href="/knjigarna">KNJIGARNA</a>      
+<a title="" href="/knjigarna/q/rubrika/1/Knjigarna">  KNJIGE</a>       
+<a title="" href="/knjigarna/q/rubrika/2/CD&amp;DVD">CD&amp;DVD</a>      
+<a title="" href="/knjigarna/q/rubrika/3/E-butik">E-BUTIK</a>          
+<a title="" href="/knjigarna/q/rubrika/469/Slike">SLIKE</a>          
+<a title="" href="/knjigarna/q/rubrika/4/Darila">VODIČ ZA DARILA</a></p></div></div></div></div></td><td valign="top" class="vsebina">
+<div style="padding: 0px 8px;">
+<div id="crumb"><img src="/images/crumb-desno.gif" width="12" height="21" align="right" /><img src="/images/crumb-levo.gif" width="12" height="21" align="absmiddle" /><a href="/knjigarna">Knjigarna</a>»
+<a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a></div><script type="text/javascript"><![CDATA[function pq(polje, vrednost)
+ {
+  var nv = "";
+  var qs = window.location.search.substring(1);
+  var obstaja = false;
+  
+  par = qs.split("&");
+  
+  
+  if(par.length > 0)
+  { 
+   
+   for (var i=0; i
+< par.length; i++) 
+   { 
+      var pol = par[i].indexOf("="); 
+     
+      if(pol >= 0) 
+      { 
+      var k = par[i].substring(0,pol); 
+      var v = par[i].substring(pol+1); 
+     
+      nv += (i == 0 ? "" : "&amp;");
+      
+      if(k == polje)
+      {
+     nv +=  k + "=" + vrednost;
+     obstaja = true;
+      }
+      else
+      {
+     nv += k + "=" + v;
+      }
+      
+      } 
+   }
+   
+   if(obstaja == false)
+   {
+      nv += "&amp;" + polje + "=" + vrednost;
+   }
+     
+    }
+    else
+    {
+   nv += polje + "=" + vrednost;
+    }
+   
+    
+    return nv; 
+ }
+ 
+ 
+ function getpage(polje, vrednost)
+ {
+  window.location = window.location.pathname + "?" + pq(polje, vrednost);
+ }
+ 
+ 
+ function orderby(polje, vrednost)
+ {
+  window.location = window.location.pathname + "?" + pq(polje, vrednost);
+ }]]></script><table width="100%"><tbody><tr><td><div style="margin: 5px;"><b>Stran 2 od 56</b>     
+<a href="?stran=1" style="text-decoration: none;"><b>&lt;&lt;</b></a>
+<a href="?stran=1" style="text-decoration: none;"><b>&lt;</b></a>
+<a href="?stran=1" style="text-decoration: none;">1</a>
+<b>2</b>
+<a href="?stran=3" style="text-decoration: none;">3</a>
+<a href="?stran=4" style="text-decoration: none;">4</a>
+<a href="?stran=5" style="text-decoration: none;">5</a>
+<a href="?stran=6" style="text-decoration: none;">6</a>
+<a href="?stran=7" style="text-decoration: none;">7</a>
+<a href="?stran=8" style="text-decoration: none;">8</a>
+<a href="?stran=9" style="text-decoration: none;">9</a>
+<a href="?stran=10" style="text-decoration: none;">10</a>
+<a href="?stran=11" style="text-decoration: none;">11</a>
+<a href="?stran=12" style="text-decoration: none;">12</a>
+<a href="?stran=13" style="text-decoration: none;">13</a>
+<a href="?stran=14" style="text-decoration: none;">14</a>
+<a href="?stran=15" style="text-decoration: none;">15</a>
+<a href="?stran=16" style="text-decoration: none;">16</a>
+<a href="?stran=17" style="text-decoration: none;">17</a>
+<a href="?stran=18" style="text-decoration: none;">18</a>
+<a href="?stran=19" style="text-decoration: none;">19</a>
+<a href="?stran=20" style="text-decoration: none;">20</a>
+<a href="?stran=21" style="text-decoration: none;">21</a>
+<a href="?stran=22" style="text-decoration: none;">22</a>
+<a href="?stran=3" style="text-decoration: none;"><b>&gt;</b></a>
+<a href="?stran=56" style="text-decoration: none;"><b>&gt;&gt;</b></a></div></td></tr><tr><td align="right">Izberite stran:
+<select name="stran" onchange="getpage(this.name, this.value);"><option value="1">1</option><option value="2" selected="selected">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option></select>Razvrstite po:
+<select name="orderby" onchange="orderby(this.name, this.value);"><option value="naziv-asc">nazivu naraščajoče</option><option value="naziv-desc">nazivu padajoče</option><option value="cena-asc">ceni naraščajoče</option><option value="cena-desc">ceni padajoče</option></select></td></tr></tbody></table>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/227">Kronike življenja &amp; sage</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/1581/amigdalino_srce"><img src="/datoteke/artikli/1581/mala_4d9a84ce3f73543d3c078f9520196783.jpg" alt="AMIGDALINO SRCE" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/1581/amigdalino_srce" class="kat-naslov">AMIGDALINO SRCE</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/630/Maja_Gal_Stromar">Maja Gal Štromar</a></i></p>
+<p> </p>
+<p class="kat-opis">V romanu Amigdalino srce je v fragmentih predstavljena življenjska zgodba Gale Amande Brollo, njene družine in ljudi, ki preko ljubezenskih razmerij zapletajo in prepletajo njihova življenja ...</p>
+<br /><br />Artikel se nahaja še v naslednjih kategorijah:
+<p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/176">Ljubezenski romani &amp; romantika</a></p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>12,48 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/1581/amigdalino_srce"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/1581"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/180">Družbeno kritični romani</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/2403/amsterdam_12.75_-_nevrotransmiterski_evangelij"><img src="/datoteke/artikli/2403/mala_ca739192faec08da8d2dc1d485734783.jpg" alt="Amsterdam 12.75 - nevrotransmiterski evangelij" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/2403/amsterdam_12.75_-_nevrotransmiterski_evangelij" class="kat-naslov">Amsterdam 12.75 - nevrotransmiterski evangelij</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/1313/Janja_Rakus">Janja Rakuš</a></i></p>
+<p> </p>
+<p class="kat-opis">Jedrska pašteta: v romanu so poleg naravnih začimb še primesi cinizma, ljubezni, seksa, droge, družine, muzike in vode</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>17,20 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/2403/amsterdam_12.75_-_nevrotransmiterski_evangelij"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/2403"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/227">Kronike življenja &amp; sage</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/2391/annina_poroka_mehka_izdaja"><img src="/datoteke/artikli/2391/mala_f23e68ad60310fb971e4fa96ede783dc.jpg" alt="Annina poroka (mehka izdaja)" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/2391/annina_poroka_mehka_izdaja" class="kat-naslov">Annina poroka (mehka izdaja)</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/1303/Nathacha_Appanah">Nathacha Appanah</a></i></p>
+<p> </p>
+<p class="kat-opis">Pripovedovalka Sonia na dan hčerine poroke na tihem dela obračun s svojim življenjem in skozi tok njenih misli in spominov se počasi izrisujejo njene mnogotere in protislovne identitete</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>14,90 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/2391/annina_poroka_mehka_izdaja"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/2391"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/227">Kronike življenja &amp; sage</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/3550/annina_poroka_zepna_izdaja"><img src="/datoteke/artikli/3550/mala_aninna_poroka_1.jpg" alt="Annina poroka (žepna izdaja)" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/3550/annina_poroka_zepna_izdaja" class="kat-naslov">Annina poroka (žepna izdaja)</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/1303/Nathacha_Appanah">Nathacha Appanah</a></i></p>
+<p> </p>
+<p class="kat-opis">Annina poroka je rahločutna in duhovita raziskava najmanjših vzgibov ločevanj, nestrpnosti in zavračanja ter meditacija o sprejemanju drugega.</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>8,99 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/3550/annina_poroka_zepna_izdaja"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/3550"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/196">Mistika, iskanja, duhovna rast</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/2679/anor_kath_-_pota_magov"><img src="/datoteke/artikli/2679/mala_anor_kath_samo_petancic.jpg" alt="Anor Kath - pota magov" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/2679/anor_kath_-_pota_magov" class="kat-naslov">Anor Kath - pota magov</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/1519/Samo_Petancic">Samo Petančič</a></i></p>
+<p> </p>
+<p class="kat-opis">Hedjegadttu se je začel gibati po prostoru kot oprezen plenilec. Priklicane duše so vzniknile okoli njegovega telesa – polprosojni sledovi, iščoč žrtev, ki bi jo nekromož določil ...</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>22,99 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/2679/anor_kath_-_pota_magov"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/2679"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/124">Literarna teorija &amp; zgodovina</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/2968/antologija_slovenskih_pesnic_3"><img src="/datoteke/artikli/2968/mala_antologija_slovenskih_pesnic_tuma.jpg" alt="Antologija slovenskih pesnic 3" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/2968/antologija_slovenskih_pesnic_3" class="kat-naslov">Antologija slovenskih pesnic 3</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/1710/Irena_Novak_Popov">Irena Novak Popov</a></i></p>
+<p> </p>
+<p class="kat-opis">Tretji del Antologije slovenskih pesnic zaokrožuje izčrpen pregled slovenskega ženskega pesniškega ustvarjanja in zajema obdobje od leta 1980 do leta 2000 in malo čez ...</p>
+<br /><br />Artikel se nahaja še v naslednjih kategorijah:
+<p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/412">Poezija</a>»
+<a href="/knjigarna/q/rubrika/179">Sodobna poezija</a></p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>22,99 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/2968/antologija_slovenskih_pesnic_3"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/2968"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-razprodano.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/263">Faksimile &amp; jubilejne izdaje</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/2102/anton_tomaz_linhart_-_jubilejna_monografija"><img src="/datoteke/artikli/2102/mala_174db61af0fe73413c988f59354f9237.jpg" alt="Anton Tomaž Linhart - Jubilejna monografija" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/2102/anton_tomaz_linhart_-_jubilejna_monografija" class="kat-naslov">Anton Tomaž Linhart - Jubilejna monografija</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/632/Ivo_Svetina">Ivo Svetina</a>,
+<a href="/knjigarna/q/avtor/1050/Francka_Slivnik">Francka Slivnik</a>,
+<a href="/knjigarna/q/avtor/1051/Verena_Stekar_Vidic">Verena Štekar Vidic</a></i></p>
+<p> </p>
+<p class="kat-opis">Jubilejna monografija ob 250 letnici rojstva</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>20,03 €</b></big></p><span style="font-weight: bold; color: red; font-size: 15px;">Ni dobavljivo</span></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/2102/anton_tomaz_linhart_-_jubilejna_monografija"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/2102"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/203">Kratka proza</a>»
+<a href="/knjigarna/q/rubrika/204">Kratke zgodbe</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/969/arabske_zgodbe"><img src="/datoteke/artikli/969/mala_d790a523be2f9a330ecc8169c044cbca.jpg" alt="ARABSKE ZGODBE" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/969/arabske_zgodbe" class="kat-naslov">ARABSKE ZGODBE</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/121/Jana_Bauer">Jana Bauer</a></i></p>
+<p> </p>
+<p class="kat-opis">Antologija sodobne arabske kratke proze</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>20,84 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/969/arabske_zgodbe"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/969"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/227">Kronike življenja &amp; sage</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/3632/arija"><img src="/datoteke/artikli/3632/mala_arija_1.jpg" alt="ARIJA" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/3632/arija" class="kat-naslov">ARIJA</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/142/Nassim_Assefi">Nassim Assefi</a></i></p>
+<p> </p>
+<p class="kat-opis">Od časov, ko še ni bilo zdravnikov, se za zdravljenje uporablja vsak košček jabolka. Ko srkaš njegov osvežujoči sok, naj te njegova sladkost spomni na vse, kar je dobrega v tvojem življenju.</p>
+<br /><br />Artikel se nahaja še v naslednjih kategorijah:
+<p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/228">Zgodbe</a></p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>27,00 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/3632/arija"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/3632"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/196">Mistika, iskanja, duhovna rast</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/3932/atlantida"><img src="/datoteke/artikli/3932/mala_atlantida_borislav_v_pekic_1.jpg" alt="ATLANTIDA" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/3932/atlantida" class="kat-naslov">ATLANTIDA</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/2786/Borislav_V._Pekic">Borislav V. Pekić</a></i></p>
+<p> </p>
+<p class="kat-opis">Ideja o Atlantidi nesporno izvira iz potrebe po raju. Ker v peklu človeške stvarnosti obstoja raja ni bilo mogoče dokazati, smo ga morali poiskati v nečem, kar je obstajalo</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>18,00 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/3932/atlantida"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/3932"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/196">Mistika, iskanja, duhovna rast</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/1160/atlantida_mehka_vezava"><img src="/datoteke/artikli/1160/mala_f4de556f1ba2a4bd043c79335ff85eb2.jpg" alt="ATLANTIDA (mehka vezava)" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/1160/atlantida_mehka_vezava" class="kat-naslov">ATLANTIDA (mehka vezava)</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/347/David_Gibbins">David Gibbins</a></i></p>
+<p> </p>
+<p class="kat-opis">Mit Atlantide vznemirja že stoletja. Človek še vedno išče legendarni otok, najrazvitejši kraj, katerega ljudstvo je živelo v harmoniji in velikem bogastvu ...</p>
+<br /><br />Artikel se nahaja še v naslednjih kategorijah:
+<p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/218">Zgodovinski romani</a></p><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/222">Duhovnost &amp; religije</a>»
+<a href="/knjigarna/q/rubrika/235">Duhovnost &amp; leposlovje</a></p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>12,90 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/1160/atlantida_mehka_vezava"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/1160"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/389">Računalništvo</a>»
+<a href="/knjigarna/q/rubrika/374">Internet</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/3640/avtorsko_pravo_v_digitalni_dobi"><img src="/datoteke/artikli/3640/mala_avtorsko_pravo_v_digitalni_obliki_1.jpg" alt="Avtorsko pravo v digitalni dobi" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/3640/avtorsko_pravo_v_digitalni_dobi" class="kat-naslov">Avtorsko pravo v digitalni dobi</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/2238/Maja_Bogataj_Janci">Maja Bogataj Jančič</a></i></p>
+<p> </p>
+<p class="kat-opis">Digitalna tehnologija, še posebej internet, je drastično spremenil dinamiko in ekonomiko kopiranja &gt; Večni izziv avtorskega prava je, kako določiti, kje se končajo izključne pravice avtorja in se začne prost javni dostop.</p>
+<br /><br />Artikel se nahaja še v naslednjih kategorijah:
+<p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/389">Računalništvo</a></p><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a></p><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/411">Umetnost</a></p><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/388">Finance &amp; kariera, poslovna rast</a>»
+<a href="/knjigarna/q/rubrika/456">Management &amp; vodenje</a></p><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/398">Komunikologija &amp; politika &amp; sociologija</a>»
+<a href="/knjigarna/q/rubrika/465">Komunikologija</a></p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>54,00 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/3640/avtorsko_pravo_v_digitalni_dobi"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/3640"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/152">Izreki &amp; modrosti</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/3879/babice_svetujejo_svetu"><img src="/datoteke/artikli/3879/mala_babice_svetujejo_svetu_carol_schaefer_1.jpg" alt="BABICE SVETUJEJO SVETU" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/3879/babice_svetujejo_svetu" class="kat-naslov">BABICE SVETUJEJO SVETU</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/2391/Carol_Schaefer">Carol Schaefer</a></i></p>
+<p> </p>
+<p class="kat-opis">Starešinke ponujajo svoje videnje rešitve našega planeta</p>
+<br /><br />Artikel se nahaja še v naslednjih kategorijah:
+<p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/260">Etnologija</a>»
+<a href="/knjigarna/q/rubrika/168">Etnologija &amp; svet</a></p><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/434">Tretje življenjsko obdobje</a>»
+<a href="/knjigarna/q/rubrika/321">Leposlovje &amp; zrela leta</a></p><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/434">Tretje življenjsko obdobje</a></p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Redna cena z DDV:
+<b><s>27,01 €</s></b></p>
+<p>Znižana cena z DDV:
+<big><b style="color: #FF0000;">21,60 €</b></big></p>
+<p>Popust:
+<b>20,02%</b></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/3879/babice_svetujejo_svetu"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/3879"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/203">Kratka proza</a>»
+<a href="/knjigarna/q/rubrika/204">Kratke zgodbe</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/3934/bambi"><img src="/datoteke/artikli/3934/mala_bambi_1.jpg" alt="BAMBI" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/3934/bambi" class="kat-naslov">BAMBI</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/1433/Milan_Klec">Milan Kleč</a></i></p>
+<p> </p>
+<p class="kat-opis">Kratka proza</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>20,00 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/3934/bambi"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/3934"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/401">Aforizmi &amp; grafiti &amp; humor</a>»
+<a href="/knjigarna/q/rubrika/391">Humoreske</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/471/barufa_in_kazin"><img src="/datoteke/artikli/471/mala_f791203fd1de20d40a28495c62af4016.jpg" alt="BARUFA IN KAŽIN" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/471/barufa_in_kazin" class="kat-naslov">BARUFA IN KAŽIN</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/2153/Franjo_Francic">Franjo Frančič</a></i></p>
+<p> </p>
+<p class="kat-opis">Humoreske in satire &gt; Knjiga Barufa in kažin prinaša izbor Frančičevih najboljših humoresk. Zaznamuje jih zgoščena pripoved in neposredni, tekoči dialogi</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>11,23 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/471/barufa_in_kazin"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/471"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/215">Mladinske knjige</a>»
+<a href="/knjigarna/q/rubrika/118">Mladinski romani, povesti</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/3732/barva_magije"><img src="/datoteke/artikli/3732/mala_barva_magije_1.jpg" alt="BARVA MAGIJE" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/3732/barva_magije" class="kat-naslov">BARVA MAGIJE</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/2315/Terry_Pratchett">Terry Pratchett</a></i></p>
+<p> </p>
+<p class="kat-opis">Zemlja je v resnici ravna plošča, ki plava skoz vesolje na hrbtu štirih slonov, ti pa jahajo na velikanski želvi neznanega spola. (To verjetno pojasni, zakaj nam gre vedno vse narobe.)</p>
+<br /><br />Artikel se nahaja še v naslednjih kategorijah:
+<p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/196">Mistika, iskanja, duhovna rast</a></p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>8,00 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/3732/barva_magije"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/3732"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/180">Družbeno kritični romani</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/3787/beda_stvari"><img src="/datoteke/artikli/3787/mala_beda_stvari_1.jpg" alt="Beda stvari" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/3787/beda_stvari" class="kat-naslov">Beda stvari</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/2344/Dimitri_Verhulst">Dimitri Verhulst</a></i></p>
+<p> </p>
+<p class="kat-opis">V briljanto napisani moralni skici je Verhulst zadel natančno pravo atmosfero in ton, da ravnotežje med veselostjo in žalostjo ostaja v rahločutnem ravnotežju …</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>19,40 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/3787/beda_stvari"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/3787"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/176">Ljubezenski romani &amp; romantika</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/2036/bela_masajka"><img src="/datoteke/artikli/2036/mala_a6f582ba91bafea26baaaf162b641270.jpg" alt="Bela Masajka" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/2036/bela_masajka" class="kat-naslov">Bela Masajka</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/972/Corinne_Hofmann">Corinne Hofmann</a></i></p>
+<p> </p>
+<p class="kat-opis">&quot;To je zgodba o štirih letih, ki sem jih preživela v divjini Kenije. Takrat sem sledila veliki ljubezni svojega življenja in spoznala nebesa in pekel. To je bil moj največji boj za preživetje!&quot; Corin</p>
+<br /><br />Artikel se nahaja še v naslednjih kategorijah:
+<p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/403">Ljubezen &amp; odnosi</a>»
+<a href="/knjigarna/q/rubrika/177">Ljubezen &amp; leposlovje</a></p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>10,90 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/2036/bela_masajka"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/2036"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/180">Družbeno kritični romani</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/564/bela_trdnjava"><img src="/datoteke/artikli/564/mala_bela_trdnjava_orhan_pamuk.jpg" alt="BELA TRDNJAVA" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/564/bela_trdnjava" class="kat-naslov">BELA TRDNJAVA</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/867/Orhan_Pamuk">Orhan Pamuk</a></i></p>
+<p> </p>
+<p class="kat-opis">Neverjetna zgodba iz 17. stoletja o odnosu dveh moških, enega z Vzhoda in drugega z Zahoda</p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>14,95 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/564/bela_trdnjava"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/564"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<div style="padding-bottom: 6px;"><!--okvir-->
+<div class="izdelek-glava"><!--glava-->
+<div><img src="/images/tip-normal.gif" alt="" width="101" height="37" align="right" /><img src="/images/kot-z-desno.gif" alt="" width="12" height="37" align="left" /></div><br /><p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a>»
+<a href="/knjigarna/q/rubrika/180">Družbeno kritični romani</a></p></div><!--konec glava-->
+<div class="izdelek-sredina" style="padding: 12px; height: auto;"><!--izdlek sredina-->
+<table><tbody><tr><td valign="top">
+<p><a href="/knjigarna/q/artikel/3546/bela_trdnjava_zepna_izdaja"><img src="/datoteke/artikli/3546/mala_bela_trdnjava_1.jpg" alt="Bela trdnjava (žepna izdaja)" class="kat-slika" /></a></p></td><td valign="top">
+<p><a href="/knjigarna/q/artikel/3546/bela_trdnjava_zepna_izdaja" class="kat-naslov">Bela trdnjava (žepna izdaja)</a></p>
+<p class="kat-avtor">Avtor:
+<i><a href="/knjigarna/q/avtor/867/Orhan_Pamuk">Orhan Pamuk</a></i></p>
+<p> </p>
+<p class="kat-opis">Neverjetna zgodba iz 17. stoletja o odnosu dveh moških, enega z Vzhoda in drugega z Zahoda</p>
+<br /><br />Artikel se nahaja še v naslednjih kategorijah:
+<p class="minikategorija"><a href="/knjigarna/q/rubrika/1">Knjige</a>»
+<a href="/knjigarna/q/rubrika/394">Leposlovje</a>»
+<a href="/knjigarna/q/rubrika/217">Romani</a></p></td></tr></tbody></table>
+<div style="clear: both;"> </div>
+<p>Cena z DDV:
+<big><b>8,99 €</b></big></p></div><!--konec izdlek sredina-->
+<div class="izdelek-noga">
+<a href="/knjigarna/q/artikel/3546/bela_trdnjava_zepna_izdaja"><img src="/images/kot-vec.gif" alt="" width="56" height="23" border="0" align="right" /></a>
+<a href="/kupci/q/art-add/3546"><img src="/images/kot-kosarica.gif" alt="" width="45" height="23" border="0" align="right" /></a><img src="/images/kot-slevo.gif" alt="" width="12" height="23" align="left" /></div></div>
+<table width="100%"><tbody><tr><td><div style="margin: 5px;"><b>Stran 2 od 56</b>     
+<a href="?stran=1" style="text-decoration: none;"><b>&lt;&lt;</b></a>
+<a href="?stran=1" style="text-decoration: none;"><b>&lt;</b></a>
+<a href="?stran=1" style="text-decoration: none;">1</a>
+<b>2</b>
+<a href="?stran=3" style="text-decoration: none;">3</a>
+<a href="?stran=4" style="text-decoration: none;">4</a>
+<a href="?stran=5" style="text-decoration: none;">5</a>
+<a href="?stran=6" style="text-decoration: none;">6</a>
+<a href="?stran=7" style="text-decoration: none;">7</a>
+<a href="?stran=8" style="text-decoration: none;">8</a>
+<a href="?stran=9" style="text-decoration: none;">9</a>
+<a href="?stran=10" style="text-decoration: none;">10</a>
+<a href="?stran=11" style="text-decoration: none;">11</a>
+<a href="?stran=12" style="text-decoration: none;">12</a>
+<a href="?stran=13" style="text-decoration: none;">13</a>
+<a href="?stran=14" style="text-decoration: none;">14</a>
+<a href="?stran=15" style="text-decoration: none;">15</a>
+<a href="?stran=16" style="text-decoration: none;">16</a>
+<a href="?stran=17" style="text-decoration: none;">17</a>
+<a href="?stran=18" style="text-decoration: none;">18</a>
+<a href="?stran=19" style="text-decoration: none;">19</a>
+<a href="?stran=20" style="text-decoration: none;">20</a>
+<a href="?stran=21" style="text-decoration: none;">21</a>
+<a href="?stran=22" style="text-decoration: none;">22</a>
+<a href="?stran=3" style="text-decoration: none;"><b>&gt;</b></a>
+<a href="?stran=56" style="text-decoration: none;"><b>&gt;&gt;</b></a></div></td></tr><tr><td align="right">Izberite stran:
+<select name="stran" onchange="getpage(this.name, this.value);"><option value="1">1</option><option value="2" selected="selected">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option></select>Razvrstite po:
+<select name="orderby" onchange="orderby(this.name, this.value);"><option value="naziv-asc">nazivu naraščajoče</option><option value="naziv-desc">nazivu padajoče</option><option value="cena-asc">ceni naraščajoče</option><option value="cena-desc">ceni padajoče</option></select></td></tr></tbody></table><div /></div></td><td valign="top" class="dm"><div class="dm">
+<div id="prijava">
+<p align="center"><img src="/images/prijava-glava.gif" width="188" height="23" /></p>
+<form name="form2" method="post" action="/kupci">
+<table width="100%" border="0" cellspacing="0" cellpadding="3"><tbody><tr><td width="32%"><div align="right">e-pošta:</div></td><td width="68%"><input name="kupec_email" type="text" class="polje-registracija" id="textfield" /></td></tr><tr><td><div align="right">geslo:</div></td><td><input name="kupec_pass" type="password" class="polje-registracija" id="textfield2" /></td></tr><tr><td> </td><td><input type="image" name="imageField" id="imageField" src="/images/gumb-prijava.gif" /></td></tr></tbody></table></form>
+<p style="padding-left: 10px;">
+<a href="/kupci/q/registracija"><b>Novi na straneh? Registrirajte se!</b></a><br />
+<a href="/kupci/q/lost">Pozabljeno geslo?</a></p>
+<a href="/kupci/q/cart"><img src="/images/prijava-kosarica.gif" width="188" height="37" /></a>
+<div style="padding: 8px;"><strong>Košarica je prazna
+<br /><br /></strong></div>
+<div><img src="/images/prijava-noga.gif" width="188" height="8" /></div></div>
+<div><p><a title="" href="/splosni-pogoji-poslovanja"><img style="margin-top: 1px" title="" border="0" alt="" width="188" height="69" src="/datoteke/slike/pasica-narocanje.gif" /></a>
+<a title="" href="/ugodnosti"><img style="margin-top: 0px" title="" border="0" alt="" width="188" height="72" src="/datoteke/slike/pasica-popusti.gif" /></a>
+<a title="" href="/placilne-kartice"><img title="" border="0" alt="" width="188" height="87" src="/datoteke/slike/okvirji/okvir-placilne-moznosti.gif" /></a></p></div><div class="rdeca"><div class="rdecaGlava" /><div class="rdecaVsebina"><h3 align="center"><font color="#ff0033"> Iz knjigarne</font></h3>
+<p align="center"> </p>
+<p align="center"><a href="/knjigarna/q/artikel/5712/psicka_pia_in_borovnice"><img style="width: 104px; height: 135px" class="kat-slika" alt="Psička Pia in borovnice" width="118" height="159" src="/datoteke/artikli/5712/mala_julia_doria_psicka_pia_in_borovnice_slikanice_za_otroke_knjige.jpg" /></a></p>
+<p align="center"><a class="kat-naslov" href="/knjigarna/q/artikel/5712/psicka_pia_in_borovnice"><strong><font color="#ffffff" size="2">Psička Pia in borovnice</font></strong></a></p>
+<p align="center"> </p>
+<p align="center"><a href="/knjigarna/q/artikel/6330/gobe_1"><img style="width: 112px; height: 143px" class="kat-slika" alt="Gobe 1" src="/datoteke/artikli/6330/mala_gobe_zlatko_ivec_11of1.jpg" width="118" height="159" /></a></p>
+<p align="center"><a class="kat-naslov" href="/knjigarna/q/artikel/6330/gobe_1"><strong><font color="#ffffff" size="2">Gobe 1</font></strong></a></p>
+<p align="center"> </p>
+<p align="center"><a href="/knjigarna/q/artikel/5469/ljubiti_in_ziveti__"><img style="width: 106px; height: 146px" class="kat-slika" alt="Ljubiti in živeti  " width="112" height="160" src="/datoteke/artikli/5469/mala_ljubiti_in_ziveti_joze_urbanija_1.jpg" /></a></p>
+<p align="center"> 
+<a class="kat-naslov" href="/knjigarna/q/artikel/5469/ljubiti_in_ziveti__"><strong><font color="#ffffff" size="2">Ljubiti in živeti</font></strong></a></p>
+<p align="center"> </p>
+<p align="center"><a href="/knjigarna/q/artikel/617/smaragdna_pot_ali_potovanje_k_notranjemu_ucitelju_-_reiki_prirocnik" /></p>
+<p align="center"><a href="/knjigarna/q/artikel/3837/vibracije_misli_-_zakon_privlacnosti_v_svetu_misli"><img style="width: 102px; height: 132px" class="kat-slika" alt="Vibracije misli - Zakon privlačnosti v Svetu Misli" width="112" height="159" src="/datoteke/artikli/3837/mala_vibracija_misli_1.jpg" /></a></p>
+<p align="center"> 
+<a class="kat-naslov" href="/knjigarna/q/artikel/3837/vibracije_misli_-_zakon_privlacnosti_v_svetu_misli"><strong><font color="#ffffff" size="2">Vibracije misli - Zakon privlačnosti v Svetu Misli</font></strong></a></p>
+<p align="center"><strong><font color="#2761cb" size="2"> </font></strong></p>
+<p align="center"><a href="/knjigarna/q/artikel/5817/knjizni_komplet_orison_s._marden_-_blaginja_vedrina_2_knjigi"><img class="kat-slika" alt="Knjižni komplet Orison S. Marden - Blaginja, Vedrina (2 knjigi)" src="/datoteke/artikli/5817/mala_knjiga_knjige_blaginja_vedrina_orison_sett_marden.jpg" /></a></p>
+<p align="center"><a class="kat-naslov" href="/knjigarna/q/artikel/5817/knjizni_komplet_orison_s._marden_-_blaginja_vedrina_2_knjigi"><strong><font color="#ffffff" size="2">Knjižni komplet Orison S. Marden - Blaginja, Vedrina (2 knjigi)</font></strong></a></p>
+<p align="center"> </p>
+<p align="center"><a href="/knjigarna/q/artikel/3987/skrivnost_uspeha"><img class="kat-slika" alt="Skrivnost uspeha" src="/datoteke/artikli/3987/mala_1233265056_4770.jpg" /></a></p>
+<p align="center"> 
+<a class="kat-naslov" href="/knjigarna/q/artikel/3987/skrivnost_uspeha"><strong><font color="#ffffff" size="2">Skrivnost uspeha</font></strong></a></p>
+<p align="center"> </p></div><div class="rdecaNoga" /></div><div><div id="laxmi">
+<p style="padding-top: 14px"><a href="/laxmi/">Klub Laxmi</a><img style="margin-left: 10px" title="" alt="" align="middle" width="35" height="26" src="/datoteke/slike/laxmi.gif" /></p>
+<p style="padding-top: 0px"><a href="/ugodnosti">Ugodnosti za kupce</a></p>
+<p style="padding-top: 25px"><a title="" href="/knjigarna/q/najbolj_brane_knjige">Najbolj brane knjige</a></p>
+<p style="padding-top: 8px"><a title="" href="/knjigarna/q/leto/2012">Novosti 2012</a></p></div></div><div><div id="iskrice"><table height="113"><tbody><tr><td><p>Avtor mora biti v svoji knjigi kakor bog v vesolju, povsod prisoten, a nikjer viden.
+<br /><br /><i>Gustave Flaubert</i></p></td></tr></tbody></table></div><div style="margin-bottom: 4px;"><img src="/images/iskrce_noga.jpg" alt="" /></div></div><div>
+<div id="mailer"><div style="padding: 60px 5px 5px 5px;">
+<form method="post" action="/postna-lista" style="margin:0px;padding:0px;">Vaš elektronski naslov:
+<br />
+<input name="mailer_email" type="text" style="width: 100px;" />
+<input type="submit" value="Pošljite" /><br />
+<input type="checkbox" name="mailer_rub[]" value="2" checked="checked" />Knjižne novice
+<br />
+<input type="checkbox" name="mailer_rub[]" value="4" checked="checked" />Mavrični mesečnik
+<br /></form></div></div></div></div></td></tr></tbody></table></div></div>
+<div id="noga">
+<p><img src="/images/noga-desni-del.gif" width="37" height="70" align="right" /><img src="/images/noga-levi-del.gif" width="29" height="70" align="left" /></p>
+<p> </p>
+<div align="center">Kontakt za naročila:
+<b><img src="/images/ico-phone.gif" width="17" height="18" align="absmiddle" />040 796 639 </b>
+<img src="/images/ico-mail.gif" width="17" height="18" align="absmiddle" />
+<a href="mailto:info@doria.si">info@doria.si</a>  |  
+<a href="javascript:popup(&apos;/popup-priporoci.php?/knjigarna/q/rubrika/394/leposlovje?stran=2&apos;,&apos;priporoci&apos;,&apos;width=400,height=300,status=1&apos;);">Pošljite prijatelju</a>  |  
+<a href="#" onclick="window.external.AddFavorite(location.href, document.title);">Dodajte stran med priljubljene</a>  |  
+<a href="#" onclick="this.style.behavior=&apos;url(#default#homepage)&apos;;this.setHomePage(&apos;http://www.doria.si&apos;);">Nastavite stran e-knjigarne za domačo stran</a></div></div>
+<div align="center" style="padding: 2px 0px 10px 0px;"><img src="/grafike/cc1.gif" width="365" height="30" vspace="5" border="0" /><br /><a href="http://www.doria.si">Spletna knjigarna Doria.si</a>vse pravice pridržane.</div>
+<script type="text/javascript"><![CDATA[window.addEvent('domready',function(){
+    Lightbox.init({descriptions: '.lightboxDesc', showControls: true});
+   });]]></script>
+<script type="text/javascript"><![CDATA[var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));]]></script>
+<script type="text/javascript"><![CDATA[try {
+var pageTracker = _gat._getTracker("UA-273037-44");
+pageTracker._trackPageview();
+} catch(err) {}]]></script>
+
+</body></html>

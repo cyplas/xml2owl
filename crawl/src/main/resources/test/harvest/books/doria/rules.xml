@@ -1,0 +1,183 @@
+<ontologyMappingElements
+    queryLanguage="urn:fri-x2o:sublang:xpath2.0"
+    expressionLanguage="urn:fri-x2o:sublang:xpath2.0"
+    xmlns="http://www.fri.uni-lj.si/xml2owl"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://www.fri.uni-lj.si/xml2owl">
+
+  <prefixIRI>http://www.fri.uni-lj.si/xml2owl/books.owl#</prefixIRI>
+
+  <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn10">
+    <node>/books/knjiga[fn:matches(isbn,'^[0-9X]{10}?$')]</node>
+    <expression>fn:concat('isbn10=',fn:replace(isbn,'\-',''))</expression>
+  </mapToOWLIndividual>
+
+  <mapToOWLIndividual type="unknown" referenceName="booksWithKoda10">
+    <node>/books/knjiga[(isbn = '') and (fn:matches(koda,'^[0-9X]{10}?$'))]</node>
+    <expression>fn:concat('isbn10=',koda)</expression>
+  </mapToOWLIndividual>
+
+  <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn13">
+    <node>/books/knjiga[fn:matches(isbn,'^[0-9X]{13}?$')]</node>
+    <expression>fn:concat('isbn13=',fn:replace(isbn,'\-',''))</expression>
+  </mapToOWLIndividual>
+
+  <mapToOWLIndividual type="unknown" referenceName="booksWithKoda13">
+    <node>/books/knjiga[(isbn = '') and (fn:matches(koda,'^[0-9X]{13}?$'))]</node>
+    <expression>fn:concat('isbn13=',koda)</expression>
+  </mapToOWLIndividual>
+
+  <collectOWLIndividuals referenceName="books">
+    <referenceToIndividual refName="booksWithIsbn10"/>
+    <referenceToIndividual refName="booksWithKoda10"/>
+    <referenceToIndividual refName="booksWithIsbn13"/>
+    <referenceToIndividual refName="booksWithKoda13"/>
+  </collectOWLIndividuals>
+
+  <mapToOWLIndividual type="unknown" referenceName="authors">
+    <parentReference refName="books"/>
+    <node>.</node>
+    <expression>fn:concat('author=',fn:tokenize(avtor,'\s+')[last()])</expression>
+  </mapToOWLIndividual>
+
+  <mapToOWLIndividual type="new" referenceName="offers">
+    <parentReference refName="books"/>
+    <node>.</node>
+  </mapToOWLIndividual>
+
+  <mapToOWLClassAssertion>
+    <referenceToIndividual refName="books"/>
+    <class>
+      <expression>'Book'</expression>
+    </class>
+  </mapToOWLClassAssertion>
+
+  <mapToOWLClassAssertion>
+    <referenceToIndividual refName="authors"/>
+    <class>
+      <expression>'Author'</expression>
+    </class>
+  </mapToOWLClassAssertion>
+
+  <mapToOWLClassAssertion>
+    <referenceToIndividual refName="offers"/>
+    <class>
+      <expression>'Offer'</expression>
+    </class>
+  </mapToOWLClassAssertion>
+
+  <mapToOWLObjectPropertyAssertion>
+    <referenceToDomainIndividual refName="authors"/>
+    <propertyName>
+      <expression>'wrote'</expression>
+    </propertyName>
+    <referenceToRangeIndividual refName="books"/>
+    <dependency independent="propertyValue" dependent="individual"/>
+  </mapToOWLObjectPropertyAssertion>
+
+  <mapToOWLObjectPropertyAssertion>
+    <referenceToDomainIndividual refName="offers"/>
+    <propertyName>
+      <expression>'instantiates'</expression>
+    </propertyName>
+    <referenceToRangeIndividual refName="books"/>
+    <dependency independent="propertyValue" dependent="individual"/>
+  </mapToOWLObjectPropertyAssertion>
+
+  <mapToOWLDataPropertyAssertion>
+    <referenceToIndividual refName="booksWithIsbn10"/>
+    <propertyName>
+      <expression>'hasIsbn10'</expression>
+    </propertyName>
+    <propertyValue>
+      <node>.</node>
+      <expression>fn:replace(isbn,'\-','')</expression>
+    </propertyValue>
+    <dependency independent="individual" dependent="propertyValue"/>
+  </mapToOWLDataPropertyAssertion>
+
+  <mapToOWLDataPropertyAssertion>
+    <referenceToIndividual refName="booksWithKoda10"/>
+    <propertyName>
+      <expression>'hasIsbn10'</expression>
+    </propertyName>
+    <propertyValue>
+      <node>.</node>
+      <expression>isbn</expression>
+    </propertyValue>
+    <dependency independent="individual" dependent="propertyValue"/>
+  </mapToOWLDataPropertyAssertion>
+
+  <mapToOWLDataPropertyAssertion>
+    <referenceToIndividual refName="booksWithIsbn13"/>
+    <propertyName>
+      <expression>'hasIsbn13'</expression>
+    </propertyName>
+    <propertyValue>
+      <node>.</node>
+      <expression>fn:replace(isbn,'\-','')</expression>
+    </propertyValue>
+    <dependency independent="individual" dependent="propertyValue"/>
+  </mapToOWLDataPropertyAssertion>
+
+  <mapToOWLDataPropertyAssertion>
+    <referenceToIndividual refName="booksWithKoda13"/>
+    <propertyName>
+      <expression>'hasIsbn13'</expression>
+    </propertyName>
+    <propertyValue>
+      <node>.</node>
+      <expression>isbn</expression>
+    </propertyValue>
+    <dependency independent="individual" dependent="propertyValue"/>
+  </mapToOWLDataPropertyAssertion>
+
+  <mapToOWLDataPropertyAssertion>
+    <referenceToIndividual refName="books"/>
+    <propertyName>
+      <expression>'hasTitle'</expression>
+    </propertyName>
+    <propertyValue>
+      <node>.</node>
+      <expression>naslov</expression>
+    </propertyValue>
+    <dependency independent="individual" dependent="propertyValue"/>
+  </mapToOWLDataPropertyAssertion>
+
+  <mapToOWLDataPropertyAssertion>
+    <referenceToIndividual refName="books"/>
+    <propertyName>
+      <expression>'wasPublishedIn'</expression>
+    </propertyName>
+    <propertyValue>
+      <node>.</node>
+      <expression type="xsd:integer">leto</expression>
+    </propertyValue>
+    <dependency independent="individual" dependent="propertyValue"/>
+  </mapToOWLDataPropertyAssertion>
+
+  <mapToOWLDataPropertyAssertion>
+    <referenceToIndividual refName="offers"/>
+    <propertyName>
+      <expression>'hasSeller'</expression>
+    </propertyName>
+    <propertyValue>
+      <node>.</node>
+      <expression>prodajalec</expression>
+    </propertyValue>
+    <dependency independent="individual" dependent="propertyValue"/>
+  </mapToOWLDataPropertyAssertion>
+
+  <mapToOWLDataPropertyAssertion>
+    <referenceToIndividual refName="offers"/>
+    <propertyName>
+      <expression>'hasPrice'</expression>
+    </propertyName>
+    <propertyValue>
+      <node>.</node>
+      <expression>cena</expression>
+    </propertyValue>
+    <dependency independent="individual" dependent="propertyValue"/>
+  </mapToOWLDataPropertyAssertion>
+
+</ontologyMappingElements>
