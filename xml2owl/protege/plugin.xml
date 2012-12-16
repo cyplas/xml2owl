@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<plugin>
+   <extension id="XML2OWLComponent"
+              point="org.protege.editor.core.application.ViewComponent">
+      <label value="XML2OWL mapper"/>
+      <class value="si.uni_lj.fri.xml2owl.protege.XML2OWLComponent"/>
+      <category value="@org.protege.ontologycategory"/>
+   </extension>
+   <extension id="XML2OWLTab"
+              point="org.protege.editor.core.application.WorkspaceTab">
+      <label value="XML2OWL"/>
+      <class value="org.protege.editor.owl.ui.OWLWorkspaceViewsTab"/>
+      <index value="X"/>
+      <editorKitId value="OWLEditorKit"/>
+      <defaultViewConfigFileName value="viewconfig-xml2owl-tab.xml"/>
+   </extension>
+</plugin>
