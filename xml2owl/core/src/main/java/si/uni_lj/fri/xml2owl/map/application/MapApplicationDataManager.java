@@ -23,12 +23,11 @@ public class MapApplicationDataManager {
     }
 
     /** Create a Request, based on xml data from files stored in testDirectory
-     * (i.e., xml.xml, owl.xml, rules.xml, options.xml). */
+     * (i.e., xml.xml, owl.xml, rules.xml). */
     public Request makeRequest() throws Xml2OwlDataException {
 	Request request = new Request();
 	request.setData(dataManager.read(sourceDirectory + "/xml"));
 	request.setRules(dataManager.read(sourceDirectory + "/rules"));
-	request.setOptions(dataManager.read("options"));
 	request.setOwl(dataManager.read("owl"));
 	return request;
     }

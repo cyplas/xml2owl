@@ -20,7 +20,6 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="data" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="owl" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="rules" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="options" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,8 +32,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "data",
     "owl",
-    "rules",
-    "options"
+    "rules"
 })
 @XmlRootElement(name = "request")
 public class Request {
@@ -45,8 +43,6 @@ public class Request {
     protected String owl;
     @XmlElement(required = true)
     protected String rules;
-    @XmlElement(required = true)
-    protected String options;
 
     /**
      * Gets the value of the data property.
@@ -120,28 +116,5 @@ public class Request {
         this.rules = value;
     }
 
-    /**
-     * Gets the value of the options property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOptions() {
-        return options;
-    }
-
-    /**
-     * Sets the value of the options property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOptions(String value) {
-        this.options = value;
-    }
-
 }
+

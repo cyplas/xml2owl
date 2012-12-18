@@ -2726,6 +2726,78 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___194 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___194">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.57</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345803485"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___195 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___195">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.57</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345803493"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___196 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___196">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$16.77</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1596987855"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___197 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___197">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$20.50</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345529057"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___198 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___198">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.80</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023513"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___199 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___199">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$5.39</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023521"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___2 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___2">
@@ -2750,6 +2822,126 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___200 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___200">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$10.79</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023491"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___201 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___201">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.57</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345803485"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___202 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___202">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.57</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345803493"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___203 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___203">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$16.77</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1596987855"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___204 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___204">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$20.50</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345529057"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___205 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___205">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.80</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023513"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___206 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___206">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$5.39</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023521"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___207 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___207">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$10.79</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023491"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___208 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___208">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.57</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345803485"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___209 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___209">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.57</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345803493"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___21 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___21">
@@ -2762,6 +2954,126 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___210 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___210">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$16.77</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1596987855"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___211 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___211">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$20.50</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345529057"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___212 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___212">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.80</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023513"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___213 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___213">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$5.39</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023521"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___214 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___214">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$10.79</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023491"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___215 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___215">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.57</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345803485"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___216 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___216">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.57</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345803493"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___217 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___217">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$16.77</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1596987855"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___218 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___218">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$20.50</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345529057"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___219 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___219">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$9.80</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023513"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___22 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___22">
@@ -2770,6 +3082,30 @@
         <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$20.50</books:hasPrice>
         <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
         <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0345529057"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___220 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___220">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$5.39</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023521"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#book___221 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#book___221">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$10.79</books:hasPrice>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon</books:hasSeller>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0439023491"/>
     </Thing>
     
 
@@ -11721,6 +12057,18 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___239 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___239">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.34</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=185326041X"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___24 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___24">
@@ -11729,6 +12077,126 @@
         <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
         <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.29</books:hasPrice>
         <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141036133"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___240 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___240">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€5.59</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0446310786"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___241 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___241">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€8.67</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0679720200"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___242 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___242">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€8.61</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099564971"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___243 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___243">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.29</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141036133"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___244 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___244">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€4.10</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1840226358"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___245 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___245">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€4.73</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0316769487"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___246 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___246">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.91</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451191145"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___247 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___247">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.30</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099549484"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___248 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___248">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€4.53</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853262714"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___249 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___249">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.68</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0486290301"/>
     </Thing>
     
 
@@ -11745,6 +12213,126 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___250 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___250">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€3.25</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260045"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___251 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___251">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.88</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0007368658"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___252 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___252">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€6.64</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0399501487"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___253 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___253">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.30</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099419785"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___254 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___254">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.50</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260150"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___255 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___255">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.08</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451524934"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___256 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___256">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€5.13</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260622"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___257 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___257">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.22</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141182571"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___258 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___258">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.50</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853261041"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___259 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___259">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.34</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=185326041X"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___26 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___26">
@@ -11757,6 +12345,126 @@
     
 
 
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___260 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___260">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€5.59</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0446310786"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___261 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___261">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€8.67</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0679720200"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___262 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___262">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€8.61</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099564971"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___263 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___263">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.29</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141036133"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___264 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___264">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€4.10</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1840226358"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___265 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___265">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€4.73</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0316769487"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___266 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___266">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.91</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451191145"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___267 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___267">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.30</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099549484"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___268 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___268">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€4.53</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853262714"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___269 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___269">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.68</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0486290301"/>
+    </Thing>
+    
+
+
     <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___27 -->
 
     <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___27">
@@ -11765,6 +12473,114 @@
         <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
         <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.91</books:hasPrice>
         <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451191145"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___270 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___270">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€3.25</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260045"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___271 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___271">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.88</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0007368658"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___272 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___272">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€6.64</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0399501487"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___273 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___273">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.30</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0099419785"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___274 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___274">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.50</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260150"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___275 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___275">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.08</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0451524934"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___276 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___276">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€5.13</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853260622"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___277 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___277">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€7.22</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=0141182571"/>
+    </Thing>
+    
+
+
+    <!-- http://www.fri.uni-lj.si/xml2owl/books.owl#novel___278 -->
+
+    <Thing rdf:about="http://www.fri.uni-lj.si/xml2owl/books.owl#novel___278">
+        <rdf:type rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#Offer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <books:hasSeller rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book Depository</books:hasSeller>
+        <books:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">€2.50</books:hasPrice>
+        <books:instantiates rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#isbn10=1853261041"/>
     </Thing>
     
 
@@ -19451,34 +20267,41 @@
     <swrl:Variable rdf:about="urn:swrl#b"/>
     <swrl:Variable rdf:about="urn:swrl#z"/>
     <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <swrl:SameIndividualAtom>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </swrl:SameIndividualAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
         <swrl:body>
             <swrl:AtomList>
                 <rdf:rest>
                     <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#hasIsbn10"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
                         <rdf:rest>
                             <swrl:AtomList>
                                 <rdf:rest>
                                     <swrl:AtomList>
+                                        <rdf:first>
+                                            <swrl:DatavaluedPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#hasIsbn13"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                            </swrl:DatavaluedPropertyAtom>
+                                        </rdf:first>
                                         <rdf:rest>
                                             <swrl:AtomList>
-                                                <rdf:first>
-                                                    <swrl:BuiltinAtom>
-                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
-                                                        <swrl:arguments>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:resource="urn:swrl#a"/>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                        <rdf:first></rdf:first>
-                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </swrl:arguments>
-                                                    </swrl:BuiltinAtom>
-                                                </rdf:first>
                                                 <rdf:rest>
                                                     <swrl:AtomList>
                                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -19502,15 +20325,26 @@
                                                         </rdf:first>
                                                     </swrl:AtomList>
                                                 </rdf:rest>
+                                                <rdf:first>
+                                                    <swrl:BuiltinAtom>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:swrl#a"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first></rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </swrl:BuiltinAtom>
+                                                </rdf:first>
                                             </swrl:AtomList>
                                         </rdf:rest>
-                                        <rdf:first>
-                                            <swrl:DatavaluedPropertyAtom>
-                                                <swrl:propertyPredicate rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#hasIsbn13"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#b"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
-                                            </swrl:DatavaluedPropertyAtom>
-                                        </rdf:first>
                                     </swrl:AtomList>
                                 </rdf:rest>
                                 <rdf:first>
@@ -19522,13 +20356,6 @@
                                 </rdf:first>
                             </swrl:AtomList>
                         </rdf:rest>
-                        <rdf:first>
-                            <swrl:DatavaluedPropertyAtom>
-                                <swrl:propertyPredicate rdf:resource="http://www.fri.uni-lj.si/xml2owl/books.owl#hasIsbn10"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#a"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                            </swrl:DatavaluedPropertyAtom>
-                        </rdf:first>
                     </swrl:AtomList>
                 </rdf:rest>
                 <rdf:first>
@@ -19540,17 +20367,6 @@
                 </rdf:first>
             </swrl:AtomList>
         </swrl:body>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                <rdf:first>
-                    <swrl:SameIndividualAtom>
-                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
-                    </swrl:SameIndividualAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
     </swrl:Imp>
 </rdf:RDF>
 

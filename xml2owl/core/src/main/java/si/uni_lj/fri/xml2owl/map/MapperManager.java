@@ -61,12 +61,11 @@ public class MapperManager {
     public OWLOntology map (OWLOntologyManager owlManager, 
                             XdmNode rules, 
                             OWLOntology owl, 
-                            XdmNode xml, 
-                            XdmNode options) 
+                            XdmNode xml)
         throws Xml2OwlMapException {
 	try {
             addNamespaces(rules);
-            MapperParameters parameters = extractParameters(rules, options);
+            MapperParameters parameters = extractParameters(rules);
             PelletReasoner reasoner = PelletReasonerFactory.getInstance().createNonBufferingReasoner(owl);
             reasoner.prepareReasoner();
             owlManager.addOntologyChangeListener(reasoner);
@@ -107,8 +106,8 @@ public class MapperManager {
         }
     }
 
-     /** Extract mapping parameters from the input rules and options. */
-     private MapperParameters extractParameters(XdmNode rules, XdmNode options)  
+     /** Extract mapping parameters from the input rules. */
+     private MapperParameters extractParameters(XdmNode rules)  
 	 throws SaxonApiException, Xml2OwlMappingException {
 	 MapperParameters parameters = new MapperParameters();
 	 parameters.setQueryLanguage
@@ -119,7 +118,7 @@ public class MapperManager {
 	      (rules, "@expressionLanguage"));
 	 parameters.setOverride
 	     (Boolean.parseBoolean
-	      (rulesEvaluator.findString(options,"override")));
+	      (rulesEvaluator.findString(rules,"@override")));
 	 parameters.setPrefixIRI
 	     (rulesEvaluator.findString
 	      (rules,"prefixIRI"));

@@ -54,8 +54,7 @@ public class MapService {
         XdmNode xml = xmlConvertor.stringToNode(request.getData());
         OWLOntology oldOwl = owlConvertor.stringToOwl(request.getOwl());
         XdmNode rules = xmlConvertor.stringToNode(request.getRules());
-        XdmNode options = xmlConvertor.stringToNode(request.getOptions());
-        OWLOntology newOwl = mapManager.map(owlManager,rules,oldOwl,xml,options);
+        OWLOntology newOwl = mapManager.map(owlManager,rules,oldOwl,xml);
         Response response = new Response();
         response.setOwl(owlConvertor.owlToString(newOwl));
         return response;

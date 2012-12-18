@@ -1,8 +1,8 @@
 package si.uni_lj.fri.xml2owl.map;
 
-/** Set of parameters which modulate the mappings carried out by Mapper.  These
- * parameters are obtained through the rules and options provided to the
- * service. */
+/** Set of parameters which modulate the mappings carried out by
+ * Mapper.  These parameters are obtained through the rules provided
+ * to the service. */
 public class MapperParameters {
 
     /** Query language for finding XML nodes. */
