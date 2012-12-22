@@ -76,8 +76,7 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
             OWLOntology owl = modelManager.getActiveOntology();
             XdmNode xml = xmlConvertor.stringToNode(dataComponent.getValue());
             XdmNode rules = xmlConvertor.stringToNode(rulesComponent.getValue());
-            XdmNode options = xmlConvertor.stringToNode("<options><override>true</override></options>");
-            mapperManager.map(owlManager, rules, owl, xml, options);
+            mapperManager.map(owlManager, rules, owl, xml);
             modelManager.refreshRenderer();
         } 
         catch (Exception e) {

@@ -6,7 +6,7 @@ Bundle-Category: protege
 Bundle-Description: XML2OWL: XML to OWL mapping
 Bundle-Vendor: Cyp and Ana
 Bundle-DocURL: http://www.fri.uni-lj.si/xml2owl
-Bundle-ClassPath: .,lib/owlapi-3.2.4.jar,lib/saxon-9.3.0.5.jar,lib/commons-io-2.0.1.jar,lib/*.jar,lib/pellet-rules-2.3.0.jar,lib/pellet-query-2.3.0.jar,lib/pellet-owlapiv3-2.3.0.jar,lib/pellet-el-2.3.0.jar,lib/pellet-datatypes-2.3.0.jar,lib/pellet-core-2.3.0.jar,lib/pellet-2.3.0.jar,lib/aterm-java-1.6-2.3.0.jar,lib/xml-apis.jar,lib/xercesImpl.jar,lib/resolver.jar,lib/serializer.jar,lib/relaxngDatatype-2.3.0.jar,lib/org.apache.servicemix.specs.jaxb-api-2.1-1.0.1.jar,lib/jgrapht-1.5.0.jar
+Bundle-ClassPath: .,lib/xml2owl-core-1.0-SNAPSHOT.jar,lib/owlapi-3.2.4.jar,lib/saxon-9.3.0.5.jar,lib/commons-io-2.0.1.jar,lib/*.jar,lib/pellet-rules-2.3.0.jar,lib/pellet-query-2.3.0.jar,lib/pellet-owlapiv3-2.3.0.jar,lib/pellet-el-2.3.0.jar,lib/pellet-datatypes-2.3.0.jar,lib/pellet-core-2.3.0.jar,lib/pellet-2.3.0.jar,lib/aterm-java-1.6-2.3.0.jar,lib/xml-apis.jar,lib/xercesImpl.jar,lib/resolver.jar,lib/serializer.jar,lib/relaxngDatatype-2.3.0.jar,lib/org.apache.servicemix.specs.jaxb-api-2.1-1.0.1.jar,lib/jgrapht-1.5.0.jar
 Import-Package: org.osgi.framework,
  org.apache.log4j,
  javax.swing,
@@ -26,11 +26,6 @@ Import-Package: org.osgi.framework,
  javax.swing.text.rtf,
  javax.swing.tree,
  javax.swing.undo,
- javax.xml.transform,
- javax.xml.transform.stream,
- javax.xml.transform.sax,
- javax.xml.transform.dom,
- javax.xml.validation,
  org.w3c.dom,
  org.w3c.dom.bootstrap,
  org.w3c.dom.events,
@@ -38,7 +33,12 @@ Import-Package: org.osgi.framework,
  org.xml.sax,
  org.xml.sax.ext,
  org.xml.sax.helpers,
- javax.xml.parsers
+ javax.xml.parsers,
+ javax.xml.transform,
+ javax.xml.transform.stream,
+ javax.xml.transform.sax,
+ javax.xml.transform.dom,
+ javax.xml.validation
 Bundle-Version: 1.0.3
 Bundle-Activator: org.protege.editor.core.plugin.DefaultPluginActivator 
 Require-Bundle: org.eclipse.equinox.registry,
