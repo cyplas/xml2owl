@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <VSNode splits="0.5 0.5">
+        <CNode>
+            <Component label="Class hierarchy">
+                <Property id="pluginId" value="org.protege.editor.owl.OWLAssertedClassHierarchy"/>
+            </Component>
+        </CNode>
+        <CNode>
+            <Component label="XML2OWL mapper">
+                <Property id="pluginId" value="si.uni_lj.fri.xml2owl.protege.XML2OWLComponent"/>
+            </Component>
+        </CNode>
+    </VSNode>
+</layout>
