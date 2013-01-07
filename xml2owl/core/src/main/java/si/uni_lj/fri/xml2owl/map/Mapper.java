@@ -182,30 +182,24 @@ public class Mapper {
 	     }
 	     while (part2Pairs.hasNext()) {
 		 ReferenceInfo pair2 = (ReferenceInfo) part2Pairs.next();
-                 // filter out if parent-reference-dependent
-                 int parentIndex = pair2.getParentIndex();
-                 if ((dependenciesType == DependenciesType.NO_DEPENDENCY) 
-                     || (parentIndex == ReferenceInfo.NO_PARENT) 
-                     || (parentIndex == counter1)) { 
-                     strings.set(1,pair2.getName());
-                     if (type == RuleType.CLASS) {
-                         String individual = 
-                             strings.get
-                             (ordering.indexOf(MapperPart.CL_INDIVIDUAL));
-                         String className = 
-                             strings.get(ordering.indexOf(MapperPart.CL_CLASS));
-                         createClassAxiom(individual, className);
-                     } else {
-                         String individual1 = 
-                             strings.get
-                             (ordering.indexOf(MapperPart.ID_INDIVIDUAL1));
-                         String individual2 = 
-                             strings.get
-                             (ordering.indexOf(MapperPart.ID_INDIVIDUAL2));
-                         createIdentityAxiom(individual1, 
-                                             individual2, 
-                                             (type==RuleType.SAME_INDIVIDUALS));
-                     }
+                 strings.set(1,pair2.getName());
+                 if (type == RuleType.CLASS) {
+                     String individual = 
+                         strings.get
+                         (ordering.indexOf(MapperPart.CL_INDIVIDUAL));
+                     String className = 
+                         strings.get(ordering.indexOf(MapperPart.CL_CLASS));
+                     createClassAxiom(individual, className);
+                 } else {
+                     String individual1 = 
+                         strings.get
+                         (ordering.indexOf(MapperPart.ID_INDIVIDUAL1));
+                     String individual2 = 
+                         strings.get
+                         (ordering.indexOf(MapperPart.ID_INDIVIDUAL2));
+                     createIdentityAxiom(individual1, 
+                                         individual2, 
+                                         (type==RuleType.SAME_INDIVIDUALS));
                  }
              }
              counter1++;
@@ -238,63 +232,52 @@ public class Mapper {
              int counter2 = 0;
 	     while (part2Pairs.hasNext()) {
                  ReferenceInfo pair2 = (ReferenceInfo) part2Pairs.next();
-                 int parentIndex2 = pair2.getParentIndex();
-                 if ((dependenciesType == DependenciesType.NO_DEPENDENCY) 
-                     || (parentIndex2 == ReferenceInfo.NO_PARENT)
-                     || (parentIndex2 == counter1)) { 
-                     strings.set(1,pair2.getName());
-                     Iterator<ReferenceInfo> part3Pairs;
-                     if (dependenciesType == DependenciesType.TWO_DEPENDENCY_RING) {
-                         part3Pairs = makePart(rule, pair2.getNode(), part3).iterator();
-                     } else if (dependenciesType == 
-                                DependenciesType.TWO_DEPENDENCY_TREE) {
-                         part3Pairs = makePart(rule, pair1.getNode(), part3).iterator();
-                     } else {
-                         part3Pairs = makePart(rule, xmlData, part3).iterator();
-                     }
-                     while (part3Pairs.hasNext()) {
-                         ReferenceInfo pair3 = (ReferenceInfo) part3Pairs.next();
-                         int parentIndex3 = pair3.getParentIndex();
-                         if ((dependenciesType == DependenciesType.NO_DEPENDENCY)
-                             || (dependenciesType == DependenciesType.ONE_DEPENDENCY)
-                             || (parentIndex3 == ReferenceInfo.NO_PARENT)
-                             || (parentIndex3 == counter2)) { 
-                             strings.set(2,pair3.getName());
-                             if (type == RuleType.DATA_PROPERTY) {
-                                 String individual = 
-                                     strings.get
-                                     (ordering.indexOf(MapperPart.DP_INDIVIDUAL));
-                                 String propertyName = 
-                                     strings.get
-                                     (ordering.indexOf(MapperPart.DP_NAME));
-                                 String propertyValue = 
-                                     strings.get
-                                     (ordering.indexOf(MapperPart.DP_VALUE));
-                                 String propertyValueType= 
-                                     findValue(rule, 
-                                               "propertyValue/expression/@type", 
-                                               "xsd:string");
-                                 createDataPropertyAxiom(individual, 
-                                                         propertyName, 
-                                                         propertyValue, 
-                                                         propertyValueType, 
-                                                         positiveAssertion);
-                             } else { // object property
-                                 String individual = 
-                                     strings.get
-                                     (ordering.indexOf(MapperPart.OP_INDIVIDUAL));
-                                 String propertyName = 
-                                     strings.get
-                                     (ordering.indexOf(MapperPart.OP_NAME));
-                                 String propertyValue = 
-                                     strings.get
-                                     (ordering.indexOf(MapperPart.OP_VALUE));
-                                 createObjectPropertyAxiom(individual, 
-                                                           propertyName, 
-                                                           propertyValue, 
-                                                           positiveAssertion);
-                             }
-                         }
+                 strings.set(1,pair2.getName());
+                 Iterator<ReferenceInfo> part3Pairs;
+                 if (dependenciesType == DependenciesType.TWO_DEPENDENCY_RING) {
+                     part3Pairs = makePart(rule, pair2.getNode(), part3).iterator();
+                 } else if (dependenciesType == 
+                            DependenciesType.TWO_DEPENDENCY_TREE) {
+                     part3Pairs = makePart(rule, pair1.getNode(), part3).iterator();
+                 } else {
+                     part3Pairs = makePart(rule, xmlData, part3).iterator();
+                 }
+                 while (part3Pairs.hasNext()) {
+                     ReferenceInfo pair3 = (ReferenceInfo) part3Pairs.next();
+                     strings.set(2,pair3.getName());
+                     if (type == RuleType.DATA_PROPERTY) {
+                         String individual = 
+                             strings.get
+                             (ordering.indexOf(MapperPart.DP_INDIVIDUAL));
+                         String propertyName = 
+                             strings.get
+                             (ordering.indexOf(MapperPart.DP_NAME));
+                         String propertyValue = 
+                             strings.get
+                             (ordering.indexOf(MapperPart.DP_VALUE));
+                         String propertyValueType= 
+                             findValue(rule, 
+                                       "propertyValue/expression/@type", 
+                                       "xsd:string");
+                         createDataPropertyAxiom(individual, 
+                                                 propertyName, 
+                                                 propertyValue, 
+                                                 propertyValueType, 
+                                                 positiveAssertion);
+                     } else { // object property
+                         String individual = 
+                             strings.get
+                             (ordering.indexOf(MapperPart.OP_INDIVIDUAL));
+                         String propertyName = 
+                             strings.get
+                             (ordering.indexOf(MapperPart.OP_NAME));
+                         String propertyValue = 
+                             strings.get
+                             (ordering.indexOf(MapperPart.OP_VALUE));
+                         createObjectPropertyAxiom(individual, 
+                                                   propertyName, 
+                                                   propertyValue, 
+                                                   positiveAssertion);
                      }
                  }
                  counter2++;
@@ -551,82 +534,39 @@ public class Mapper {
 		}
 		list.add(new ReferenceInfo(null,name));
 	    } else {
-                String parentReference = rulesEvaluator.findString(individualNode, "parentReference/@refName");
-                if (parentReference == null) {
-                    XdmSequenceIterator nodes = dataEvaluator.findIterator(root, query);
-                    while (nodes.hasNext()) {
-                        XdmNode node = (XdmNode) nodes.next();
-                        String name;
-                        if (expression == null) {
+                XdmSequenceIterator nodes = dataEvaluator.findIterator(root, query);
+                while (nodes.hasNext()) {
+                    XdmNode node = (XdmNode) nodes.next();
+                    String name;
+                    if (expression == null) {
+                        name = prefixIRI + 
+                            dataEvaluator.getName(node) + "___" + counter; 
+                        while (owlOntology.containsEntityInSignature
+                               (createIRI(name))) {
+                            counter++;
                             name = prefixIRI + 
                                 dataEvaluator.getName(node) + "___" + counter; 
-                            while (owlOntology.containsEntityInSignature
-                                   (createIRI(name))) {
-                                counter++;
-                                name = prefixIRI + 
-                                    dataEvaluator.getName(node) + "___" + counter; 
-                            }
-                        } else {
-                            name = prefixIRI + 
-                                dataEvaluator.findString(node, expression);
                         }
-                        // check that individual doesn't exist yet
-                       if (!owlOntology.containsEntityInSignature(createIRI(name))) {
-                           System.out.println("createIndividual 2: " + name);
-                           createIndividual(name);
-                       } else {
-                           if (mappingType.equals("new")) {
-                               throw new Xml2OwlMappingException
-                                   ("The supposedly new OWL individual already"
-                                    + " exists.", 
-                                    true);
-                           }
-                       }
-                       list.add(new ReferenceInfo(node,name)); // TODO: only spot where need to do something
-                    } 
-                } else {
-                    List<ReferenceInfo> parentList = references.get(parentReference);
-                    Iterator parentIterator = parentList.iterator();
-                    int parentCount = 0;
-                    while (parentIterator.hasNext()) {
-                        ReferenceInfo info = (ReferenceInfo) parentIterator.next();
-                        XdmNode relativeNode = info.getNode();
-                        XdmSequenceIterator nodes = dataEvaluator.findIterator(relativeNode, query);
-                        while (nodes.hasNext()) {
-                            XdmNode node = (XdmNode) nodes.next();
-                            String name;
-                            if (expression == null) {
-                                name = prefixIRI + 
-                                    dataEvaluator.getName(node) + "___" + counter; 
-                                while (owlOntology.containsEntityInSignature
-                                       (createIRI(name))) {
-                                    counter++;
-                                    name = prefixIRI + 
-                                        dataEvaluator.getName(node) + "___" + counter; 
-                                }
-                            } else {
-                                name = prefixIRI + 
-                                    dataEvaluator.findString(node, expression);
-                            }
-                            if (!owlOntology.containsEntityInSignature(createIRI(name))) {
-                                System.out.println("createIndividual 3: " + name);
-                                createIndividual(name);
-                            } else {
-                                if (mappingType.equals("new")) {
-                                    throw new Xml2OwlMappingException
-                                        ("The supposedly new OWL individual already"
-                                         + " exists.", 
-                                         true);
-                                }
-                            }
-                            list.add(new ReferenceInfo(node,name,parentCount));
-                            parentCount++;
+                    } else {
+                        name = prefixIRI + 
+                            dataEvaluator.findString(node, expression);
+                    }
+                    // check that individual doesn't exist yet
+                    if (!owlOntology.containsEntityInSignature(createIRI(name))) {
+                        System.out.println("createIndividual 2: " + name);
+                        createIndividual(name);
+                    } else {
+                        if (mappingType.equals("new")) {
+                            throw new Xml2OwlMappingException
+                                ("The supposedly new OWL individual already"
+                                 + " exists.", 
+                                 true);
                         }
                     }
-                }
+                    list.add(new ReferenceInfo(node,name)); // TODO: only spot where need to do something
+                } 
             }
             String referenceName = rulesEvaluator.findString(individualNode,"@referenceName");
-            System.out.println("blim! referenceName: " + referenceName);
             if (referenceName != null) {
                 List<ReferenceInfo> existingList = references.get(referenceName);
                 if (existingList == null) {

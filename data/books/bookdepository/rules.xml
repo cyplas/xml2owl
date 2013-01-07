@@ -23,16 +23,28 @@
     <referenceToIndividual refName="booksWithIsbn13"/>
   </collectOWLIndividuals>
 
-  <mapToOWLIndividual type="unknown" referenceName="authors">
-    <parentReference refName="books"/>
-    <node>.</node>
-    <expression>fn:concat('author=',fn:tokenize(author,'\s+')[last()])</expression>
-  </mapToOWLIndividual>
+  <mapToOWLObjectPropertyAssertion>
+    <domainIndividual type="unknown" referenceName="authors">
+      <node>.</node>
+      <expression>fn:concat('author=',fn:tokenize(author,'\s+')[last()])</expression>
+    </domainIndividual>
+    <propertyName>
+      <expression>'wrote'</expression>
+    </propertyName>
+    <referenceToRangeIndividual refName="books"/>
+    <dependency independent="propertyValue" dependent="individual"/>
+  </mapToOWLObjectPropertyAssertion>
 
-  <mapToOWLIndividual type="new" referenceName="offers">
-    <parentReference refName="books"/>
-    <node>.</node>
-  </mapToOWLIndividual>
+  <mapToOWLObjectPropertyAssertion>
+    <domainIndividual type="new" referenceName="offers">
+      <node>.</node>
+    </domainIndividual>
+    <propertyName>
+      <expression>'instantiates'</expression>
+    </propertyName>
+    <referenceToRangeIndividual refName="books"/>
+    <dependency independent="propertyValue" dependent="individual"/>
+  </mapToOWLObjectPropertyAssertion>
 
   <mapToOWLClassAssertion>
     <referenceToIndividual refName="books"/>
@@ -54,24 +66,6 @@
       <expression>'Offer'</expression>
     </class>
   </mapToOWLClassAssertion>
-
-  <mapToOWLObjectPropertyAssertion>
-    <referenceToDomainIndividual refName="authors"/>
-    <propertyName>
-      <expression>'wrote'</expression>
-    </propertyName>
-    <referenceToRangeIndividual refName="books"/>
-    <dependency independent="propertyValue" dependent="individual"/>
-  </mapToOWLObjectPropertyAssertion>
-
-  <mapToOWLObjectPropertyAssertion>
-    <referenceToDomainIndividual refName="offers"/>
-    <propertyName>
-      <expression>'instantiates'</expression>
-    </propertyName>
-    <referenceToRangeIndividual refName="books"/>
-    <dependency independent="propertyValue" dependent="individual"/>
-  </mapToOWLObjectPropertyAssertion>
 
   <mapToOWLDataPropertyAssertion>
     <referenceToIndividual refName="books"/>

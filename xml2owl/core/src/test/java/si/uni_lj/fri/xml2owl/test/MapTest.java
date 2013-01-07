@@ -6,10 +6,14 @@ public class MapTest {
 
     public void testMap() throws Exception {
         MapApplication application = new MapApplication();
-        System.out.println("Running testMap() on amazon ...");
-        application.run("../../data/books","amazon");
-        System.out.println("Running testMap() on bookdepository ...");
-        application.run("../../data/books","bookdepository");
+        // System.out.println("Running testMap() on amazon ...");
+        // application.run("../../data/books","amazon");
+        // System.out.println("Running testMap() on bookdepository ...");
+        // application.run("../../data/books","bookdepository");
+        // System.out.println("Running testMap() on doria ...");
+        // application.run("../../data/books","doria");
+        System.out.println("Running testMap() on mimovrste ...");
+        application.run("../../data/books","mimovrste");
     }
 
 }

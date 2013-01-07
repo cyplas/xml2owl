@@ -83,7 +83,6 @@
       <xsd:extension base="tExtensibleElements">	  		
 	<xsd:sequence>
 	  <xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>
-          <xsd:element name="parentReference" type="tReferenceName" minOccurs="0"/>
 	  <xsd:choice>
 	    <xsd:sequence>
 	      <xsd:element name="node" default="." nillable="true" type="tIDQuery"/>
