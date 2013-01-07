@@ -4,16 +4,18 @@ import si.uni_lj.fri.xml2owl.map.application.MapApplication;
 
 public class MapTest {
 
+    final private MapApplication application = new MapApplication();
+
     public void testMap() throws Exception {
-        MapApplication application = new MapApplication();
-        // System.out.println("Running testMap() on amazon ...");
-        // application.run("../../data/books","amazon");
-        // System.out.println("Running testMap() on bookdepository ...");
-        // application.run("../../data/books","bookdepository");
-        // System.out.println("Running testMap() on doria ...");
-        // application.run("../../data/books","doria");
-        System.out.println("Running testMap() on mimovrste ...");
-        application.run("../../data/books","mimovrste");
+        testMapOnBookSource("amazon");
+        testMapOnBookSource("bookdepository");
+        testMapOnBookSource("doria");
+        testMapOnBookSource("mimovrste");
+    }
+
+    private void testMapOnBookSource(String source) throws Exception {
+        System.out.println("Running testMap() on " + source + " ...");
+        application.run("../../data/books", source);
     }
 
 }
