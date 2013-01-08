@@ -73,7 +73,7 @@ public class XPathEvaluator {
 	    return selector.evaluate();
 	} else {
 	    // with dummy 0 value
-	    return compiler.evaluate(xpath, new XdmAtomicValue(0)); 
+            return compiler.evaluate(xpath, new XdmAtomicValue(0)); 
 	}
     }
 

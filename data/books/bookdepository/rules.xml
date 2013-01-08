@@ -18,9 +18,18 @@
     <expression>fn:concat('isbn13=',isbn13)</expression>
   </mapToOWLIndividual>
 
+  <mapToOWLIndividual type="existing" referenceName="iceFire">
+    <expression>'isbn10=0345529057'</expression>
+  </mapToOWLIndividual>    
+
   <collectOWLIndividuals referenceName="books">
     <referenceToIndividual refName="booksWithIsbn10"/>
     <referenceToIndividual refName="booksWithIsbn13"/>
+  </collectOWLIndividuals>
+
+  <collectOWLIndividuals referenceName="allBooks">
+    <referenceToIndividual refName="iceFire"/>
+    <referenceToIndividual refName="books"/>
   </collectOWLIndividuals>
 
   <mapToOWLObjectPropertyAssertion>
@@ -104,7 +113,7 @@
   </mapToOWLDataPropertyAssertion>
 
   <mapToOWLDataPropertyAssertion>
-    <referenceToIndividual refName="books"/>
+    <referenceToIndividual refName="allBooks"/>
     <propertyName>
       <expression>'hasPublisher'</expression>
     </propertyName>

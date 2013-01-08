@@ -7,10 +7,10 @@ public class MapTest {
     final private MapApplication application = new MapApplication();
 
     public void testMap() throws Exception {
-        testMapOnBookSource("amazon");
+        // testMapOnBookSource("amazon");
         testMapOnBookSource("bookdepository");
-        testMapOnBookSource("doria");
-        testMapOnBookSource("mimovrste");
+        // testMapOnBookSource("doria");
+        // testMapOnBookSource("mimovrste");
     }
 
     private void testMapOnBookSource(String source) throws Exception {
