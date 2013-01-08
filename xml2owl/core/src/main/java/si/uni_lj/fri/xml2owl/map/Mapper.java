@@ -178,7 +178,12 @@ public class Mapper {
 	     if (dependenciesType == DependenciesType.NO_DEPENDENCY) {
                  part2Pairs = makePart(rule, xmlData, part2).iterator();
 	     } else {
-                 part2Pairs = makePart(rule, pair1.getNode(), part2).iterator();
+                 // Skip to next pair if part 1 is static.
+                 if (pair1.getNode() == null) { 
+                     continue; 
+                 } else {
+                     part2Pairs = makePart(rule, pair1.getNode(), part2).iterator();
+                 }
 	     }
 	     while (part2Pairs.hasNext()) {
 		 ReferenceInfo pair2 = (ReferenceInfo) part2Pairs.next();
@@ -227,7 +232,12 @@ public class Mapper {
 	     if (dependenciesType == DependenciesType.NO_DEPENDENCY) {
                  part2Pairs = makePart(rule, xmlData, part2).iterator();
 	     } else {
-                 part2Pairs = makePart(rule, pair1.getNode(), part2).iterator();
+                 // Skip to next pair if part 1 is static.
+                 if (pair1.getNode() == null) { 
+                     continue; 
+                 } else {
+                     part2Pairs = makePart(rule, pair1.getNode(), part2).iterator();
+                 }
 	     }
              int counter2 = 0;
 	     while (part2Pairs.hasNext()) {
@@ -235,10 +245,20 @@ public class Mapper {
                  strings.set(1,pair2.getName());
                  Iterator<ReferenceInfo> part3Pairs;
                  if (dependenciesType == DependenciesType.TWO_DEPENDENCY_RING) {
-                     part3Pairs = makePart(rule, pair2.getNode(), part3).iterator();
+                     // Skip to next pair if part 2 is static.
+                     if (pair2.getNode() == null) { 
+                         continue; 
+                     } else {
+                         part3Pairs = makePart(rule, pair2.getNode(), part3).iterator();
+                     }
                  } else if (dependenciesType == 
                             DependenciesType.TWO_DEPENDENCY_TREE) {
-                     part3Pairs = makePart(rule, pair1.getNode(), part3).iterator();
+                     // Skip to next pair if part 1 is static.
+                     if (pair2.getNode() == null) { 
+                         continue; 
+                     } else {
+                         part3Pairs = makePart(rule, pair1.getNode(), part3).iterator();
+                     }
                  } else {
                      part3Pairs = makePart(rule, xmlData, part3).iterator();
                  }

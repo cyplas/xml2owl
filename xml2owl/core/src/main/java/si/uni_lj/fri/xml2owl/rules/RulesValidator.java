@@ -201,32 +201,54 @@ public class RulesValidator {
         }
     }
 
-    /** Build up the set of references, and check enroute that all independent
-     * individual definitions are named, and that there are no duplicates. */   
+    /** Build up the set of references, and check enroute that there are no duplicates. */   
     private void buildAndVerifyReferences(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
         System.out.println("Building and verifying references ...");
 	XdmSequenceIterator nameIterator = evaluator.findIterator
 	    (rules, "//*[@referenceName!='']");
+        List<XdmNode> collectionReferenceNodes = new ArrayList<XdmNode>();
 	while (nameIterator.hasNext()) {
 	    XdmNode node = (XdmNode) nameIterator.next();
-	    String next = evaluator.findString(node,"@referenceName");
-	    if (next == null) {
-		throw new Xml2OwlRuleValidationException
-		    ("Independent individual definition lacks a reference name.");
-	    } else if (references.containsKey(next)) {
-		throw new Xml2OwlRuleValidationException
-		    ("Ruleset has multiple individual mapping definitions with the stupid name " 
+            String next = evaluator.findString(node,"@referenceName");
+            if (references.containsKey(next)) {
+                throw new Xml2OwlRuleValidationException
+                    ("Ruleset has multiple individual mapping definitions named " 
                      + next + ".");
-	    } else {
-		if ((evaluator.findNode(node, "node") == null) 
-                    && (evaluator.findNode(node, "referenceToIndividual") == null)) { // TODO: this is garbage test 
-		    references.put(next, ReferenceType.STATIC);
-		} else {
-		    references.put(next, ReferenceType.DYNAMIC);
-		}
+            } else {
+                if (node.getNodeName().toString().equals("collectOWLIndividuals")) {
+                    collectionReferenceNodes.add(node);
+                } else {
+                    if (evaluator.findNode(node, "node") == null) {
+                        references.put(next, ReferenceType.STATIC);
+                    } else {
+                        references.put(next, ReferenceType.DYNAMIC);
+                    }
+                }
 	    }
 	}
+        Iterator collectionIterator = collectionReferenceNodes.iterator();
+        while (collectionIterator.hasNext()) {
+            XdmNode collectionNode = (XdmNode) collectionIterator.next();
+            String collectionName = evaluator.findString(collectionNode,"@referenceName");
+            XdmSequenceIterator componentIterator = evaluator.findIterator
+                (collectionNode, "referenceToIndividual");
+            // Treat collection as dynamic if it has any dynamic components.
+            boolean dynamicCollection = false;
+            while (componentIterator.hasNext()) {
+                XdmNode componentNode = (XdmNode) componentIterator.next();
+                String componentName = evaluator.findString(componentNode, "@refName");
+                if (references.get(componentName) == ReferenceType.DYNAMIC) {
+                    dynamicCollection = true;
+                    break;
+                }
+            }
+            if (dynamicCollection) {
+                references.put(collectionName, ReferenceType.DYNAMIC);
+            } else {
+                references.put(collectionName, ReferenceType.STATIC);
+            }
+        }
     }
 	
     /** Check that all used references are defined, and that all defined
