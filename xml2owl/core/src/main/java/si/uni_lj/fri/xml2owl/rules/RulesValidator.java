@@ -21,7 +21,6 @@ public class RulesValidator {
     /** The XML schema used for basic validation. */
     //    private static final StreamSource schemaSource = 
     //  	new StreamSource(new File("xml2owl/resources/rules.xsd"));
-
     private StreamSource schemaSource;
 
     /** The supported expression languages. */
@@ -31,6 +30,12 @@ public class RulesValidator {
     /** The supported query languages. */
     private static final List<String> supportedQueryLanguages =
         Arrays.asList("urn:fri-x2o:sublang:xpath2.0");
+
+    /** Supported data property value datatypes, other than xsd:string. */
+    private static final List<String> nonStringTypes = 
+        new ArrayList<String>
+        (Arrays.asList
+         ("xsd:boolean", "xsd:integer", "xsd:double", "xsd:float"));
 
     /** Converts between Strings and XdmNodes. */
     private XmlStringConvertor convertor;
@@ -180,12 +185,17 @@ public class RulesValidator {
             String nodeName = evaluator.getName(node);
             String type = evaluator.findString(node, "@type");
             if ((type != null) && !type.equals("xsd:string")) {
-                XdmNode parentNode = evaluator.findNode(node, "..");
-                String parentName = evaluator.getName(parentNode);
-                if (!parentName.equals("propertyValue")
-                    || !nodeName.equals("expression")) {
+                if (nonStringTypes.contains(type)) {
+                    XdmNode parentNode = evaluator.findNode(node, "..");
+                    String parentName = evaluator.getName(parentNode);
+                    if (!parentName.equals("propertyValue")
+                        || !nodeName.equals("expression")) {
+                        throw new Xml2OwlRuleValidationException
+                            ("Expression type must be xsd:string, but is " + type + ".");
+                    }
+                } else {
                     throw new Xml2OwlRuleValidationException
-                        ("Expression type must be xsd:string, but is " + type);
+                        ("Unsupported data property value type " + type + ".");
                 }
             }
         }

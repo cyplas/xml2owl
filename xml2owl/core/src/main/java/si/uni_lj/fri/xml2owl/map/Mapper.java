@@ -342,7 +342,6 @@ public class Mapper {
 	 if (owlOntology.containsEntityInSignature(owlProperty)) {
 	     Iterator<OWLDataRange> ranges = 
                  owlProperty.getRanges(owlOntology).iterator();
-	     OWLAxiom axiom;
              OWLLiteral literal = null;
              while ((literal == null) && ranges.hasNext()) {
                  OWLDatatype datatype = ranges.next().asOWLDatatype();
@@ -369,13 +368,14 @@ public class Mapper {
                      literal = 
                          owlFactory.getOWLLiteral
                          (Integer.valueOf(propertyValue));
+                 } else {
+                     throw new Xml2OwlMappingException
+                         ("OWL data property value " + propertyValue 
+                          + " does not match expected type " + propertyValueType + ".",
+                         true);
                  }
              }
-             if (literal == null) { // specified range isn't among property data ranges
-                 throw new Xml2OwlMappingException
-                     ("OWL data property range datatype unsupported/mismatched.", 
-                      true);
-	     }
+	     OWLAxiom axiom;
 	     if (positive) {
 		 axiom = owlFactory.getOWLDataPropertyAssertionAxiom
 		     (owlProperty,owlIndividual,literal);
