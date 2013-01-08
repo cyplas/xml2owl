@@ -344,40 +344,34 @@ public class Mapper {
                  owlProperty.getRanges(owlOntology).iterator();
 	     OWLAxiom axiom;
              OWLLiteral literal = null;
-             boolean match = false;
-             while (!match && ranges.hasNext()) {
+             while ((literal == null) && ranges.hasNext()) {
                  OWLDatatype datatype = ranges.next().asOWLDatatype();
                  if (datatype.isString() 
                      && propertyValueType.equals("xsd:string")) {
                      literal = owlFactory.getOWLLiteral(propertyValue);
-                     match = true;
                  } else if (datatype.isBoolean() 
                             && propertyValueType.equals("xsd:boolean")) {
                      literal = 
                          owlFactory.getOWLLiteral
                          (Boolean.valueOf(propertyValue));
-                     match = true;
                  } else if (datatype.isDouble() 
                             && propertyValueType.equals("xsd:double")) {
                      literal = 
                          owlFactory.getOWLLiteral
                          (Double.valueOf(propertyValue));
-                     match = true;
                  } else if (datatype.isFloat() 
                             && propertyValueType.equals("xsd:float")) {
                      literal = 
                          owlFactory.getOWLLiteral
                          (Float.valueOf(propertyValue));
-                     match = true;
                  } else if (datatype.isInteger() 
                             && propertyValueType.equals("xsd:integer")) {
                      literal = 
                          owlFactory.getOWLLiteral
                          (Integer.valueOf(propertyValue));
-                     match = true;
                  }
              }
-             if (!match) { // specified range isn't among property data ranges
+             if (literal == null) { // specified range isn't among property data ranges
                  throw new Xml2OwlMappingException
                      ("OWL data property range datatype unsupported/mismatched.", 
                       true);
