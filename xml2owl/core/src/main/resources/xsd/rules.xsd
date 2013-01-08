@@ -129,7 +129,6 @@
 	  <xsd:element name="propertyValue">
 	    <xsd:complexType>
 	      <xsd:sequence>
-		<xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>	
 		<xsd:element name="node" type="tIDQuery" minOccurs="0"/>
 		<xsd:element name="expression" type="tIDExpression"/>
 	      </xsd:sequence>
