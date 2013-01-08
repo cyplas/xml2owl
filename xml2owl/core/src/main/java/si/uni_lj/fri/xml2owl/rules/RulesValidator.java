@@ -369,6 +369,7 @@ public class RulesValidator {
 	String assertionName = evaluator.getName(assertion);
 	String from = evaluator.findString(dependency, "@independent");
 	String to = evaluator.findString(dependency, "@dependent");
+
 	// Reject simple cycle a->a.
 	if (from.equals(to)) { 
 	    throw new Xml2OwlRuleValidationException
@@ -376,38 +377,37 @@ public class RulesValidator {
 		 + " has same independent and dependent part.");
 	}
 
-	// TODO: check that scrapping this below is correct.
         // Reject individual references in dependent parts of the dependency.
-	// String reference = null;
-	// if (to.equals("individual")) {
-	//     if (assertionName.equals("mapToOWLClassAssertion")
-	// 	|| assertionName.equals("mapToOWLDataPropertyAssertion")) {
-	// 	reference = 
-        //             evaluator.findString(assertion, "referenceToIndividual");
-	//     } else if (assertionName.equals
-        //                ("mapToOWLObjectPropertyAssertion")) {
-	// 	reference = 
-        //             evaluator.findString(assertion, 
-        //                                  "referenceToDomainIndividual");
-	//     }
-	// } else if (to.equals("propertyValue")) {
-	//     if (assertionName.equals("mapToOWLObjectPropertyAssertion")) {
-	// 	reference = 
-        //             evaluator.findString(assertion, 
-        //                                  "referenceToRangeIndividual");
-	//     }
-	// } else if (to.equals("individual1")) {
-	//     reference = 
-        //         evaluator.findString(assertion, "referenceToIndividual1");
-	// } else if (to.equals("individual2")) {
-	//     reference = 
-        //         evaluator.findString(assertion, "referenceToIndividual2");
-	// }
-	// if (reference != null) {
-	//     throw new Xml2OwlRuleValidationException
-	// 	("Dependency for " + assertionName
-	// 	 + " has an individual reference as the dependent part.");
-	// }
+	String reference = null;
+	if (to.equals("individual")) {
+	    if (assertionName.equals("mapToOWLClassAssertion")
+		|| assertionName.equals("mapToOWLDataPropertyAssertion")) {
+		reference = 
+                    evaluator.findString(assertion, "referenceToIndividual");
+	    } else if (assertionName.equals
+                       ("mapToOWLObjectPropertyAssertion")) {
+		reference = 
+                    evaluator.findString(assertion, 
+                                         "referenceToDomainIndividual");
+	    }
+	} else if (to.equals("propertyValue")) {
+	    if (assertionName.equals("mapToOWLObjectPropertyAssertion")) {
+		reference = 
+                    evaluator.findString(assertion, 
+                                         "referenceToRangeIndividual");
+	    }
+	} else if (to.equals("individual1")) {
+	    reference = 
+                evaluator.findString(assertion, "referenceToIndividual1");
+	} else if (to.equals("individual2")) {
+	    reference = 
+                evaluator.findString(assertion, "referenceToIndividual2");
+	}
+	if (reference != null) {
+	    throw new Xml2OwlRuleValidationException
+		("Dependency for " + assertionName
+		 + " has an individual reference as the dependent part.");
+	}
 
 	// Reject dependencies with static parts.  
 	boolean allDynamic = true;
