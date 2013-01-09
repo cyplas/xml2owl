@@ -498,7 +498,7 @@ public class Mapper {
                                                  MapperPart part) 
 	throws SaxonApiException, Xml2OwlMappingException {
 	List<ReferenceInfo> list = new ArrayList<ReferenceInfo>();
-        String query = rulesEvaluator.findString(partNode, "node");
+        String query = rulesEvaluator.findString(partNode, "query");
 	String expression = rulesEvaluator.findString(partNode, "expression");
 	String prefixIRI = findPrefixIRI(partNode, part);
 	if (query == null) { // static
@@ -527,7 +527,7 @@ public class Mapper {
             return references.get(refName);
 	} else {
 	    List<ReferenceInfo> list = new ArrayList<ReferenceInfo>();
-	    String query = rulesEvaluator.findString(individualNode, "node");
+	    String query = rulesEvaluator.findString(individualNode, "query");
 	    String expression = rulesEvaluator.findString(individualNode, 
                                                           "expression");
 	    String prefixIRI = findPrefixIRI(individualNode, part);

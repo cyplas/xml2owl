@@ -71,7 +71,7 @@
 	  <xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>
 	  <xsd:choice>
 	    <xsd:sequence>
-	      <xsd:element name="node" default="." nillable="true" type="xsd:string"/>
+	      <xsd:element name="query" default="." nillable="true" type="xsd:string"/>
 	      <xsd:element name="expression" type="tIDExpression" minOccurs="0"/>
 	    </xsd:sequence>
 	    <xsd:sequence>
@@ -106,7 +106,7 @@
 	    <xsd:complexType>
 	      <xsd:sequence>
 		<xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>	
-		<xsd:element name="node" type="xsd:string" minOccurs="0"/>						
+		<xsd:element name="query" type="xsd:string" minOccurs="0"/>						
 		<xsd:element name="expression" type="tIDExpression"/>	  
 	      </xsd:sequence>
 	    </xsd:complexType>
@@ -115,7 +115,7 @@
 	  <xsd:element name="propertyValue">
 	    <xsd:complexType>
 	      <xsd:sequence>
-		<xsd:element name="node" type="xsd:string" minOccurs="0"/>
+		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
 		<xsd:element name="expression" type="tIDExpression"/>
 	      </xsd:sequence>
 	    </xsd:complexType>
@@ -154,7 +154,7 @@
 	    <xsd:complexType>
 	      <xsd:sequence>
 		<xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>	
-		<xsd:element name="node" type="xsd:string" minOccurs="0"/>
+		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
 		<xsd:element name="expression" type="tIDExpression"/>	  
 	      </xsd:sequence>
 	    </xsd:complexType>
@@ -214,7 +214,7 @@
 	    <xsd:complexType>
 	      <xsd:sequence>
  		<xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>
-		<xsd:element name="node" type="xsd:string" minOccurs="0"/>
+		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
 		<xsd:element name="expression" type="tIDExpression"/>
 	      </xsd:sequence>							
 	    </xsd:complexType>

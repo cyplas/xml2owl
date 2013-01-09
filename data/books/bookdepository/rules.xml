@@ -9,12 +9,12 @@
   <prefixIRI>http://www.fri.uni-lj.si/xml2owl/books.owl#</prefixIRI>
 
   <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn10">
-    <node>/books/novel[fn:matches(isbn10,'^[0-9X]{10}?$')]</node>
+    <query>/books/novel[fn:matches(isbn10,'^[0-9X]{10}?$')]</query>
     <expression>fn:concat('isbn10=',isbn10)</expression>
   </mapToOWLIndividual>
 
   <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn13">
-    <node>/books/novel[(isbn10 = '') and (fn:matches(isbn13,'^[0-9X]{13}?$'))]</node>
+    <query>/books/novel[(isbn10 = '') and (fn:matches(isbn13,'^[0-9X]{13}?$'))]</query>
     <expression>fn:concat('isbn13=',isbn13)</expression>
   </mapToOWLIndividual>
 
@@ -34,7 +34,7 @@
 
   <mapToOWLObjectPropertyAssertion>
     <domainIndividual type="unknown" referenceName="authors">
-      <node>.</node>
+      <query>.</query>
       <expression>fn:concat('author=',fn:tokenize(author,'\s+')[last()])</expression>
     </domainIndividual>
     <propertyName>
@@ -46,7 +46,7 @@
 
   <mapToOWLObjectPropertyAssertion>
     <domainIndividual type="new" referenceName="offers">
-      <node>.</node>
+      <query>.</query>
     </domainIndividual>
     <propertyName>
       <expression>'instantiates'</expression>
@@ -82,7 +82,7 @@
       <expression>'hasIsbn10'</expression>
     </propertyName>
     <propertyValue>
-      <node>.[fn:matches(isbn10,'^[0-9X]{10}?$')]</node>
+      <query>.[fn:matches(isbn10,'^[0-9X]{10}?$')]</query>
       <expression>isbn10</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -94,7 +94,7 @@
       <expression>'hasIsbn13'</expression>
     </propertyName>
     <propertyValue>
-      <node>.[fn:matches(isbn13,'^[0-9X]{13}?$')]</node>
+      <query>.[fn:matches(isbn13,'^[0-9X]{13}?$')]</query>
       <expression>isbn13</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -106,7 +106,7 @@
       <expression>'hasTitle'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>title</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -118,7 +118,7 @@
       <expression>'hasPublisher'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>publisher</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -130,7 +130,7 @@
       <expression>'wasPublishedIn'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression type="xsd:integer">year</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -142,7 +142,7 @@
       <expression>'hasSeller'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>vendor</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -154,7 +154,7 @@
       <expression>'hasPrice'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>cost</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>

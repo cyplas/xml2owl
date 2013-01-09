@@ -136,7 +136,7 @@ public class RulesValidator {
         throws SaxonApiException, Xml2OwlRuleValidationException {
         System.out.println("Verifying XPath validity ...");
 	XdmSequenceIterator expressionIterator = evaluator.findIterator
-	    (rules, "//(node|expression)");
+	    (rules, "//(query|expression)");
         while (expressionIterator.hasNext()) {
             XdmNode node = (XdmNode) expressionIterator.next();
             String content = evaluator.findString(node, ".");
@@ -158,7 +158,7 @@ public class RulesValidator {
 	    (rules, "//(mapToOWLIndividual|individual|domainIndividual|rangeIndividual|individual1|individual2)");
         while (expressionIterator.hasNext()) {
             XdmNode individual = (XdmNode) expressionIterator.next();
-            XdmNode node = evaluator.findNode(individual, "node");
+            XdmNode node = evaluator.findNode(individual, "query");
             String type = evaluator.findString(individual, "@type");
             if (type == null) { 
                 type = "unknown"; // default
@@ -219,7 +219,7 @@ public class RulesValidator {
                 if (node.getNodeName().toString().equals("collectOWLIndividuals")) {
                     collectionReferenceNodes.add(node);
                 } else {
-                    if (evaluator.findNode(node, "node") == null) {
+                    if (evaluator.findNode(node, "query") == null) {
                         references.put(next, ReferenceType.STATIC);
                     } else {
                         references.put(next, ReferenceType.DYNAMIC);
@@ -333,7 +333,7 @@ public class RulesValidator {
     /** Check whether the part specified in the rule is dynamic. */
     private boolean isPartDynamic(XdmNode rule, String part) 
         throws SaxonApiException {
-	return (evaluator.findNode(rule, part+"/node") != null);
+	return (evaluator.findNode(rule, part+"/query") != null);
     }
 
     /** Check whether the specified reference part in rule is dynamic. */  
