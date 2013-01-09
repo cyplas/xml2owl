@@ -7,27 +7,13 @@
 
   <xsd:element name="ontologyMappingElements" type="tOntologyMappingElements"/>
   
-  <xsd:element name="IDQueryParameter" type="tIDQueryParameter"/>
-  
-  <xsd:complexType name="tIDQuery" mixed="true">
-    <xsd:attribute name="type" type="xsd:QName" default="xsd:string" />
-  </xsd:complexType>
-
   <xsd:complexType name="tIDExpression" mixed="true">
     <xsd:attribute name="type" type="xsd:QName" default="xsd:string" />
   </xsd:complexType>
 
-  <xsd:complexType name="tReferenceName" mixed="false">
+  <xsd:complexType name="tReferenceName">
     <xsd:attribute name="refName" type="xsd:NCName" use="required"/>
   </xsd:complexType>
-
-  <xsd:complexType name="tIDQueryParameter" mixed="true">
-    <xsd:complexContent>			
-      <xsd:extension base="tIDQuery">
-	<xsd:attribute name="name" type="xsd:NCName" use="required"/>
-      </xsd:extension>
-    </xsd:complexContent>		
-  </xsd:complexType>	
 
   <xsd:complexType name="tOntologyMappingElements">		
     <xsd:complexContent>
@@ -85,7 +71,7 @@
 	  <xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>
 	  <xsd:choice>
 	    <xsd:sequence>
-	      <xsd:element name="node" default="." nillable="true" type="tIDQuery"/>
+	      <xsd:element name="node" default="." nillable="true" type="xsd:string"/>
 	      <xsd:element name="expression" type="tIDExpression" minOccurs="0"/>
 	    </xsd:sequence>
 	    <xsd:sequence>
@@ -120,7 +106,7 @@
 	    <xsd:complexType>
 	      <xsd:sequence>
 		<xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>	
-		<xsd:element name="node" type="tIDQuery" minOccurs="0"/>						
+		<xsd:element name="node" type="xsd:string" minOccurs="0"/>						
 		<xsd:element name="expression" type="tIDExpression"/>	  
 	      </xsd:sequence>
 	    </xsd:complexType>
@@ -129,7 +115,7 @@
 	  <xsd:element name="propertyValue">
 	    <xsd:complexType>
 	      <xsd:sequence>
-		<xsd:element name="node" type="tIDQuery" minOccurs="0"/>
+		<xsd:element name="node" type="xsd:string" minOccurs="0"/>
 		<xsd:element name="expression" type="tIDExpression"/>
 	      </xsd:sequence>
 	    </xsd:complexType>
@@ -168,7 +154,7 @@
 	    <xsd:complexType>
 	      <xsd:sequence>
 		<xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>	
-		<xsd:element name="node" type="tIDQuery" minOccurs="0"/>
+		<xsd:element name="node" type="xsd:string" minOccurs="0"/>
 		<xsd:element name="expression" type="tIDExpression"/>	  
 	      </xsd:sequence>
 	    </xsd:complexType>
@@ -228,7 +214,7 @@
 	    <xsd:complexType>
 	      <xsd:sequence>
  		<xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>
-		<xsd:element name="node" type="tIDQuery" minOccurs="0"/>
+		<xsd:element name="node" type="xsd:string" minOccurs="0"/>
 		<xsd:element name="expression" type="tIDExpression"/>
 	      </xsd:sequence>							
 	    </xsd:complexType>
