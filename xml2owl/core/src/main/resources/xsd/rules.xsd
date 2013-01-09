@@ -71,7 +71,7 @@
 	  <xsd:element name="prefixIRI" type="tIDExpression" minOccurs="0"/>
 	  <xsd:choice>
 	    <xsd:sequence>
-	      <xsd:element name="query" default="." nillable="true" type="xsd:string"/>
+	      <xsd:element name="query" type="xsd:string"/>
 	      <xsd:element name="expression" type="tIDExpression" minOccurs="0"/>
 	    </xsd:sequence>
 	    <xsd:sequence>
