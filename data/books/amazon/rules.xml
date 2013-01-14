@@ -6,7 +6,7 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns:tns="http://www.fri.uni-lj.si/xml2owl">
 
-  <prefixIRI>http://www.fri.uni-lj.si/xml2owl/books.owl#</prefixIRI>
+  <prefixIRI dynamic="true">fn:concat('http://www.fri.uni-lj.si/xml2owl/',/books/book,'.owl#')</prefixIRI>
 
   <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn10">
     <node>/books/book[fn:matches(isbn10,'^[0-9X]{10}?$')]</node>

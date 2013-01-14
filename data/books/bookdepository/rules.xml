@@ -9,6 +9,7 @@
   <prefixIRI>http://www.fri.uni-lj.si/xml2owl/books.owl#</prefixIRI>
 
   <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn10">
+    <prefixIRI dynamic="true">fn:concat('http://www.fri.uni-lj.si/xml2owl/booksFrom',/books/novel[1]/year,'.owl#')</prefixIRI>
     <query>/books/novel[fn:matches(isbn10,'^[0-9X]{10}?$')]</query>
     <expression>fn:concat('isbn10=',isbn10)</expression>
   </mapToOWLIndividual>
