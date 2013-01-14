@@ -14,9 +14,6 @@ public class MapperParameters {
     /** Whether to overwrite pre-existing OWL entities. */
     private boolean override;
 
-    /** Global default prefix IRI for OWL entities. */ 
-    private String prefixIRI;
-    
     public String getQueryLanguage() {
 	return queryLanguage;
     }
@@ -39,14 +36,6 @@ public class MapperParameters {
 
     public void setOverride(boolean override) {
 	this.override = override;
-    }
-
-    public String getPrefixIRI() {
-	return prefixIRI;
-    }
-
-    public void setPrefixIRI(String prefixIRI) {
-	this.prefixIRI = prefixIRI;
     }
 
 }

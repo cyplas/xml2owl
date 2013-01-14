@@ -72,7 +72,7 @@ public class MapperManager {
             mapper = new Mapper(owlManager, owl, xml, // 
                                 parameters, rulesEvaluator, dataEvaluator, reasoner);
             ruleIterator = rulesEvaluator.findIterator
-                (rules, "*[starts-with(name(),'mapTo') or name() = 'collectOWLIndividuals']");
+                (rules, "*[name() = 'prefixIRI' or starts-with(name(),'mapTo') or name() = 'collectOWLIndividuals']");
 	    processRules();     // 
             reasoner.getKB().realize();
             InferredOntologyGenerator generator = new InferredOntologyGenerator(reasoner);
@@ -119,9 +119,6 @@ public class MapperManager {
 	 parameters.setOverride
 	     (Boolean.parseBoolean
 	      (rulesEvaluator.findString(rules,"@override")));
-	 parameters.setPrefixIRI
-	     (rulesEvaluator.findString
-	      (rules,"prefixIRI"));
         return parameters;
      }
 

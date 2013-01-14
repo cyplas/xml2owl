@@ -61,6 +61,9 @@ public class Mapper {
     /** The cumulative set of axioms added to the OWL ontology. */
     private Set<OWLAxiom> axiomsAdded;
 
+    /** Default prefixIRI. */
+    private String globalPrefixIRI = null;
+
      /** Constructor. */
      public Mapper(OWLOntologyManager owlManager, 
 		   OWLOntology owlOntology, 
@@ -91,7 +94,10 @@ public class Mapper {
 	 throws Xml2OwlMappingException, SaxonApiException {
 	 String ruleName = rulesEvaluator.getName(rule);
 	 System.out.println("Trying to map rule " + ruleName + " ...");
-	 if (ruleName.equals("mapToOWLIndividual")) {
+         if (ruleName.equals("prefixIRI")) {
+             globalPrefixIRI = calculatePrefixIRI(xmlData, rule);
+             System.out.println("found globalPrefixIRI: " + globalPrefixIRI);
+         } else if (ruleName.equals("mapToOWLIndividual")) {
 	     mapOnePartRule(rule, RuleType.INDIVIDUAL);
 	 } else if (ruleName.equals("mapToOWLClassAssertion")) {
 	     mapTwoPartRule(rule, RuleType.CLASS);
@@ -500,14 +506,16 @@ public class Mapper {
 	List<ReferenceInfo> list = new ArrayList<ReferenceInfo>();
         String query = rulesEvaluator.findString(partNode, "query");
 	String expression = rulesEvaluator.findString(partNode, "expression");
-	String prefixIRI = findPrefixIRI(partNode, part);
+        XdmNode prefixIRINode = rulesEvaluator.findNode(partNode, "prefixIRI"); 
 	if (query == null) { // static
+            String prefixIRI = findPrefixIRI(null, prefixIRINode, part);
 	    String name = prefixIRI + dataEvaluator.findString(null, expression);
 	    list.add(new ReferenceInfo(null,name)); 
 	} else { // dynamic
 	    XdmSequenceIterator nodes = dataEvaluator.findIterator(root, query);
 	    while (nodes.hasNext()) {
 		XdmNode node = (XdmNode) nodes.next();
+                String prefixIRI = findPrefixIRI(node, prefixIRINode, part);
 		String name = prefixIRI + 
                     dataEvaluator.findString(node, expression);
 		list.add(new ReferenceInfo(node,name));
@@ -530,9 +538,11 @@ public class Mapper {
 	    String query = rulesEvaluator.findString(individualNode, "query");
 	    String expression = rulesEvaluator.findString(individualNode, 
                                                           "expression");
-	    String prefixIRI = findPrefixIRI(individualNode, part);
+            XdmNode prefixIRINode = rulesEvaluator.findNode(individualNode,
+                                                            "prefixIRI");
 	    String mappingType = rulesEvaluator.findString(individualNode, "@type");
 	    if (query == null) {
+                String prefixIRI = findPrefixIRI(null, prefixIRINode, part);
 		String name = prefixIRI + 
                     dataEvaluator.findString(null, expression);
 		if (!owlOntology.containsEntityInSignature(createIRI(name))) {
@@ -551,6 +561,7 @@ public class Mapper {
                 XdmSequenceIterator nodes = dataEvaluator.findIterator(root, query);
                 while (nodes.hasNext()) {
                     XdmNode node = (XdmNode) nodes.next();
+                    String prefixIRI = findPrefixIRI(node,prefixIRINode, part);
                     String name;
                     if (expression == null) {
                         name = prefixIRI + 
@@ -734,21 +745,45 @@ public class Mapper {
 	 }
      }
 
-    /** Determines the prefixIRI of the part, checking first in the part itself
-	and then falling back on the global default. */
-     private String findPrefixIRI(XdmNode partNode, MapperPart part) 
-         throws SaxonApiException {
-	 String prefixIRI;
-	 if (part == MapperPart.DP_VALUE) { // not an OWL entity
-	     prefixIRI = "";
-	 } else {
-	     prefixIRI = rulesEvaluator.findString(partNode, "prefixIRI");
-	     if (prefixIRI == null) {
-		 prefixIRI = parameters.getPrefixIRI();
-	     }
-	 }
-	 return prefixIRI;
-     }
+    /** Calculate the prefixIRI for a prefixIRINode, possibly dynamically relative to
+        a particular data node. */
+    public String calculatePrefixIRI(XdmNode relativeNode, XdmNode prefixIRINode) 
+        throws SaxonApiException {
+        if (prefixIRINode == null) {
+            return null;
+        } else {
+            String expression = rulesEvaluator.findString(prefixIRINode, ".");
+            if (expression == null) {
+                return null;
+            } else {
+                String dynamicAttribute = rulesEvaluator.findString(prefixIRINode,"@dynamic");
+                boolean dynamic = (dynamicAttribute != null && Boolean.valueOf(dynamicAttribute));
+                if (dynamic) {
+                    return dataEvaluator.findString(relativeNode, expression);
+                } else {
+                    return expression;
+                }
+            }
+        }
+    }
+
+    /** Determines the prefixIRI of the part, checking first at the
+        mapping part level, and then globally. */
+    private String findPrefixIRI(XdmNode relativeNode, XdmNode prefixIRINode, MapperPart part) 
+        throws SaxonApiException {
+        if (part == MapperPart.DP_VALUE) { // not an OWL entity
+            return "";
+        } else {
+            String localPrefixIRI = calculatePrefixIRI(relativeNode, prefixIRINode);
+            if (localPrefixIRI != null) {
+                return localPrefixIRI;
+            } else if (globalPrefixIRI != null) {
+                return globalPrefixIRI;
+            } else {
+                return "";
+            }
+        }
+    } 
 
     /** Check whether the state of owlOntology is self-consistent. */
     private boolean isOntologyConsistent() {
@@ -792,6 +827,3 @@ public class Mapper {
     }
 
 }
-
-
-
