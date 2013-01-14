@@ -7,7 +7,7 @@
 
   <xsd:element name="ontologyMappingElements" type="tOntologyMappingElements"/>
   
-  <xsd:complexType name="tIDExpression" mixed="true">
+  <xsd:complexType name="tExpression" mixed="true">
     <xsd:attribute name="type" type="xsd:QName" default="xsd:string" />
   </xsd:complexType>
 
@@ -76,10 +76,10 @@
 	  <xsd:choice>
 	    <xsd:sequence>
 	      <xsd:element name="query" type="xsd:string"/>
-	      <xsd:element name="expression" type="tIDExpression" minOccurs="0"/>
+	      <xsd:element name="expression" type="tExpression" minOccurs="0"/>
 	    </xsd:sequence>
 	    <xsd:sequence>
-	      <xsd:element name="expression" type="tIDExpression"/>	
+	      <xsd:element name="expression" type="tExpression"/>	
 	    </xsd:sequence>						
 	  </xsd:choice>					
 	</xsd:sequence>       
@@ -111,7 +111,7 @@
 	      <xsd:sequence>
 		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>	
 		<xsd:element name="query" type="xsd:string" minOccurs="0"/>						
-		<xsd:element name="expression" type="tIDExpression"/>	  
+		<xsd:element name="expression" type="tExpression"/>	  
 	      </xsd:sequence>
 	    </xsd:complexType>
 	  </xsd:element>							
@@ -120,7 +120,7 @@
 	    <xsd:complexType>
 	      <xsd:sequence>
 		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
-		<xsd:element name="expression" type="tIDExpression"/>
+		<xsd:element name="expression" type="tExpression"/>
 	      </xsd:sequence>
 	    </xsd:complexType>
 	  </xsd:element>
@@ -159,7 +159,7 @@
 	      <xsd:sequence>
 		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>	
 		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
-		<xsd:element name="expression" type="tIDExpression"/>	  
+		<xsd:element name="expression" type="tExpression"/>	  
 	      </xsd:sequence>
 	    </xsd:complexType>
 	  </xsd:element>			
@@ -218,7 +218,7 @@
 	      <xsd:sequence>
  		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
 		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
-		<xsd:element name="expression" type="tIDExpression"/>
+		<xsd:element name="expression" type="tExpression"/>
 	      </xsd:sequence>							
 	    </xsd:complexType>
 	  </xsd:element>		
