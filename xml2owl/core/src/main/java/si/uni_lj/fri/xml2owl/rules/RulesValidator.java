@@ -18,10 +18,8 @@ public class RulesValidator {
 	STATIC, DYNAMIC;
     }
 
-    /** The XML schema used for basic validation. */
-    //    private static final StreamSource schemaSource = 
-    //  	new StreamSource(new File("xml2owl/resources/rules.xsd"));
-    private StreamSource schemaSource;
+    /** Location of XML rules schema. */
+    private final String schemaLocation = "/xsd/rules.xsd";
 
     /** The supported expression languages. */
     public static final List<String> supportedExpressionLanguages =
@@ -57,8 +55,8 @@ public class RulesValidator {
 	convertor = new XmlStringConvertor(processor);
 	evaluator = new XPathEvaluator(processor, "http://www.fri.uni-lj.si/xml2owl");
 	references = new HashMap<String, ReferenceType>();
-        InputStream stream = getClass().getResourceAsStream("/xsd/rules.xsd");
-        schemaSource = new StreamSource(stream);
+        InputStream stream = getClass().getResourceAsStream(schemaLocation);
+        StreamSource schemaSource = new StreamSource(stream);
 	try {
 	    SchemaFactory factory = 
 		SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
@@ -93,7 +91,7 @@ public class RulesValidator {
 	} 
     }
 
-    /** Validate the XML input against the XML schema in schemaSource. */
+    /** Validate the XML input against the XML schema. */
     private void validateVersusSchema(String xml) 
         throws Xml2OwlRuleValidationException {
         try {
