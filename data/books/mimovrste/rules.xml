@@ -3,21 +3,22 @@
     expressionLanguage="urn:fri-x2o:sublang:xpath2.0"
     xmlns="http://www.fri.uni-lj.si/xml2owl"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:sl="http://www.blah.com"
     xmlns:tns="http://www.fri.uni-lj.si/xml2owl">
 
   <namespaces>
-    <namespace prefix="sl" name="http://www.blah.com"/>
+    <namespace prefix="slx" name="http://www.blahx.com"/>
   </namespaces>
 
   <prefixIRI>http://www.fri.uni-lj.si/xml2owl/books.owl#</prefixIRI>
 
   <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn10">
-    <node>/books/sl:knjiga[fn:matches(isbn,'^[0-9X]{10}?$')]</node>
+    <query>/books/slx:knjiga[fn:matches(isbn,'^[0-9X]{10}?$')]</query>
     <expression>fn:concat('isbn10=',isbn)</expression>
   </mapToOWLIndividual>
 
   <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn13">
-    <node>/books/sl:knjiga[fn:matches(isbn,'^[0-9X]{13}?$')]</node>
+    <query>/books/slx:knjiga[fn:matches(isbn,'^[0-9X]{13}?$')]</query>
     <expression>fn:concat('isbn13=',isbn)</expression>
   </mapToOWLIndividual>
 
@@ -28,7 +29,7 @@
 
   <mapToOWLObjectPropertyAssertion>
     <domainIndividual type="unknown" referenceName="authors">
-      <node>.</node>
+      <query>.</query>
       <expression>fn:concat('author=',fn:tokenize(avtor,'\s+')[last()])</expression>
     </domainIndividual>
     <propertyName>
@@ -40,7 +41,7 @@
 
   <mapToOWLObjectPropertyAssertion>
     <domainIndividual type="new" referenceName="offers">
-      <node>.</node>
+      <query>.</query>
     </domainIndividual>
     <propertyName>
       <expression>'instantiates'</expression>
@@ -71,24 +72,24 @@
   </mapToOWLClassAssertion>
 
   <mapToOWLDataPropertyAssertion>
-    <referenceToIndividual refName="booksWithIsbn10"/>
+    <referenceToIndividual refName="books"/>
     <propertyName>
       <expression>'hasIsbn10'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>isbn</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
   </mapToOWLDataPropertyAssertion>
 
   <mapToOWLDataPropertyAssertion>
-    <referenceToIndividual refName="booksWithIsbn13"/>
+    <referenceToIndividual refName="books"/>
     <propertyName>
       <expression>'hasIsbn13'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>isbn</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -100,7 +101,7 @@
       <expression>'hasTitle'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>naslov</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -112,7 +113,7 @@
       <expression>'hasPublisher'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>zalozba</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -124,7 +125,7 @@
       <expression>'hasPublicationDate'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>leto</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -136,7 +137,7 @@
       <expression>'hasSeller'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>prodajalec</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
@@ -148,7 +149,7 @@
       <expression>'hasPrice'</expression>
     </propertyName>
     <propertyValue>
-      <node>.</node>
+      <query>.</query>
       <expression>cena</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>

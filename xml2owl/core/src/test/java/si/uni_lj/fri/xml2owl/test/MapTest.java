@@ -8,9 +8,9 @@ public class MapTest {
 
     public void testMap() throws Exception {
         // testMapOnBookSource("amazon");
-        testMapOnBookSource("bookdepository");
+        // testMapOnBookSource("bookdepository");
         // testMapOnBookSource("doria");
-        // testMapOnBookSource("mimovrste");
+        testMapOnBookSource("mimovrste");
     }
 
     private void testMapOnBookSource(String source) throws Exception {
