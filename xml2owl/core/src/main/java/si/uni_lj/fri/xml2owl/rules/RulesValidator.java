@@ -133,16 +133,22 @@ public class RulesValidator {
     private void verifyXPathValidity(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
         System.out.println("Verifying XPath validity ...");
+        XPathCompiler compiler = processor.newXPathCompiler();
+        compiler.declareNamespace
+            ("fn", "http://www.w3.org/2005/xpath-functions");
+        XdmSequenceIterator namespaceIterator = evaluator.findIterator
+            (rules, "/ontologyMappingElements/namespaces/namespace");
+        while (namespaceIterator.hasNext()) {
+            XdmNode node = (XdmNode) namespaceIterator.next();
+            String prefix = evaluator.findString(node, "@prefix");
+            String name = evaluator.findString(node, "@name");
+            compiler.declareNamespace(prefix,name);
+        }
 	XdmSequenceIterator expressionIterator = evaluator.findIterator
 	    (rules, "//(query|expression)"); // TODO: maybe check prefixIRI as well
         while (expressionIterator.hasNext()) {
             XdmNode node = (XdmNode) expressionIterator.next();
             String content = evaluator.findString(node, ".");
-            XPathCompiler compiler = processor.newXPathCompiler();
-            compiler.declareNamespace
-                ("fn", "http://www.w3.org/2005/xpath-functions");
-            compiler.declareNamespace // TODO: remove this testing
-                ("sl", "http://www.blahs.com");
             compiler.compile(content); // throws exception if no good
         }
     }
