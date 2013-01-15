@@ -53,8 +53,8 @@
   </xsd:complexType>
 
   <xsd:complexType name="tNamespace">
-    <xsd:attribute name="prefix" type="xsd:string" use="required"/>
-    <xsd:attribute name="name" type="xsd:string" use="required"/>
+    <xsd:attribute name="prefix" type="xsd:NCName" use="required"/>
+    <xsd:attribute name="name" type="xsd:anyURI" use="required"/>
   </xsd:complexType>
 
   <xsd:complexType name="tCollectOWLIndividuals">
