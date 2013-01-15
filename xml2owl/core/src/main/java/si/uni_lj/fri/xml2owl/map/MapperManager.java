@@ -69,8 +69,9 @@ public class MapperManager {
             PelletReasoner reasoner = PelletReasonerFactory.getInstance().createNonBufferingReasoner(owl);
             reasoner.prepareReasoner();
             owlManager.addOntologyChangeListener(reasoner);
+            List<String> referenceNames = findReferenceNames(rules);
             mapper = new Mapper(owlManager, owl, xml, // 
-                                parameters, rulesEvaluator, dataEvaluator, reasoner);
+                                parameters, rulesEvaluator, dataEvaluator, reasoner, referenceNames);
             ruleIterator = rulesEvaluator.findIterator
                 (rules, "*[name() = 'prefixIRI' or starts-with(name(),'mapTo') or name() = 'collectOWLIndividuals']");
 	    processRules();     // 
@@ -104,6 +105,16 @@ public class MapperManager {
             String name = rulesEvaluator.findString(node, "@name");
             dataEvaluator.addNamespace(prefix,name);
         }
+    }
+
+    private List<String> findReferenceNames(XdmNode rules) throws SaxonApiException {
+        List<String> list = new ArrayList<String>();
+         XdmSequenceIterator referenceIterator = 
+             rulesEvaluator.findIterator(rules,"//@referenceName");
+        while (referenceIterator.hasNext()) {
+            list.add(referenceIterator.next().getStringValue());
+        }
+        return list;
     }
 
      /** Extract mapping parameters from the input rules. */
@@ -151,7 +162,7 @@ public class MapperManager {
 		lethal = false; 
 	    }
 	} else if (!(exception instanceof Xml2OwlMapException)) {
-	    prefix = "Unrecognised type exception: ";
+	    prefix = "Unrecognised exception of type " + exception.getClass().getName() + " : ";
 	}
 	// If exception is lethal, mapping failed and abort flag is set.
 	abort = lethal;

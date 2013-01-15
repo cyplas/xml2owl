@@ -71,7 +71,8 @@ public class Mapper {
 		   MapperParameters parameters,
 		   XPathEvaluator rulesEvaluator,
                    XPathEvaluator dataEvaluator,
-                   PelletReasoner reasoner) {
+                   PelletReasoner reasoner,
+                   List<String> referenceNames) {
 	 this.owlManager = owlManager;
 	 this.owlOntology = owlOntology;
 	 this.xmlData = xmlData;
@@ -79,9 +80,15 @@ public class Mapper {
 	 this.rulesEvaluator = rulesEvaluator;
 	 this.dataEvaluator = dataEvaluator;
          this.reasoner = reasoner;
+
+         references = new HashMap<String, List<ReferenceInfo>> ();
+         Iterator<String> referenceIterator = referenceNames.iterator();
+         while (referenceIterator.hasNext()) {
+             references.put((String) referenceIterator.next(), new ArrayList<ReferenceInfo>());
+         }
+
 	 owlFactory = owlManager.getOWLDataFactory();
          axiomsAdded = new HashSet<OWLAxiom>();
-	 references = new HashMap<String, List<ReferenceInfo>> ();
      }
 
      /** Return the (updated) OWL ontology. */
@@ -96,7 +103,6 @@ public class Mapper {
 	 System.out.println("Trying to map rule " + ruleName + " ...");
          if (ruleName.equals("prefixIRI")) {
              globalPrefixIRI = calculatePrefixIRI(xmlData, rule);
-             System.out.println("found globalPrefixIRI: " + globalPrefixIRI);
          } else if (ruleName.equals("mapToOWLIndividual")) {
 	     mapOnePartRule(rule, RuleType.INDIVIDUAL);
 	 } else if (ruleName.equals("mapToOWLClassAssertion")) {
@@ -491,7 +497,8 @@ public class Mapper {
 	     || (part == MapperPart.OP_VALUE) 
 	     || (part == MapperPart.ID_INDIVIDUAL1) 
 	     || (part == MapperPart.ID_INDIVIDUAL2)) {
-	     return makeIndividuals(partNode, root, part);
+             List<ReferenceInfo> individuals = makeIndividuals(partNode, root, part);
+	     return individuals;
 	 } else {
 	     return makeAssertionPart(partNode, root, part);
 	 }
@@ -593,13 +600,7 @@ public class Mapper {
             }
             String referenceName = rulesEvaluator.findString(individualNode,"@referenceName");
             if (referenceName != null) {
-                List<ReferenceInfo> existingList = references.get(referenceName);
-                if (existingList == null) {
-                    references.put(referenceName,list); 
-                } else {
-                    existingList.addAll(list);
-                    references.put(referenceName,existingList); // todo: redundant?
-                }
+                references.put(referenceName,list); 
             }
 	    return list;
 	}
