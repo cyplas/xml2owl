@@ -134,14 +134,14 @@ public class RulesValidator {
         throws SaxonApiException, Xml2OwlRuleValidationException {
         System.out.println("Verifying XPath validity ...");
 	XdmSequenceIterator expressionIterator = evaluator.findIterator
-	    (rules, "//(query|expression)");
+	    (rules, "//(query|expression)"); // TODO: maybe check prefixIRI as well
         while (expressionIterator.hasNext()) {
             XdmNode node = (XdmNode) expressionIterator.next();
             String content = evaluator.findString(node, ".");
             XPathCompiler compiler = processor.newXPathCompiler();
             compiler.declareNamespace
                 ("fn", "http://www.w3.org/2005/xpath-functions");
-            compiler.declareNamespace // testing
+            compiler.declareNamespace // TODO: remove this testing
                 ("sl", "http://www.blahs.com");
             compiler.compile(content); // throws exception if no good
         }
@@ -171,13 +171,13 @@ public class RulesValidator {
         }
     }
 
-    /** Check that all elements of type tIDExpression are either null or
+    /** Check that all elements of type tExpression are either null or
      * "xsd:string", except for the propertyValue expression element. */
     private void verifyExpressionTypes(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
         System.out.println("Verifying expression types ...");
 	XdmSequenceIterator expressionIterator = evaluator.findIterator
-	    (rules, "//(prefixIRI|expression)");
+	    (rules, "//(prefixIRI|expression)"); // TODO: check that prefixIRI handled ok
         while (expressionIterator.hasNext()) {
             XdmNode node = (XdmNode) expressionIterator.next();
             String nodeName = evaluator.getName(node);
