@@ -80,7 +80,8 @@ public class RulesValidator {
 	    verifyExpressionTypes(rules);
 	    buildAndVerifyReferences(rules);
 	    verifyReferenceUses(rules);
-	    verifyDynamic(rules);
+	    verifyDynamicRules(rules);
+	    verifyDynamicPrefixIRIs(rules);
 	    verifyDependencies(rules);
             System.out.println("[XML2OWL] Ruleset validation successfully completed.");
 	}
@@ -264,7 +265,7 @@ public class RulesValidator {
 
     /** Verify that there is at least one dynamic part to every assertion
      * mapping rule. */
-    private void verifyDynamic(XdmNode rules) 
+    private void verifyDynamicRules(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
         System.out.println("[XML2OWL] Verifying dynamicity ...");
 	XdmSequenceIterator iterator = evaluator.findIterator
@@ -280,6 +281,22 @@ public class RulesValidator {
 	}
     }
 			
+    private void verifyDynamicPrefixIRIs(XdmNode rules) 
+        throws SaxonApiException, Xml2OwlRuleValidationException {
+        System.out.println("[XML2OWL] Verifying dynamic prefixIRIs ...");
+	XdmSequenceIterator iterator = evaluator.findIterator
+	    (rules, "//prefixIRI/..");
+	while (iterator.hasNext()) {
+	    XdmNode node = (XdmNode) iterator.next();
+            String name = evaluator.getName(node);
+            if (!name.equals("ontologyMappingElements")
+                && evaluator.findNode(node, "query") == null) {
+                throw new Xml2OwlRuleValidationException
+                    ("Dynamic prefixIRI in static part " + name + ".");
+            }
+        }
+    } 
+
     /** Check if an individual rule has at least one dynamic part. */
     private boolean isRuleDynamic(XdmNode rule) throws SaxonApiException {
 	String ruleName = evaluator.getName(rule);
