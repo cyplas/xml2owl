@@ -37,7 +37,6 @@
 	</xsd:sequence>			
 	<xsd:attribute name="expressionLanguage" type="xsd:anyURI"/>	
 	<xsd:attribute name="queryLanguage" type="xsd:anyURI"/>	
-	<xsd:attribute name="override" type="xsd:boolean" default="false"/>
       </xsd:extension>
     </xsd:complexContent>		
   </xsd:complexType>  

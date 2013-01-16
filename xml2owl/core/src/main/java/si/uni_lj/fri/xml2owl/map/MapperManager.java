@@ -125,9 +125,6 @@ public class MapperManager {
 	 parameters.setExpressionLanguage
 	     (rulesEvaluator.findString
 	      (rules, "@expressionLanguage"));
-	 parameters.setOverride
-	     (Boolean.parseBoolean
-	      (rulesEvaluator.findString(rules,"@override")));
         return parameters;
      }
 

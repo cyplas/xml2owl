@@ -11,9 +11,6 @@ public class MapperParameters {
     /** Expression language for making expressions involving XML data. */
     private String expressionLanguage;
 
-    /** Whether to overwrite pre-existing OWL entities. */
-    private boolean override;
-
     public String getQueryLanguage() {
 	return queryLanguage;
     }
@@ -28,14 +25,6 @@ public class MapperParameters {
 
     public void setExpressionLanguage(String expressionLanguage) {
 	this.expressionLanguage = expressionLanguage;
-    }
-
-    public boolean getOverride() {
-	return override;
-    }
-
-    public void setOverride(boolean override) {
-	this.override = override;
     }
 
 }
