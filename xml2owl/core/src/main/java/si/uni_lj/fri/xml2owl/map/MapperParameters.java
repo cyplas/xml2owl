@@ -11,6 +11,9 @@ public class MapperParameters {
     /** Expression language for making expressions involving XML data. */
     private String expressionLanguage;
 
+    /** Whether to abort for all exceptions. */
+    private boolean strict;
+
     public String getQueryLanguage() {
 	return queryLanguage;
     }
@@ -26,6 +29,15 @@ public class MapperParameters {
     public void setExpressionLanguage(String expressionLanguage) {
 	this.expressionLanguage = expressionLanguage;
     }
+
+    public boolean getStrict() {
+	return strict;
+    }
+
+    public void setStrict(boolean strict) {
+	this.strict = strict;
+    }
+
 
 }
 

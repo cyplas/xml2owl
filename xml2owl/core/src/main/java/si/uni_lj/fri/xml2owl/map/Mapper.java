@@ -43,8 +43,8 @@ public class Mapper {
     /** The XML input data. */
     private final XdmNode xmlData;
 
-    /** The parameters used for the mapping. */
-    private final MapperParameters parameters;
+    /** Whether to abort strictly for every exception. */
+    private final boolean strict;
 
     /** The XML tool used to process queries and expressions for the rules. */
     private final XPathEvaluator rulesEvaluator;
@@ -76,7 +76,7 @@ public class Mapper {
 	 this.owlManager = owlManager;
 	 this.owlOntology = owlOntology;
 	 this.xmlData = xmlData;
-	 this.parameters = parameters;
+	 this.strict = parameters.getStrict();
 	 this.rulesEvaluator = rulesEvaluator;
 	 this.dataEvaluator = dataEvaluator;
          this.reasoner = reasoner;
@@ -127,9 +127,9 @@ public class Mapper {
                  } else {
                      mapOnePartRule(rule, RuleType.DIFFERENT_INDIVIDUALS);
                  }
-             } else {
+             } else {  // should already be caught by validator
                  throw new Xml2OwlMappingException
-                     ("Unsupported mapping rule " + ruleName + ".", false);
+                     ("Unsupported mapping rule " + ruleName + ".", true);
              }
          }
      }
@@ -354,7 +354,7 @@ public class Mapper {
 	 } else {
 	     throw new Xml2OwlMappingException 
 		 ("OWL class " + className + " does not yet exist in the ontology.", 
-		  false);
+		  strict);
 	 }
 	 System.out.println("[XML2OWL]   Class assertion successfully created.");
     }
@@ -412,7 +412,7 @@ public class Mapper {
                      throw new Xml2OwlMappingException
                          ("OWL data property value " + propertyValue 
                           + " does not match expected type " + propertyValueType + ".",
-                         true);
+                         strict);
                  }
              }
 	     OWLAxiom axiom;
@@ -427,7 +427,7 @@ public class Mapper {
 	 } else {
 	     throw new Xml2OwlMappingException 
 		 ("OWL data property " + propertyName + " does not yet exist in the ontology.", 
-		  false);
+		  strict);
 	 }
 	 System.out.println("[XML2OWL]   Data property assertion successfully created.");
      }
@@ -464,7 +464,7 @@ public class Mapper {
 	 } else {
 	     throw new Xml2OwlMappingException 
 		 ("OWL object property " + propertyName + " does not yet exist in the ontology.", 
-		  true);
+		  strict);
 	 }
 	 System.out.println("[XML2OWL]   Object property assertion successfully created.");
      }
@@ -816,7 +816,7 @@ public class Mapper {
         }
         catch (URISyntaxException e) {
             throw new Xml2OwlMappingException
-                ("Invalid IRI (well, at least invalid URI): " + cleanedString + ".", true);
+                ("Invalid URI: " + cleanedString + ".", true);
         }
         return IRI.create(uri); 
     }
@@ -831,9 +831,10 @@ public class Mapper {
         owlManager.addAxiom(owlOntology, axiom);
         if (!isOntologyConsistent()) {
             owlManager.removeAxiom(owlOntology,axiom);
-            throw new Xml2OwlMappingException("Ontology conflict in axiom creation.", true);
+            throw new Xml2OwlMappingException("Ontology conflict in axiom creation.", strict);
+        } else {
+            axiomsAdded.add(axiom);
         }
-        axiomsAdded.add(axiom);
     }
 
 }

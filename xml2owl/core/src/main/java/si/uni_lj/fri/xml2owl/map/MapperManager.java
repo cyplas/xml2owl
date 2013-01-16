@@ -83,7 +83,10 @@ public class MapperManager {
             }
             System.out.println("[XML2OWL] Ruleset mapping successfully completed.");
 	}
-	catch (Exception e) {
+	catch (SaxonApiException e) {
+	    handleException(e);
+	}
+	catch (Xml2OwlMappingException e) {
 	    handleException(e);
 	}
         return owl;
@@ -125,14 +128,25 @@ public class MapperManager {
 	 parameters.setExpressionLanguage
 	     (rulesEvaluator.findString
 	      (rules, "@expressionLanguage"));
+	 parameters.setStrict
+	     (Boolean.parseBoolean
+	      (rulesEvaluator.findString(rules,"@strict")));
         return parameters;
      }
 
      /** Process the rules remaining in ruleIterator, handling exceptions if
 	 necessary. */
-    public void processRules() throws Exception {
+    public void processRules() throws Xml2OwlMapException {
 	while (!abort && ruleIterator.hasNext()) {
-            mapper.mapRule((XdmNode) ruleIterator.next());
+            try {
+                mapper.mapRule((XdmNode) ruleIterator.next());
+            }
+            catch (SaxonApiException e) {
+                handleException(e);
+            }
+            catch (Xml2OwlMappingException e) {
+                handleException(e);
+            }
         }
     }
 

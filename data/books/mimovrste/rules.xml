@@ -1,6 +1,7 @@
 <ontologyMappingElements
     queryLanguage="urn:fri-x2o:sublang:xpath2.0"
     expressionLanguage="urn:fri-x2o:sublang:xpath2.0"
+    strict="true"
     xmlns="http://www.fri.uni-lj.si/xml2owl"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns:sl="http://www.blah.com"
