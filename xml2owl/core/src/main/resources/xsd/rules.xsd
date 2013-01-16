@@ -72,13 +72,14 @@
     <xsd:complexContent>
       <xsd:extension base="tExtensibleElements">	  		
 	<xsd:sequence>
-	  <xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
 	  <xsd:choice>
 	    <xsd:sequence>
 	      <xsd:element name="query" type="xsd:string"/>
+	      <xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
 	      <xsd:element name="expression" type="tExpression" minOccurs="0"/>
 	    </xsd:sequence>
 	    <xsd:sequence>
+	      <xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
 	      <xsd:element name="expression" type="tExpression"/>	
 	    </xsd:sequence>						
 	  </xsd:choice>					
@@ -109,8 +110,8 @@
 	  <xsd:element name="propertyName">
 	    <xsd:complexType>
 	      <xsd:sequence>
-		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>	
 		<xsd:element name="query" type="xsd:string" minOccurs="0"/>						
+		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>	
 		<xsd:element name="expression" type="tExpression"/>	  
 	      </xsd:sequence>
 	    </xsd:complexType>
@@ -157,8 +158,8 @@
 	  <xsd:element name="propertyName">
 	    <xsd:complexType>
 	      <xsd:sequence>
-		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>	
 		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
+		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>	
 		<xsd:element name="expression" type="tExpression"/>	  
 	      </xsd:sequence>
 	    </xsd:complexType>
@@ -216,8 +217,8 @@
 	  <xsd:element name="class">
 	    <xsd:complexType>
 	      <xsd:sequence>
- 		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
 		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
+ 		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
 		<xsd:element name="expression" type="tExpression"/>
 	      </xsd:sequence>							
 	    </xsd:complexType>

@@ -7,17 +7,17 @@
     xmlns:tns="http://www.fri.uni-lj.si/xml2owl">
 
   <namespaces>
-    <namespace prefix="slx" name="http://www.blahx.com"/>
+    <namespace prefix="slx" name="http://www.blah.com"/>
   </namespaces>
 
   <prefixIRI>http://www.fri.uni-lj.si/xml2owl/books.owl#</prefixIRI>
 
-  <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn10">
+  <mapToOWLIndividual referenceName="booksWithIsbn10">
     <query>/books/slx:knjiga[fn:matches(isbn,'^[0-9X]{10}?$')]</query>
     <expression>fn:concat('isbn10=',isbn)</expression>
   </mapToOWLIndividual>
 
-  <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn13">
+  <mapToOWLIndividual referenceName="booksWithIsbn13">
     <query>/books/slx:knjiga[fn:matches(isbn,'^[0-9X]{13}?$')]</query>
     <expression>fn:concat('isbn13=',isbn)</expression>
   </mapToOWLIndividual>
@@ -28,7 +28,7 @@
   </collectOWLIndividuals>
 
   <mapToOWLObjectPropertyAssertion>
-    <domainIndividual type="unknown" referenceName="authors">
+    <domainIndividual referenceName="authors">
       <query>.</query>
       <expression>fn:concat('author=',fn:tokenize(avtor,'\s+')[last()])</expression>
     </domainIndividual>

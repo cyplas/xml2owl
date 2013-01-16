@@ -558,22 +558,13 @@ public class Mapper {
                                                           "expression");
             XdmNode prefixIRINode = rulesEvaluator.findNode(individualNode,
                                                             "prefixIRI");
-	    String mappingType = rulesEvaluator.findString(individualNode, "@type");
+	    String mappingType = findValue(individualNode, "@type", "unknown");
 	    if (query == null) {
                 String prefixIRI = findPrefixIRI(null, prefixIRINode, part);
 		String name = prefixIRI + 
                     dataEvaluator.findString(null, expression);
-		if (!owlOntology.containsEntityInSignature(createIRI(name))) {
-		    if (mappingType.equals("unknown")) {
-			createIndividual(name);
-		    } else {
-			throw new Xml2OwlMappingException
-			    ("The supposedly existing OWL individual " + name + " does not"
-			     + " yet exist.", 
-			     true);
-		    }
-		}
-		list.add(new ReferenceInfo(null,name));
+                handleIndividualType(name, mappingType);
+                list.add(new ReferenceInfo(null,name));
 	    } else {
                 XdmSequenceIterator nodes = dataEvaluator.findIterator(root, query);
                 while (nodes.hasNext()) {
@@ -593,18 +584,8 @@ public class Mapper {
                         name = prefixIRI + 
                             dataEvaluator.findString(node, expression);
                     }
-                    // check that individual doesn't exist yet
-                    if (!owlOntology.containsEntityInSignature(createIRI(name))) {
-                        createIndividual(name);
-                    } else {
-                        if (mappingType.equals("new")) {
-                            throw new Xml2OwlMappingException
-                                ("The supposedly new OWL individual " + name + 
-                                 " already exists.", 
-                                 true);
-                        }
-                    }
-                    list.add(new ReferenceInfo(node,name)); // TODO: only spot where need to do something
+                    handleIndividualType(name,mappingType);
+                    list.add(new ReferenceInfo(node,name));
                 } 
             }
             String referenceName = rulesEvaluator.findString(individualNode,"@referenceName");
@@ -613,6 +594,26 @@ public class Mapper {
             }
 	    return list;
 	}
+    }
+
+    private void handleIndividualType(String name, String type) throws Xml2OwlMappingException {
+        if (owlOntology.containsEntityInSignature(createIRI(name))) {
+            if (type.equals("new")) {
+                throw new Xml2OwlMappingException
+                    ("The supposedly new OWL individual " + name 
+                     + " already exists.", 
+                     true);
+            } 
+        } else {
+            if (type.equals("existing")) {
+                throw new Xml2OwlMappingException
+                    ("The supposedly existing OWL individual " + name 
+                     + " does not yet exist.", 
+                     true);
+            } else {
+                createIndividual(name);
+            }
+        }
     }
 
     /** Determine an order in which to process the mapping parts of the rule
@@ -766,8 +767,7 @@ public class Mapper {
             if (expression == null) {
                 return null;
             } else {
-                String dynamicAttribute = rulesEvaluator.findString(prefixIRINode,"@dynamic");
-                boolean dynamic = (dynamicAttribute != null && Boolean.valueOf(dynamicAttribute));
+                boolean dynamic = Boolean.valueOf(findValue(prefixIRINode,"@dynamic","false"));
                 if (dynamic) {
                     return dataEvaluator.findString(relativeNode, expression);
                 } else {

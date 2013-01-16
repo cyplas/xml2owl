@@ -77,7 +77,6 @@ public class RulesValidator {
 	try {
             verifySupportedLanguages(rules);
 	    verifyXPathValidity(rules);
-            verifyIndividualsTypeValidity(rules);
 	    verifyExpressionTypes(rules);
 	    buildAndVerifyReferences(rules);
 	    verifyReferenceUses(rules);
@@ -151,30 +150,6 @@ public class RulesValidator {
             XdmNode node = (XdmNode) expressionIterator.next();
             String content = evaluator.findString(node, ".");
             compiler.compile(content); // throws exception if no good
-        }
-    }
-
-    /** Check that new individual definitions include queries, while existing
-     * and unknown ones do not. */
-    private void verifyIndividualsTypeValidity(XdmNode rules)
-        throws SaxonApiException, Xml2OwlRuleValidationException {
-        System.out.println("[XML2OWL] Verifying individuals' type integrity ...");
-	XdmSequenceIterator expressionIterator = evaluator.findIterator
-	    (rules, "//(mapToOWLIndividual|individual|domainIndividual|rangeIndividual|individual1|individual2)");
-        while (expressionIterator.hasNext()) {
-            XdmNode individual = (XdmNode) expressionIterator.next();
-            XdmNode node = evaluator.findNode(individual, "query");
-            String type = evaluator.findString(individual, "@type");
-            if (type == null) { 
-                type = "unknown"; // default
-            }
-            if (type.equals("new") && (node == null)) {
-                throw new Xml2OwlRuleValidationException
-                    ("New individual definition lacks a query.");
-            } else if (type.equals("existing") && (node != null)) {
-                throw new Xml2OwlRuleValidationException
-                    ("Existing individual definition includes a query.");
-            } // TODO: handle two types of unknown definitions well (w or w/o query)
         }
     }
 
