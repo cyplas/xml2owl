@@ -9,7 +9,6 @@ import org.semanticweb.owlapi.util.InferredOntologyGenerator;
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
 import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
 
-import org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat;
 import org.semanticweb.owlapi.io.OWLObjectRenderer;
 import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxObjectRenderer;
 
@@ -75,12 +74,11 @@ public class MapperManager {
             reasoner.getKB().realize();
             InferredOntologyGenerator generator = new InferredOntologyGenerator(reasoner);
             generator.fillOntology(owlManager, owl);
-            lastChanges = mapper.getAxiomsAdded();
-            PrefixOWLOntologyFormat pm = owlManager.getOntologyFormat(owl).asPrefixOWLOntologyFormat(); 
             OWLObjectRenderer renderer = new DLSyntaxObjectRenderer(); 
             for (SWRLRule rule : owl.getAxioms(AxiomType.SWRL_RULE)) { 
                 System.out.println("[XML2OWL] Processing SWRL rule: " + renderer.render(rule) + " ..."); 
             }
+            lastChanges = mapper.getAxiomsAdded();
             System.out.println("[XML2OWL] Ruleset mapping successfully completed.");
 	}
 	catch (SaxonApiException e) {
@@ -92,7 +90,7 @@ public class MapperManager {
         return owl;
      }
 
-    /** Undo all changes made to the OWL ontology with the last 'map' call. */
+    /** Undo all changes made to the OWL ontology with this Mapper. */
     public void unmap(OWLOntologyManager owlManager, OWLOntology owl) {
         owlManager.removeAxioms(owl, lastChanges);
     }

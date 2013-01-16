@@ -5,8 +5,6 @@ import si.uni_lj.fri.xml2owl.util.*;
 import java.net.*;
 import java.util.*;
 import org.semanticweb.owlapi.model.*;
-import org.semanticweb.owlapi.reasoner.*;
-import org.semanticweb.owlapi.util.InferredOntologyGenerator;
 import net.sf.saxon.s9api.*;
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
 
@@ -798,13 +796,6 @@ public class Mapper {
     /** Check whether the state of owlOntology is self-consistent. */
     private boolean isOntologyConsistent() {
         return reasoner.isConsistent();
-        // boolean consistent = reasoner.isConsistent();
-        // reasoner.getKB().realize();
-        // reasoner.getKB().printClassTree();
-        // InferredOntologyGenerator generator = new InferredOntologyGenerator(reasoner);
-        // generator.fillOntology(owlManager, owlOntology);
-        // System.out.println("consistent: " + consistent);
-        // return consistent;
     }
 
     /** Create an IRI based on the String given, first removing any spaces */ 
