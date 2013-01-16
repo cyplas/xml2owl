@@ -35,9 +35,6 @@ public class MapperManager {
     /** Iterator for the set of mapping rules to process. */
     private XdmSequenceIterator ruleIterator; 
 
-    /** The messages from the exceptions encountered. */
-    private String exceptionMessages;
-
     /** Flag indicating whether there has been a lethal exception. */
     private boolean abort;
 
@@ -52,7 +49,6 @@ public class MapperManager {
 	mapper = null;
 	ruleIterator = null;
 	abort = false;
-	exceptionMessages = "";
     }
 
    /**  Get the data into the right format, creates a Mapper, prepares the set
@@ -64,6 +60,7 @@ public class MapperManager {
                             XdmNode xml)
         throws Xml2OwlMapException {
 	try {
+            System.out.println("[XML2OWL] Beginning ruleset mapping ...");
             addNamespaces(rules);
             MapperParameters parameters = extractParameters(rules);
             PelletReasoner reasoner = PelletReasonerFactory.getInstance().createNonBufferingReasoner(owl);
@@ -74,7 +71,7 @@ public class MapperManager {
                                 parameters, rulesEvaluator, dataEvaluator, reasoner, referenceNames);
             ruleIterator = rulesEvaluator.findIterator
                 (rules, "*[name() = 'prefixIRI' or starts-with(name(),'mapTo') or name() = 'collectOWLIndividuals']");
-	    processRules();     // 
+            processRules();
             reasoner.getKB().realize();
             InferredOntologyGenerator generator = new InferredOntologyGenerator(reasoner);
             generator.fillOntology(owlManager, owl);
@@ -82,8 +79,9 @@ public class MapperManager {
             PrefixOWLOntologyFormat pm = owlManager.getOntologyFormat(owl).asPrefixOWLOntologyFormat(); 
             OWLObjectRenderer renderer = new DLSyntaxObjectRenderer(); 
             for (SWRLRule rule : owl.getAxioms(AxiomType.SWRL_RULE)) { 
-                System.out.println(renderer.render(rule)); 
+                System.out.println("[XML2OWL] Processing SWRL rule: " + renderer.render(rule) + " ..."); 
             }
+            System.out.println("[XML2OWL] Ruleset mapping successfully completed.");
 	}
 	catch (Exception e) {
 	    handleException(e);
@@ -135,45 +133,37 @@ public class MapperManager {
 
      /** Process the rules remaining in ruleIterator, handling exceptions if
 	 necessary. */
-    public void processRules() throws Xml2OwlMapException {
+    public void processRules() throws Exception {
 	while (!abort && ruleIterator.hasNext()) {
-	    try {
-		mapper.mapRule((XdmNode) ruleIterator.next());
-	    }
-	    catch (Exception e) {
-		handleException(e);
-	    }
-	}
+            mapper.mapRule((XdmNode) ruleIterator.next());
+        }
     }
 
-    /** Handle an exception.  Set the abort flag if lethal. */
+    /** Handle exception.  Set the abort flag if lethal. */
     private void handleException(Exception exception) throws Xml2OwlMapException {
 	boolean lethal = true; // default
-	String prefix = "";
+	String prefix = "[XML2OWL] ";
 	if (exception instanceof SaxonApiException) {
-	    prefix = "Saxon lethal exception: ";
+	    prefix += "Saxon exception: ";
 	} else if (exception instanceof OWLException) {
-	    prefix = "OWL exception: ";
+	    prefix += "OWL exception: ";
 	} else if (exception instanceof Xml2OwlMappingException) {
 	    if (((Xml2OwlMappingException) exception).isLethal()) {
-		prefix = "XML2OWL mapping exception: ";
+		prefix += "XML2OWL mapping exception: ";
 	    } else { // it's OK if it's a non-lethal XML2OWL exception
-		prefix = "XML2OWL mapping warning: ";
+		prefix += "XML2OWL mapping warning: ";
 		lethal = false; 
 	    }
 	} else if (!(exception instanceof Xml2OwlMapException)) {
-	    prefix = "Unrecognised exception of type " + exception.getClass().getName() + " : ";
+	    prefix += "Unrecognised exception of type " + exception.getClass().getName() + " : ";
 	}
 	// If exception is lethal, mapping failed and abort flag is set.
 	abort = lethal;
 	String currentMessage = prefix + exception.getMessage();
-	System.out.println(currentMessage);
-	exceptionMessages = "** Xml2OwlMapException messages start **\n"
-	    + exceptionMessages + currentMessage + "\n"
-	    + "** Xml2OwlMapException messages end **\n";
+        System.out.println(currentMessage);
 	if (abort) {
-	    throw new Xml2OwlMapException(exceptionMessages);
-	}
+	    throw new Xml2OwlMapException(currentMessage);
+        }
     }
 
 }

@@ -26,6 +26,7 @@ public class FileManager implements DataManager {
     /** Check if named file exists. */
     public boolean exists(String name) throws Xml2OwlDataException {
 	String fullName = makeName(name);
+	System.out.println("[XML2OWL] Checking for file: " + fullName + " ...");
 	File file = new File(fullName);
         try {
             return file.exists();
@@ -38,6 +39,7 @@ public class FileManager implements DataManager {
     /** Returns contents of named file. */
     public String read(String name) throws Xml2OwlDataException {
 	String fullName = makeName(name);
+	System.out.println("[XML2OWL] Reading file: " + fullName + " ...");
         File file = new File(fullName);
         if (!file.exists()) {
             return null;
@@ -56,6 +58,7 @@ public class FileManager implements DataManager {
         throws Xml2OwlDataException {
         boolean success = false;
 	String fullName = makeName(name);
+	System.out.println("[XML2OWL] Writing file: " + fullName + " ...");
         File file = new File(fullName);
 	if (file.exists() && !overwrite) {
             return false;
@@ -73,6 +76,7 @@ public class FileManager implements DataManager {
     /** Delete named file. */
     public boolean delete(String name) throws Xml2OwlDataException {
 	String fullName = makeName(name);
+	System.out.println("[XML2OWL] Deleting file: " + fullName + " ...");
         File file = new File(fullName);
         try { 
             return file.delete();
@@ -84,7 +88,6 @@ public class FileManager implements DataManager {
 
     /** Produce the full filename from the name provided. */
     private String makeName(String name) {
-	System.out.println(path + directory + "/" + name + suffix);
 	return (path + directory + "/" + name + suffix);
     }
 

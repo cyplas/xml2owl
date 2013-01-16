@@ -35,9 +35,7 @@ public class MapApplicationDataManager {
     /** Process a Response, writing to owl.xml in testDirectory if
      * successful. */  
     public void processResponse(Response response) throws Xml2OwlDataException {
-	System.out.println("Request processed.");
 	String owl = response.getOwl();
         dataManager.write("owl", owl, true);
-        System.out.println("XML2OWL mapping succeeded: see updated owl.xml.");
     }
 }

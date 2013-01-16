@@ -12,8 +12,7 @@ public class MapApplication {
      * mapping work using the data. */ 
     public static void run (String directory, String source) throws Exception {
      
-	System.out.println
-	    ("                      *** Xml2owl: begin output ***\n\n" );
+	System.out.println("[XML2OWL] Beginning of XML2OWL program output." );
 	
 	MapService service = new MapService();
 	MapApplicationDataManager manager = new MapApplicationDataManager(directory, source);
@@ -23,8 +22,7 @@ public class MapApplication {
 	Response response = service.map(request);
 	manager.processResponse(response);
 
-	System.out.println
-	    ("\n\n                      *** Xml2owl:  end output  ***" );
+	System.out.println("[XML2OWL] End of XML2OWL program output." );
 
     }
 

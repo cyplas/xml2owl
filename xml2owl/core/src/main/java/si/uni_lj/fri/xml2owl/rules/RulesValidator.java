@@ -64,13 +64,14 @@ public class RulesValidator {
 	    schemaValidator = schema.newValidator();
 	}
         catch (SAXException e) { // this shouldn't happen!
-	    System.out.println("Couldn't load rules.xsd:" + e.getMessage());
+	    System.out.println("[XML2OWL] Couldn't load rules.xsd:" + e.getMessage());
 	}
     }
 
     /** The main validation function, which calls a series of specific
      * validation functions. */   
     public void validate(String xml) throws Xml2OwlRuleValidationException { 
+        System.out.println("[XML2OWL] Beginning ruleset validation ...");
         validateVersusSchema(xml);
         XdmNode rules = convertToNode(xml);
 	try {
@@ -82,7 +83,7 @@ public class RulesValidator {
 	    verifyReferenceUses(rules);
 	    verifyDynamic(rules);
 	    verifyDependencies(rules);
-            System.out.println("           *** Ruleset successfully validated! ***");
+            System.out.println("[XML2OWL] Ruleset validation successfully completed.");
 	}
 	catch (SaxonApiException e) {
 	    throw new Xml2OwlRuleValidationException
@@ -115,7 +116,7 @@ public class RulesValidator {
      * supported. */
     private void verifySupportedLanguages(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
-        System.out.println("Verifying supported languages ...");
+        System.out.println("[XML2OWL] Verifying supported languages ...");
 	String expressionLanguage = 
             evaluator.findString(rules, "@expressionLanguage");
 	if (!supportedExpressionLanguages.contains(expressionLanguage)) {
@@ -132,7 +133,7 @@ public class RulesValidator {
     /** Verify that XPath syntax is valid. */  
     private void verifyXPathValidity(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
-        System.out.println("Verifying XPath validity ...");
+        System.out.println("[XML2OWL] Verifying XPath validity ...");
         XPathCompiler compiler = processor.newXPathCompiler();
         compiler.declareNamespace
             ("fn", "http://www.w3.org/2005/xpath-functions");
@@ -157,7 +158,7 @@ public class RulesValidator {
      * and unknown ones do not. */
     private void verifyIndividualsTypeValidity(XdmNode rules)
         throws SaxonApiException, Xml2OwlRuleValidationException {
-        System.out.println("Verifying individuals' type integrity ...");
+        System.out.println("[XML2OWL] Verifying individuals' type integrity ...");
 	XdmSequenceIterator expressionIterator = evaluator.findIterator
 	    (rules, "//(mapToOWLIndividual|individual|domainIndividual|rangeIndividual|individual1|individual2)");
         while (expressionIterator.hasNext()) {
@@ -181,7 +182,7 @@ public class RulesValidator {
      * "xsd:string", except for the propertyValue expression element. */
     private void verifyExpressionTypes(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
-        System.out.println("Verifying expression types ...");
+        System.out.println("[XML2OWL] Verifying expression types ...");
 	XdmSequenceIterator expressionIterator = evaluator.findIterator
 	    (rules, "//(prefixIRI|expression)"); // TODO: check that prefixIRI handled ok
         while (expressionIterator.hasNext()) {
@@ -208,7 +209,7 @@ public class RulesValidator {
     /** Build up the set of references, and check enroute that there are no duplicates. */   
     private void buildAndVerifyReferences(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
-        System.out.println("Building and verifying references ...");
+        System.out.println("[XML2OWL] Building and verifying references ...");
 	XdmSequenceIterator nameIterator = evaluator.findIterator
 	    (rules, "//*[@referenceName!='']");
         List<XdmNode> collectionReferenceNodes = new ArrayList<XdmNode>();
@@ -259,7 +260,7 @@ public class RulesValidator {
      * references are used. */
     private void verifyReferenceUses(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
-        System.out.println("Verifying reference uses ...");
+        System.out.println("[XML2OWL] Verifying reference uses ...");
 	XdmSequenceIterator nameIterator = evaluator.findIterator
 	    (rules, 
              "*/(referenceToIndividual | referenceToDomainIndividual | referenceToRangeIndividual | referenceToIndividual1 | referenceToIndividual2)");
@@ -290,7 +291,7 @@ public class RulesValidator {
      * mapping rule. */
     private void verifyDynamic(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
-        System.out.println("Verifying dynamicity ...");
+        System.out.println("[XML2OWL] Verifying dynamicity ...");
 	XdmSequenceIterator iterator = evaluator.findIterator
 	    (rules, 
              "mapToOWLClassAssertion | mapToOWLDataPropertyAssertion | mapToOWLObjectPropertyAssertion | mapToOWLSameAssertion | mapToOWLDifferentAssertion");
@@ -351,7 +352,7 @@ public class RulesValidator {
     /** Verify each dependency as well as the relations between dependencies. */
     private void verifyDependencies(XdmNode rules) 
 	throws SaxonApiException, Xml2OwlRuleValidationException {
-        System.out.println("Verifying dependencies ...");
+        System.out.println("[XML2OWL] Verifying dependencies ...");
 	XdmSequenceIterator ruleIterator = evaluator.findIterator
 	    (rules, 
              "mapToOWLClassAssertion | mapToOWLDataPropertyAssertion | mapToOWLObjectPropertyAssertion | mapToOWLSameAssertion | mapToOWLDifferentAssertion");

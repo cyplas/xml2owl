@@ -102,35 +102,28 @@ public class RulesManager {
 
     /** Validates a ruleset. */
     public void validateRuleset(String ruleset) 
-        throws Xml2OwlRulesException {
+        throws Xml2OwlRuleValidationException {
 	RulesValidator validator = new RulesValidator();
-        try {
-            validator.validate(ruleset);
-        }
-	catch (Exception e) {
-	    handleException(e);
-        }
+        validator.validate(ruleset);
     }
 
     /** Handles possible exceptions thrown during validation. */ 
     private void handleException(Exception exception) 
         throws Xml2OwlRulesException {
-	String prefix = "";
+	String prefix = "[XML2OWL] ";
 	if (exception instanceof Xml2OwlRuleValidationException) {
-	    prefix = "Rule validation exception: ";
+	    prefix += "Rule validation exception: ";
 	} else if (exception instanceof Xml2OwlDataException) {
-	    prefix = "Data exception: ";
+	    prefix += "Data exception: ";
 	} else if (exception instanceof SaxonApiException) {
-	    prefix = "Saxon exception: ";
+	    prefix += "Saxon exception: ";
 	} else {
-	    prefix = "Unrecognised exception: ";
+	    prefix += "Unrecognised blah exception: ";
 	}
-	String message = "** Xml2OwlRulesException start **\n"
-	    + prefix + exception.getMessage() + "\n"
-	    + "** Xml2OwlRulesException end **\n";
+	String message = prefix + exception.getMessage() + "\n";
 	RulesFault faultInfo = new RulesFault();
 	faultInfo.setMessage(message);
-	System.out.println(message);
+        System.out.println(message);
 	throw new Xml2OwlRulesException(message,faultInfo);
     }
 

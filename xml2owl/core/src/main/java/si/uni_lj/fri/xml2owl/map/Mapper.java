@@ -100,48 +100,54 @@ public class Mapper {
      public void mapRule (XdmNode rule) 
 	 throws Xml2OwlMappingException, SaxonApiException {
 	 String ruleName = rulesEvaluator.getName(rule);
-	 System.out.println("Trying to map rule " + ruleName + " ...");
          if (ruleName.equals("prefixIRI")) {
              globalPrefixIRI = calculatePrefixIRI(xmlData, rule);
-         } else if (ruleName.equals("mapToOWLIndividual")) {
-	     mapOnePartRule(rule, RuleType.INDIVIDUAL);
-	 } else if (ruleName.equals("mapToOWLClassAssertion")) {
-	     mapTwoPartRule(rule, RuleType.CLASS);
-	 } else if (ruleName.equals("mapToOWLDataPropertyAssertion")) {
-	     mapThreePartRule(rule, RuleType.DATA_PROPERTY);
-	 } else if (ruleName.equals("mapToOWLObjectPropertyAssertion")) {
-	     mapThreePartRule(rule, RuleType.OBJECT_PROPERTY);
-	 } else if (ruleName.equals("mapToOWLSameAssertion")) {
-	     if (hasTwoIndividualParts(rule)) {
-		 mapTwoPartRule(rule, RuleType.SAME_INDIVIDUALS);
-	     } else {
-		 mapOnePartRule(rule, RuleType.SAME_INDIVIDUALS);
-	     }
-	 } else if (ruleName.equals("mapToOWLDifferentAssertion")) {
-	     if (hasTwoIndividualParts(rule)) {
-		 mapTwoPartRule(rule, RuleType.DIFFERENT_INDIVIDUALS);
-	     } else {
-		 mapOnePartRule(rule, RuleType.DIFFERENT_INDIVIDUALS);
-	     }
+             System.out.println("[XML2OWL] Determined default prefix IRI: " + globalPrefixIRI + ".");
          } else if (ruleName.equals("collectOWLIndividuals")) {
              collectRule(rule);
-	 } else {
-	     throw new Xml2OwlMappingException
-		 ("Unsupported mapping rule " + ruleName + ".", false);
-	 }
+         } else {
+             System.out.println("[XML2OWL] Mapping rule " + ruleName + " ...");
+             if (ruleName.equals("mapToOWLIndividual")) {
+                 mapOnePartRule(rule, RuleType.INDIVIDUAL);
+             } else if (ruleName.equals("mapToOWLClassAssertion")) {
+                 mapTwoPartRule(rule, RuleType.CLASS);
+             } else if (ruleName.equals("mapToOWLDataPropertyAssertion")) {
+                 mapThreePartRule(rule, RuleType.DATA_PROPERTY);
+             } else if (ruleName.equals("mapToOWLObjectPropertyAssertion")) {
+                 mapThreePartRule(rule, RuleType.OBJECT_PROPERTY);
+             } else if (ruleName.equals("mapToOWLSameAssertion")) {
+                 if (hasTwoIndividualParts(rule)) {
+                     mapTwoPartRule(rule, RuleType.SAME_INDIVIDUALS);
+                 } else {
+                     mapOnePartRule(rule, RuleType.SAME_INDIVIDUALS);
+                 }
+             } else if (ruleName.equals("mapToOWLDifferentAssertion")) {
+                 if (hasTwoIndividualParts(rule)) {
+                     mapTwoPartRule(rule, RuleType.DIFFERENT_INDIVIDUALS);
+                 } else {
+                     mapOnePartRule(rule, RuleType.DIFFERENT_INDIVIDUALS);
+                 }
+             } else {
+                 throw new Xml2OwlMappingException
+                     ("Unsupported mapping rule " + ruleName + ".", false);
+             }
+         }
      }
 
     private void collectRule(XdmNode rule) throws SaxonApiException {
         String referenceName = rulesEvaluator.findString(rule, "@referenceName");
+        System.out.println("[XML2OWL] Building collection reference: " + referenceName + " ...");
         List<ReferenceInfo> collectionList = new ArrayList<ReferenceInfo>();
         XdmSequenceIterator refNames = 
             rulesEvaluator.findIterator(rule, "referenceToIndividual/@refName");
         while (refNames.hasNext()) {
             String refName = refNames.next().getStringValue();
+            System.out.println("[XML2OWL]   Including reference: " + refName + " ...");
             List<ReferenceInfo> nextList = references.get(refName);
             collectionList.addAll(nextList);
         }
         references.put(referenceName,collectionList);
+        System.out.println("[XML2OWL] Collection reference built.");
     }
             
     /** Maps a rule containing just one part.  This is either an individual
@@ -320,22 +326,23 @@ public class Mapper {
 
     /** Adds the individual to the OWL ontology. */
     private void createIndividual(String name) throws Xml2OwlMappingException {
-	 System.out.println("creating individual definition: ");
-	 System.out.println("  individual: " + name);
+	 System.out.println("[XML2OWL]     Creating individual ...");
+	 System.out.println("[XML2OWL]       individual: " + name);
 	 OWLNamedIndividual owlIndividual = 
              owlFactory.getOWLNamedIndividual(createIRI(name));
 	 OWLAxiom axiom = 
 	     owlFactory.getOWLDeclarationAxiom(owlIndividual);
          addAxiom(axiom);
+	 System.out.println("[XML2OWL]   Individual successfully created.");
     }
 
     /** Adds a class assertion to the OWL ontology, throwing an exception if the
 	class does not yet exist. */  
     private void createClassAxiom(String individual, String className)
 	throws Xml2OwlMappingException {
-	 System.out.println("creating class assertion: ");
-	 System.out.println("  individual: " + individual);
-	 System.out.println("  class: " + className);
+	 System.out.println("[XML2OWL]   Creating class assertion ...");
+	 System.out.println("[XML2OWL]     individual: " + individual);
+	 System.out.println("[XML2OWL]     class: " + className);
 	 OWLNamedIndividual owlIndividual = 
              owlFactory.getOWLNamedIndividual(createIRI(individual));
 	 OWLClass owlClass = owlFactory.getOWLClass(createIRI(className));
@@ -346,9 +353,10 @@ public class Mapper {
 	     addAxiom(axiom);
 	 } else {
 	     throw new Xml2OwlMappingException 
-		 ("OWL class does not yet exist in the ontology.", 
+		 ("OWL class " + className + " does not yet exist in the ontology.", 
 		  false);
 	 }
+	 System.out.println("[XML2OWL]   Class assertion successfully created.");
     }
 
     /** Adds a data property assertion to the OWL ontology, throwing an
@@ -360,12 +368,12 @@ public class Mapper {
 					  String positiveAssertion) 
      throws Xml2OwlMappingException {
 	 // TODO: check things with the propertyValueType 
-	 System.out.println("creating data property: ");
-	 System.out.println("  individual: " + individual);
-	 System.out.println("  propertyName: " + propertyName);
-	 System.out.println("  propertyValue: " + propertyValue);
-	 System.out.println("  propertyValueType: " + propertyValueType);
-	 System.out.println("  positiveAssertion: " + positiveAssertion); 
+	 System.out.println("[XML2OWL]   Creating data property assertion ...");
+	 System.out.println("[XML2OWL]     individual: " + individual);
+	 System.out.println("[XML2OWL]     propertyName: " + propertyName);
+	 System.out.println("[XML2OWL]     propertyValue: " + propertyValue);
+	 System.out.println("[XML2OWL]     propertyValueType: " + propertyValueType);
+	 System.out.println("[XML2OWL]     positiveAssertion: " + positiveAssertion); 
 	 OWLNamedIndividual owlIndividual = 
              owlFactory.getOWLNamedIndividual(createIRI(individual));
 	 OWLDataProperty owlProperty = 
@@ -418,9 +426,10 @@ public class Mapper {
 	     addAxiom(axiom);
 	 } else {
 	     throw new Xml2OwlMappingException 
-		 ("OWL data property does not yet exist in the ontology.", 
+		 ("OWL data property " + propertyName + " does not yet exist in the ontology.", 
 		  false);
 	 }
+	 System.out.println("[XML2OWL]   Data property assertion successfully created.");
      }
 
     /** Adds an object property assertion to the OWL ontology, throwing an
@@ -430,11 +439,11 @@ public class Mapper {
                                             String object, 
                                             String positiveAssertion) 
      throws Xml2OwlMappingException {
-	 System.out.println("creating object property: ");
-	 System.out.println("  individual: " + individual);
-	 System.out.println("  propertyName: " + propertyName);
-	 System.out.println("  object: " + object);
-	 System.out.println("  positiveAssertion: " + positiveAssertion); 
+	 System.out.println("[XML2OWL]   Creating object property assertion ...");
+	 System.out.println("[XML2OWL]     individual: " + individual);
+	 System.out.println("[XML2OWL]     propertyName: " + propertyName);
+	 System.out.println("[XML2OWL]     object: " + object);
+	 System.out.println("[XML2OWL]     positiveAssertion: " + positiveAssertion); 
 	 OWLNamedIndividual owlIndividual = 
              owlFactory.getOWLNamedIndividual(createIRI(individual));
 	 OWLObjectProperty owlProperty = 
@@ -454,9 +463,10 @@ public class Mapper {
 	     addAxiom(axiom);
 	 } else {
 	     throw new Xml2OwlMappingException 
-		 ("OWL object property does not yet exist in the ontology.", 
-		  false);
+		 ("OWL object property " + propertyName + " does not yet exist in the ontology.", 
+		  true);
 	 }
+	 System.out.println("[XML2OWL]   Object property assertion successfully created.");
      }
 
     /** Adds a same/different individual assertion to the OWL ontology. */
@@ -464,9 +474,9 @@ public class Mapper {
                                      String individual2, 
                                      boolean areSame) 
     throws Xml2OwlMappingException {
-	 System.out.println("creating identity assertion: ");
-	 System.out.println("  individual1: " + individual1);
-	 System.out.println("  individual2: " + individual2);
+	 System.out.println("[XML2OWL]   Creating identity assertion ...");
+	 System.out.println("[XML2OWL]     individual1: " + individual1);
+	 System.out.println("[XML2OWL]     individual2: " + individual2);
 	 OWLNamedIndividual owlIndividual1 = 
              owlFactory.getOWLNamedIndividual(createIRI(individual1));	
 	 OWLNamedIndividual owlIndividual2 = 
@@ -480,6 +490,7 @@ public class Mapper {
                                                                 owlIndividual2);
 	 }
 	 addAxiom(axiom);
+	 System.out.println("[XML2OWL]   Identity assertion successfully created.");
     }
 
     /** Returns a list of ReferenceInfos for the specified part in the rule,
@@ -554,11 +565,10 @@ public class Mapper {
                     dataEvaluator.findString(null, expression);
 		if (!owlOntology.containsEntityInSignature(createIRI(name))) {
 		    if (mappingType.equals("unknown")) {
-                        System.out.println("createIndividual 1: " + name);
 			createIndividual(name);
 		    } else {
 			throw new Xml2OwlMappingException
-			    ("The supposedly existing OWL individual does not"
+			    ("The supposedly existing OWL individual " + name + " does not"
 			     + " yet exist.", 
 			     true);
 		    }
@@ -585,13 +595,12 @@ public class Mapper {
                     }
                     // check that individual doesn't exist yet
                     if (!owlOntology.containsEntityInSignature(createIRI(name))) {
-                        System.out.println("createIndividual 2: " + name);
                         createIndividual(name);
                     } else {
                         if (mappingType.equals("new")) {
                             throw new Xml2OwlMappingException
-                                ("The supposedly new OWL individual already"
-                                 + " exists.", 
+                                ("The supposedly new OWL individual " + name + 
+                                 " already exists.", 
                                  true);
                         }
                     }
@@ -807,7 +816,7 @@ public class Mapper {
         }
         catch (URISyntaxException e) {
             throw new Xml2OwlMappingException
-                ("Invalid IRI (well, at least invalid URI).", true);
+                ("Invalid IRI (well, at least invalid URI): " + cleanedString + ".", true);
         }
         return IRI.create(uri); 
     }
