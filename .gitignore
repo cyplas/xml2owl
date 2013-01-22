@@ -2,3 +2,5 @@
 target
 build
 owl.xml
+catalog-*.xml
+xml2owl*.jar
