@@ -95,7 +95,7 @@ public class MapperManager {
      }
 
     /** Undo all changes made to the OWL ontology with this Mapper. */
-    public void unmap(OWLOntology owl) {
+    public void unmap(OWLOntologyManager owlManager, OWLOntology owl) {
         owlManager.removeAxioms(owl, lastChanges);
     }
 
