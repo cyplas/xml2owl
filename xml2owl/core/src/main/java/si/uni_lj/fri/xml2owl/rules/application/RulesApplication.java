@@ -27,11 +27,11 @@ public class RulesApplication {
 	DeleteResponse deleteResponse = service.deleteRules(deleteRequest);
 	manager.processDeleteResponse(deleteResponse);
 
-	// ValidateByNameRequest validateByNameRequest = 
-        //     manager.makeValidateByNameRequest();
-	// ValidateByNameResponse validateByNameResponse = 
-        //     service.validateByNameRules(validateByNameRequest);
-	// manager.processValidateByNameResponse(validateByNameResponse);
+	ValidateByNameRequest validateByNameRequest = 
+            manager.makeValidateByNameRequest();
+	ValidateByNameResponse validateByNameResponse = 
+            service.validateByNameRules(validateByNameRequest);
+	manager.processValidateByNameResponse(validateByNameResponse);
 
 	ValidateFullRequest validateFullRequest = 
             manager.makeValidateFullRequest();
