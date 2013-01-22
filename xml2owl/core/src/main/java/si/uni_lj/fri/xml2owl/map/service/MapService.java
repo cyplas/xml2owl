@@ -24,16 +24,17 @@ import si.uni_lj.fri.xml2owl.map.*;
 import si.uni_lj.fri.xml2owl.util.*;
 import si.uni_lj.fri.xml2owl.rules.service.Xml2OwlRulesException;
 
-/** The XMl2OWL mapping service. */
+/** The XML2OWL mapping service. */
 @WebService(name = "map", targetNamespace = "http://www.fri.uni-lj.si/xml2owl", serviceName = "map", portName = "mapPort", wsdlLocation = "/WEB-INF/wsdl/xml2owlMap.wsdl")
 @javax.jws.soap.SOAPBinding(style = javax.jws.soap.SOAPBinding.Style.DOCUMENT, parameterStyle = javax.jws.soap.SOAPBinding.ParameterStyle.BARE)
 @BindingType(SOAPBinding.SOAP12HTTP_BINDING)
 public class MapService {
+    /** Constructor. */
     public MapService() {
     }
 
-    /** Validates the input ruleset (using the RulesService), and if successful,
-     * uses it together with the input XML to update the OWL provided. */
+    /** Validates the input ruleset, and if successful, uses it
+     * together with the input XML to update the OWL provided. */
     @javax.jws.soap.SOAPBinding(parameterStyle = javax.jws.soap.SOAPBinding.ParameterStyle.BARE)
     @Action(input = "http://www.fri.uni-lj.si/xml2owl/request", output = "http://www.fri.uni-lj.si/xml2owl/map/mapResponse", fault = { @FaultAction(className =
                         Xml2OwlRulesException.class, value = "http://www.fri.uni-lj.si/xml2owl/map/map/Fault/xml2owlRulesException"), @FaultAction(className =

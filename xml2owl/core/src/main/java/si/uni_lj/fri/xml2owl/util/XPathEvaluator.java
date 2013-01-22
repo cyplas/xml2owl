@@ -2,7 +2,6 @@ package si.uni_lj.fri.xml2owl.util;
 
 import net.sf.saxon.s9api.*;
 
-// TODO: rename this class perhaps: such a class exists in Saxon!
 /** Utility class which processes XPath expressions and provides results in
  * various formats. */
 public class XPathEvaluator {
@@ -17,6 +16,7 @@ public class XPathEvaluator {
 	addNamespace("", defaultNamespace);
     }
 
+    /** Tell the compiler about a namespace definition. */
     public void addNamespace(String prefix, String name) {
         compiler.declareNamespace(prefix,name);
     }

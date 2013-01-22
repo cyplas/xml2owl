@@ -18,7 +18,7 @@ public class RulesValidator {
 	STATIC, DYNAMIC;
     }
 
-    /** Location of XML rules schema. */
+    /** Location of XML rules schema relative to resources directory. */
     private final String schemaLocation = "/xsd/rules.xsd";
 
     /** The supported expression languages. */
@@ -41,10 +41,10 @@ public class RulesValidator {
     /** Used to evaluate XPath expressions. */
     private XPathEvaluator evaluator;
 
-    /** Validates the XML input against the XML schema in schemaSource. */
+    /** Validates the XML input against the XML schema at schemaLocation. */
     private Validator schemaValidator;
 
-    /** The set of reference names and their corresponding ReferenceTypes. */
+    /** The map of reference names and their corresponding types. */
     private Map<String, ReferenceType> references;
 
     /** The XML processor. */ 
@@ -281,6 +281,8 @@ public class RulesValidator {
 	}
     }
 			
+    /** Verify that any part-level dynamic prefixIRIs are in a dynamic
+     * part. */
     private void verifyDynamicPrefixIRIs(XdmNode rules) 
         throws SaxonApiException, Xml2OwlRuleValidationException {
         System.out.println("[XML2OWL] Verifying dynamic prefixIRIs ...");

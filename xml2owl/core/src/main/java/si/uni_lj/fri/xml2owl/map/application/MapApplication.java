@@ -3,12 +3,11 @@ package si.uni_lj.fri.xml2owl.map.application;
 import si.uni_lj.fri.xml2owl.map.service.MapService;
 import si.uni_lj.fri.xml2owl.map.service.types.*;
 
-/** Wraps MapService so that it can be run and tested as a stand-alone
- *  application, without relying on web service infrastructure. */
+/** Stand-alone XMl2OWL application. */
 public class MapApplication {
 
-    /** Process the XML2OWL mappings, using an ApplicationDataManager to help
-     * with data input and output, and a TranslateD2OImpl service to do the
+    /** Process the XML2OWL mappings, using an ApplicationDataManager
+     * to help with data input and output from the filesystem. *
      * mapping work using the data. */ 
     public static void run (String directory, String source) throws Exception {
      
@@ -17,7 +16,7 @@ public class MapApplication {
 	MapService service = new MapService();
 	MapApplicationDataManager manager = new MapApplicationDataManager(directory, source);
 
-	// rig the request, call the service, and possibly save the owl
+	// rig the request, call the service, and save the owl
 	Request request = manager.makeRequest();
 	Response response = service.map(request);
 	manager.processResponse(response);

@@ -8,13 +8,17 @@ import si.uni_lj.fri.xml2owl.util.*;
 /** Bridge of Application with data, reading from and writing to files. */
 public class MapApplicationDataManager {
     
-    /** Directory from which to read input and into which to write output. */ 
+    /** Directory with the OWL ontology (owl.xml) to read and update. */
     private String ontologyDirectory;
 
+    /** Directory of an XML source (xml.xml) and corresponding rules
+        file (rules.xml). */
     private String sourceDirectory;
 
+    /** Manages accesses to and from the data. */
     private DataManager dataManager;
 
+    /** Constructor. Uses a FileManager implementation. */
     public MapApplicationDataManager(String ontologyDirectory, 
                                      String sourceDirectory) {
         this.ontologyDirectory = ontologyDirectory;
@@ -22,8 +26,7 @@ public class MapApplicationDataManager {
         dataManager = new FileManager(ontologyDirectory, ".xml");
     }
 
-    /** Create a Request, based on xml data from files stored in testDirectory
-     * (i.e., xml.xml, owl.xml, rules.xml). */
+    /** Create a Request, based on xml files in ontologyDirectory and sourceDirectory. */ 
     public Request makeRequest() throws Xml2OwlDataException {
 	Request request = new Request();
 	request.setData(dataManager.read(sourceDirectory + "/xml"));
@@ -32,8 +35,7 @@ public class MapApplicationDataManager {
 	return request;
     }
 	
-    /** Process a Response, writing to owl.xml in testDirectory if
-     * successful. */  
+    /** Process a Response, writing to owl.xml if successful. */  
     public void processResponse(Response response) throws Xml2OwlDataException {
 	String owl = response.getOwl();
         dataManager.write("owl", owl, true);

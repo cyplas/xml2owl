@@ -7,7 +7,7 @@ import si.uni_lj.fri.xml2owl.rules.service.types.*;
  * local files. */ 
 class RulesApplicationDataManager {
 
-    // The FileManager used to get the input for some of the operations. */ 
+    /** The FileManager used to get the input for some of the operations. */ 
     public static final DataManager dataManager = 
 	new FileManager("test/rules", ".xml");
 

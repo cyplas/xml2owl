@@ -17,7 +17,7 @@ public class RulesManager {
 	dataManager = new RulesDataManager();
     }
     
-    /** Adds a ruleset, unless it does not validate. */
+    /** Add a ruleset, unless it does not validate. */
     public AddResponse addRules(AddRequest request) 
         throws Xml2OwlRulesException {
 	try {
@@ -35,7 +35,7 @@ public class RulesManager {
 	return response;
     }
 
-    /** Deletes a stored ruleset, identified by its name. */
+    /** Delete a stored ruleset, identified by its name. */
     public DeleteResponse deleteRules(DeleteRequest request) 
 	throws Xml2OwlRulesException {
 	String name = request.getName();
@@ -50,7 +50,7 @@ public class RulesManager {
 	return response;
     }
 
-    /** Gets a stored ruleset, identified by its name. */
+    /** Get a stored ruleset, identified by its name. */
     public GetResponse getRules(GetRequest request) 
 	throws Xml2OwlRulesException {
 	String ruleset = "";
@@ -65,7 +65,7 @@ public class RulesManager {
 	return response;
     }
 
-    /** Validates a stored ruleset, identified by its name. */
+    /** Validate a stored ruleset, identified by its name. */
     public ValidateByNameResponse validateRulesByName
         (ValidateByNameRequest request) 
 	throws Xml2OwlRulesException {
@@ -100,14 +100,14 @@ public class RulesManager {
         return response;
     }
 
-    /** Validates a ruleset. */
+    /** Validate a ruleset. */
     public void validateRuleset(String ruleset) 
         throws Xml2OwlRuleValidationException {
 	RulesValidator validator = new RulesValidator();
         validator.validate(ruleset);
     }
 
-    /** Handles possible exceptions thrown during validation. */ 
+    /** Handle possible exceptions thrown during validation. */ 
     private void handleException(Exception exception) 
         throws Xml2OwlRulesException {
 	String prefix = "[XML2OWL] ";

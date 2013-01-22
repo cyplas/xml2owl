@@ -25,11 +25,14 @@ import si.uni_lj.fri.xml2owl.rules.RulesManager;
 @BindingType(SOAPBinding.SOAP12HTTP_BINDING)
 public class RulesService {
 
+    /** Manager for rule validation. */ 
     private static final RulesManager rulesManager = new RulesManager();
 
+    /** Constructor. */
     public RulesService() {
     }
 
+    /** Add a named ruleset. */
     @javax.jws.soap.SOAPBinding(parameterStyle = javax.jws.soap.SOAPBinding.ParameterStyle.BARE)
     @Action(input = "http://www.fri.uni-lj.si/xml2owl/rules/addRules", 
             output = "http://www.fri.uni-lj.si/xml2owl/rules/rules/addRulesResponse", 
@@ -45,7 +48,8 @@ public class RulesService {
         AddRequest part) throws Xml2OwlRulesException {
         return rulesManager.addRules(part);
     }
-
+    
+    /** Get rules stored under the specific name. */
     @javax.jws.soap.SOAPBinding(parameterStyle = javax.jws.soap.SOAPBinding.ParameterStyle.BARE)
     @Action(input = "http://www.fri.uni-lj.si/xml2owl/rules/getRules", 
             output = "http://www.fri.uni-lj.si/xml2owl/rules/rules/getRulesResponse", 
@@ -62,6 +66,7 @@ public class RulesService {
         return rulesManager.getRules(part);
     }
 
+    /** Delete rules stored under the specified name. */
     @javax.jws.soap.SOAPBinding(parameterStyle = javax.jws.soap.SOAPBinding.ParameterStyle.BARE)
     @Action(input = "http://www.fri.uni-lj.si/xml2owl/rules/deleteRules", 
             output = "http://www.fri.uni-lj.si/xml2owl/rules/rules/deleteRulesResponse", 
@@ -78,6 +83,7 @@ public class RulesService {
         return rulesManager.deleteRules(part);
     }
 
+    /** Validate ruleset provided. */
     @javax.jws.soap.SOAPBinding(parameterStyle = javax.jws.soap.SOAPBinding.ParameterStyle.BARE)
     @Action(input = "http://www.fri.uni-lj.si/xml2owl/rules/validateFullRules", 
             output = "http://www.fri.uni-lj.si/xml2owl/rules/rules/validateFullRulesResponse", 
@@ -94,6 +100,7 @@ public class RulesService {
         return rulesManager.validateRulesFull(part);
     }
 
+    /** Validate rules stored under the specified name. */
     @javax.jws.soap.SOAPBinding(parameterStyle = javax.jws.soap.SOAPBinding.ParameterStyle.BARE)
     @Action(input = "http://www.fri.uni-lj.si/xml2owl/rules/validateByNameRules", 
             output = "http://www.fri.uni-lj.si/xml2owl/rules/rules/validateByNameRulesResponse", 
