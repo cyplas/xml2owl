@@ -588,7 +588,12 @@ public class Mapper {
             }
             String referenceName = rulesEvaluator.findString(individualNode,"@referenceName");
             if (referenceName != null) {
-                references.put(referenceName,list); 
+                List<ReferenceInfo> existingReferences = references.get(referenceName);
+                if (existingReferences == null) {
+                    references.put(referenceName,list); 
+                } else {
+                    existingReferences.addAll(list);
+                }
             }
 	    return list;
 	}

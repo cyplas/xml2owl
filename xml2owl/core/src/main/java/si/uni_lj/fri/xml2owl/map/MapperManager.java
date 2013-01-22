@@ -6,6 +6,7 @@ import si.uni_lj.fri.xml2owl.rules.RulesValidator;
 import si.uni_lj.fri.xml2owl.rules.Xml2OwlRuleValidationException;
 
 import org.semanticweb.owlapi.util.InferredOntologyGenerator;
+import org.semanticweb.owlapi.util.InferredAxiomGenerator;
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
 import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
 
@@ -79,6 +80,9 @@ public class MapperManager {
                 System.out.println("[XML2OWL] Processing SWRL rule: " + renderer.render(rule) + " ..."); 
             }
             lastChanges = mapper.getAxiomsAdded();
+            for (InferredAxiomGenerator axiomGenerator : generator.getAxiomGenerators()) {
+                lastChanges.addAll(axiomGenerator.createAxioms(owlManager, reasoner));
+            }
             System.out.println("[XML2OWL] Ruleset mapping successfully completed.");
 	}
 	catch (SaxonApiException e) {
@@ -91,7 +95,7 @@ public class MapperManager {
      }
 
     /** Undo all changes made to the OWL ontology with this Mapper. */
-    public void unmap(OWLOntologyManager owlManager, OWLOntology owl) {
+    public void unmap(OWLOntology owl) {
         owlManager.removeAxioms(owl, lastChanges);
     }
 
