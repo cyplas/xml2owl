@@ -223,6 +223,7 @@ public class Mapper {
                  }
              }
              counter1++;
+         }
     }
 	
     /** Map a rule containing three parts.  This is either a data
