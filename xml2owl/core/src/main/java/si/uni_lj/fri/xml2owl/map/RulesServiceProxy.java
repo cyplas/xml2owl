@@ -1,4 +1,4 @@
-package si.uni_lj.fri.xml2owl.map.service;
+package si.uni_lj.fri.xml2owl.map;
 
 import si.uni_lj.fri.xml2owl.rules.service.*;
 import si.uni_lj.fri.xml2owl.rules.service.types.*;

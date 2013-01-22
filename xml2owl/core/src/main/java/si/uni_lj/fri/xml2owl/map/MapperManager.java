@@ -1,7 +1,6 @@
 package si.uni_lj.fri.xml2owl.map;
 
 import si.uni_lj.fri.xml2owl.util.*;
-import si.uni_lj.fri.xml2owl.map.service.Xml2OwlMapException;
 import si.uni_lj.fri.xml2owl.rules.RulesValidator;
 import si.uni_lj.fri.xml2owl.rules.Xml2OwlRuleValidationException;
 

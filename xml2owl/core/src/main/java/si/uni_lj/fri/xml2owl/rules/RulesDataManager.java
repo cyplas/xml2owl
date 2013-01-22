@@ -8,8 +8,7 @@ class RulesDataManager {
 
     /** The FileManager used to store and access rulesets. */
     public static final DataManager dataManager = 
-        //	new FileManager("data/rules", ".xml");
-	new DatabaseManager("rules");
+        new FileManager("data/rules", ".xml");
 
     /** Find if there are rules associated with the name provided. */   
     public boolean findRuleset(String name) throws Xml2OwlDataException {

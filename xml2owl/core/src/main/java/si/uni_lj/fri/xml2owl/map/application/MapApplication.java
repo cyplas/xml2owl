@@ -1,7 +1,6 @@
 package si.uni_lj.fri.xml2owl.map.application;
 
-import si.uni_lj.fri.xml2owl.map.service.MapService;
-import si.uni_lj.fri.xml2owl.map.service.types.*;
+import si.uni_lj.fri.xml2owl.map.*;
 
 /** Stand-alone XMl2OWL application. */
 public class MapApplication {
@@ -17,8 +16,8 @@ public class MapApplication {
 	MapApplicationDataManager manager = new MapApplicationDataManager(directory, source);
 
 	// rig the request, call the service, and save the owl
-	Request request = manager.makeRequest();
-	Response response = service.map(request);
+	MapRequest request = manager.makeRequest();
+	MapResponse response = service.map(request);
 	manager.processResponse(response);
 
 	System.out.println("[XML2OWL] End of XML2OWL program output." );

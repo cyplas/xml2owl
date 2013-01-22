@@ -8,18 +8,15 @@ import java.sql.*;
 /** An implementation of DataManager which uses the file system for storage.  */  
 public class FileManager implements DataManager {
 
-    /** The base directory. */
-    public final static String path = "";
-
-    /** The directory where the files should be stored relative to path. */
-    public final String directory;
+    /** The path where the files should be stored. */
+    public final String path;
 
     /** The suffix (e.g., ".xml") to attach onto the names provided. */
     public final String suffix;
 
     /** Constructor. */
-    public FileManager(String directory, String suffix) {
-	this.directory = directory;
+    public FileManager(String path, String suffix) {
+	this.path = path;
 	this.suffix = suffix;
     }
 
@@ -88,7 +85,7 @@ public class FileManager implements DataManager {
 
     /** Produce the full filename from the name provided. */
     private String makeName(String name) {
-	return (path + directory + "/" + name + suffix);
+	return (path + "/" + name + suffix);
     }
 
 }
