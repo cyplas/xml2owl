@@ -292,7 +292,8 @@ public class RulesValidator {
 	    XdmNode node = (XdmNode) iterator.next();
             String name = evaluator.getName(node);
             if (!name.equals("ontologyMappingElements")
-                && evaluator.findNode(node, "query") == null) {
+                && !isPartDynamic(node,".")
+                && Boolean.valueOf(evaluator.findString(node,"prefixIRI/@dynamic"))) {
                 throw new Xml2OwlRuleValidationException
                     ("Dynamic prefixIRI in static part " + name + ".");
             }
