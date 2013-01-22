@@ -8,8 +8,7 @@ import org.semanticweb.owlapi.model.*;
 import net.sf.saxon.s9api.*;
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
 
-/** Maps rules to an OWLOntology, modifying it.  This class carries out the bulk
- * of the work for the TranslateD20 web service. */
+/** Maps rules to an OWLOntology, modifying and updating it. */
 public class Mapper {
 
     /** Indicates what kind of dependencies are applied to the current rule. */  
@@ -27,7 +26,7 @@ public class Mapper {
     }
 
     /** Counter used for IRI generation mechanism. */ 
-    static private int counter = 0;
+    static private int nameCounter = 0;
 
     /** Manager used to access and update the owlOntology. */ 
     private final OWLOntologyManager owlManager;
@@ -53,7 +52,7 @@ public class Mapper {
     /** The set of references to individual mapping parts. */
      private final Map<String, List<ReferenceInfo>> references;
 
-    /** Reasoner used to check consistency of OWL ontology. */ 
+    /** Reasoner used to check consistency of the OWL ontology. */ 
     private final PelletReasoner reasoner;
 
     /** The cumulative set of axioms added to the OWL ontology. */
@@ -89,7 +88,7 @@ public class Mapper {
          axiomsAdded = new HashSet<OWLAxiom>();
      }
 
-     /** Return the (updated) OWL ontology. */
+     /** Return the OWL ontology. */
      public OWLOntology getOwl() {
 	 return owlOntology;
      }
@@ -132,6 +131,7 @@ public class Mapper {
          }
      }
 
+    /** Map a rule gathering individual references into a collection. */
     private void collectRule(XdmNode rule) throws SaxonApiException {
         String referenceName = rulesEvaluator.findString(rule, "@referenceName");
         System.out.println("[XML2OWL] Building collection reference: " + referenceName + " ...");
@@ -148,7 +148,7 @@ public class Mapper {
         System.out.println("[XML2OWL] Collection reference built.");
     }
             
-    /** Maps a rule containing just one part.  This is either an individual
+    /** Map a rule containing just one part.  This is either an individual
 	mapping definition, or a one-part same/different identity assertion.*/   
     private void mapOnePartRule(XdmNode rule, RuleType type) 
 	throws SaxonApiException, Xml2OwlMappingException {
@@ -174,7 +174,7 @@ public class Mapper {
 	}
      }
 
-    /** Maps a rule containing two parts.  This is either a class assertion, or
+    /** Map a rule containing two parts.  This is either a class assertion, or
 	a two-part same/different identity assertion. */
     private void mapTwoPartRule(XdmNode rule, RuleType type) 
 	throws SaxonApiException, Xml2OwlMappingException {
@@ -223,11 +223,11 @@ public class Mapper {
                  }
              }
              counter1++;
-	 }
+	 
     }
 	
-    /** Maps a rule containing three parts.  These are properties, either data
-	properties or object properties. */
+    /** Map a rule containing three parts.  This is either a data
+	property or an object property. */
     private void mapThreePartRule(XdmNode rule, RuleType type) 
         throws SaxonApiException, Xml2OwlMappingException {
 	 List<MapperPart> ordering = determineOrdering(rule);
@@ -321,7 +321,7 @@ public class Mapper {
          }
      }
 
-    /** Adds the individual to the OWL ontology. */
+    /** Add the individual to the OWL ontology. */
     private void createIndividual(String name) throws Xml2OwlMappingException {
 	 System.out.println("[XML2OWL]     Creating individual ...");
 	 System.out.println("[XML2OWL]       individual: " + name);
@@ -333,8 +333,8 @@ public class Mapper {
 	 System.out.println("[XML2OWL]   Individual successfully created.");
     }
 
-    /** Adds a class assertion to the OWL ontology, throwing an exception if the
-	class does not yet exist. */  
+    /** Add a class assertion to the OWL ontology, throwing an
+	exception if the class does not yet exist. */  
     private void createClassAxiom(String individual, String className)
 	throws Xml2OwlMappingException {
 	 System.out.println("[XML2OWL]   Creating class assertion ...");
@@ -356,7 +356,7 @@ public class Mapper {
 	 System.out.println("[XML2OWL]   Class assertion successfully created.");
     }
 
-    /** Adds a data property assertion to the OWL ontology, throwing an
+    /** Add a data property assertion to the OWL ontology, throwing an
      * exception if the property does not yet exist. */
      private void createDataPropertyAxiom(String individual, 
 					  String propertyName, 
@@ -364,7 +364,6 @@ public class Mapper {
 					  String propertyValueType,
 					  String positiveAssertion) 
      throws Xml2OwlMappingException {
-	 // TODO: check things with the propertyValueType 
 	 System.out.println("[XML2OWL]   Creating data property assertion ...");
 	 System.out.println("[XML2OWL]     individual: " + individual);
 	 System.out.println("[XML2OWL]     propertyName: " + propertyName);
@@ -429,8 +428,8 @@ public class Mapper {
 	 System.out.println("[XML2OWL]   Data property assertion successfully created.");
      }
 
-    /** Adds an object property assertion to the OWL ontology, throwing an
-     * exception if the property does not yet exist. */
+    /** Add an object property assertion to the OWL ontology, throwing
+     * an exception if the property does not yet exist. */
      private void createObjectPropertyAxiom(String individual, 
                                             String propertyName, 
                                             String object, 
@@ -466,7 +465,7 @@ public class Mapper {
 	 System.out.println("[XML2OWL]   Object property assertion successfully created.");
      }
 
-    /** Adds a same/different individual assertion to the OWL ontology. */
+    /** Add a same/different individual assertion to the OWL ontology. */
     private void createIdentityAxiom(String individual1, 
                                      String individual2, 
                                      boolean areSame) 
@@ -494,7 +493,7 @@ public class Mapper {
 	 System.out.println("[XML2OWL]   Identity assertion successfully created.");
     }
 
-    /** Returns a list of ReferenceInfos for the specified part in the rule,
+    /** Return the ReferenceInfos for the specified part in the rule,
      * relative to the root node provided. */
      private List<ReferenceInfo> makePart(XdmNode rule, 
                                           XdmNode root, 
@@ -516,8 +515,8 @@ public class Mapper {
 	 }
      }
 
-    /** Returns a list of ReferenceInfos for the specified non-individual part in
-     * the rule, relative to the root node provided. */
+    /** Return the ReferenceInfos for the specified non-individual
+     * part in the rule, relative to the root node provided. */
     private List<ReferenceInfo> makeAssertionPart(XdmNode partNode, 
                                                  XdmNode root, 
                                                  MapperPart part) 
@@ -543,8 +542,8 @@ public class Mapper {
 	return list;
     }
 
-    /** Returns a list of ReferenceInfos for the specified individual part in the
-     * rule, relative to the root node provided. */
+    /** Return the ReferenceInfos for the specified individual part in
+     * the rule, relative to the root node provided. */
     private List<ReferenceInfo> makeIndividuals(XdmNode individualNode, 
                                                 XdmNode root, 
                                                 MapperPart part) 
@@ -574,12 +573,12 @@ public class Mapper {
                     String name;
                     if (expression == null) {
                         name = prefixIRI + 
-                            dataEvaluator.getName(node) + "___" + counter; 
+                            dataEvaluator.getName(node) + "___" + nameCounter; 
                         while (owlOntology.containsEntityInSignature
                                (createIRI(name))) {
-                            counter++;
+                            nameCounter++;
                             name = prefixIRI + 
-                                dataEvaluator.getName(node) + "___" + counter; 
+                                dataEvaluator.getName(node) + "___" + nameCounter; 
                         }
                     } else {
                         name = prefixIRI + 
@@ -602,6 +601,9 @@ public class Mapper {
 	}
     }
 
+    /** Depending on the individual mapping type and on whether the
+    individual already exists in the ontology, either create the
+    individual, throws an exception, or do nothing. */
     private void handleIndividualType(String name, String type) throws Xml2OwlMappingException {
         if (owlOntology.containsEntityInSignature(createIRI(name))) {
             if (type.equals("new")) {
@@ -622,7 +624,7 @@ public class Mapper {
         }
     }
 
-    /** Determine an order in which to process the mapping parts of the rule
+    /** Determine the order in which to process the mapping parts of the rule
      * which is consistent with its dependencies (if any). */
      private List<MapperPart> determineOrdering(XdmNode rule) 
          throws SaxonApiException {
@@ -715,7 +717,7 @@ public class Mapper {
 	 }
      }
 
-    /** Determines the rule's dependency structure. */  
+    /** Determine the rule's dependency structure. */  
      private DependenciesType determineDependenciesType (XdmNode rule) 
          throws SaxonApiException {
 	 XdmSequenceIterator iterator = 
@@ -741,8 +743,8 @@ public class Mapper {
 	 }
      }
 
-    /** Checks if the (same/different individual assertion) rule contains two
-	parts. */ 
+    /** Check if the (same/different individual assertion) rule
+	contains two parts. */ 
     private boolean hasTwoIndividualParts(XdmNode rule) 
         throws SaxonApiException {
 	XdmNode individual2 = 
@@ -750,8 +752,8 @@ public class Mapper {
 	return (individual2 != null);
     }
 
-    /** Evaluates the xpath expression relative to the rule provided, returning
-	the defaultValue in the case of a null result. */
+    /** Evaluate the XPath expression relative to the rule provided, returning
+	a defaultValue provided in case of a null result. */
     private String findValue(XdmNode rule, String xpath, String defaultValue) 
 	throws SaxonApiException {
 	 String result = rulesEvaluator.findString(rule, xpath);
@@ -762,8 +764,8 @@ public class Mapper {
 	 }
      }
 
-    /** Calculate the prefixIRI for a prefixIRINode, possibly dynamically relative to
-        a particular data node. */
+    /** Calculate the prefixIRI for a prefixIRI node, possibly
+        dynamically relative to a particular data node. */
     public String calculatePrefixIRI(XdmNode relativeNode, XdmNode prefixIRINode) 
         throws SaxonApiException {
         if (prefixIRINode == null) {
@@ -783,8 +785,8 @@ public class Mapper {
         }
     }
 
-    /** Determines the prefixIRI of the part, checking first at the
-        mapping part level, and then globally. */
+    /** Determine the prefixIRI of the mapping part, checking first at
+         the part level, and then globally. */
     private String findPrefixIRI(XdmNode relativeNode, XdmNode prefixIRINode, MapperPart part) 
         throws SaxonApiException {
         if (part == MapperPart.DP_VALUE) { // not an OWL entity
@@ -806,7 +808,7 @@ public class Mapper {
         return reasoner.isConsistent();
     }
 
-    /** Create an IRI based on the String given, first removing any spaces */ 
+    /** Create an IRI based on the String given, first removing any spaces. */ 
     private IRI createIRI (String string) throws Xml2OwlMappingException {
         String cleanedString = string.replaceAll(" ",""); // crude space removal
         URI uri = null;

@@ -12,15 +12,13 @@ import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
 
 import org.semanticweb.owlapi.io.OWLObjectRenderer;
 import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxObjectRenderer;
-
+ 
 import java.util.*;
 import org.semanticweb.owlapi.model.*;
 import net.sf.saxon.s9api.*;
 
-/** The bridge between TranslateD2OImpl and Mapper classes.  Sets up a
- * Mapper object and iterates through mapping rules based on input
- * from the Service, and returns the results to the Service.  Uses a
- * Convertor to get the data in and out of the right format for the Service. */
+/** This class handles the data, rules and Mapper and defers to the
+ * Mapper to map each rule. */
 public class MapperManager {
 
     /** Evaluator used to evaluate XPath expressions for rules. */
@@ -51,9 +49,10 @@ public class MapperManager {
 	abort = false;
     }
 
-   /**  Get the data into the right format, creates a Mapper, prepares the set
-     * of rules, and processes the rules, one at a time.  Also handles resulting
-     * XML2OWL and Saxon exceptions. */ 
+   /**  Get the data into the right format, create a Mapper, prepare
+     * the set of rules, and iterate through the rules, processing one
+     * at a time.  Also handle resulting XML2OWL and Saxon
+     * exceptions. */ 
     public OWLOntology map (OWLOntologyManager owlManager, 
                             XdmNode rules, 
                             OWLOntology owl, 
@@ -91,7 +90,7 @@ public class MapperManager {
 	catch (Xml2OwlMappingException e) {
 	    handleException(e);
 	}
-        return owl;
+         return owl;
      }
 
     /** Undo all changes made to the OWL ontology with this Mapper. */
@@ -99,6 +98,7 @@ public class MapperManager {
         owlManager.removeAxioms(owl, lastChanges);
     }
 
+    /** Add the namespaces defined in the rules to the dataEvaluator. */
     private void addNamespaces(XdmNode rules) throws SaxonApiException {
          XdmSequenceIterator namespaceIterator = 
              rulesEvaluator.findIterator(rules,"namespaces/namespace");
@@ -110,6 +110,7 @@ public class MapperManager {
         }
     }
 
+    /** Find all the reference names in the rules. */
     private List<String> findReferenceNames(XdmNode rules) throws SaxonApiException {
         List<String> list = new ArrayList<String>();
          XdmSequenceIterator referenceIterator = 
@@ -152,9 +153,10 @@ public class MapperManager {
         }
     }
 
-    /** Handle exception.  Set the abort flag if lethal. */
+    /** Handle an exception.  Set the abort flag, unless it's a
+     * non-lethal XML2OWLMappingException. */
     private void handleException(Exception exception) throws Xml2OwlMapException {
-	boolean lethal = true; // default
+        abort = true; // default
 	String prefix = "[XML2OWL] ";
 	if (exception instanceof SaxonApiException) {
 	    prefix += "Saxon exception: ";
@@ -165,13 +167,11 @@ public class MapperManager {
 		prefix += "XML2OWL mapping exception: ";
 	    } else { // it's OK if it's a non-lethal XML2OWL exception
 		prefix += "XML2OWL mapping warning: ";
-		lethal = false; 
+		abort = false; 
 	    }
 	} else if (!(exception instanceof Xml2OwlMapException)) {
 	    prefix += "Unrecognised exception of type " + exception.getClass().getName() + " : ";
 	}
-	// If exception is lethal, mapping failed and abort flag is set.
-	abort = lethal;
 	String currentMessage = prefix + exception.getMessage();
         System.out.println(currentMessage);
 	if (abort) {
