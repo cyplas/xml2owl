@@ -158,18 +158,17 @@ public class Mapper {
 	    List<ReferenceInfo> individuals = 
                 makePart(rule, xmlData, MapperPart.ID_INDIVIDUAL1);
 	    Iterator<ReferenceInfo> iterator1 = individuals.iterator(); 
-	    Iterator<ReferenceInfo> iterator2 = individuals.iterator(); 
 	    while (iterator1.hasNext()) {
 		String individual1 = 
                     ((ReferenceInfo) iterator1.next()).getName();
+                iterator1.remove();
+                Iterator<ReferenceInfo> iterator2 = individuals.iterator(); 
 		while (iterator2.hasNext()) {
 		    String individual2 = 
                         ((ReferenceInfo) iterator2.next()).getName();
-		    if (individual1 != individual2) {
-			createIdentityAxiom(individual1, 
-                                            individual2, 
-                                            (type==RuleType.SAME_INDIVIDUALS));
-		    }
+                    createIdentityAxiom(individual1, 
+                                        individual2, 
+                                        (type==RuleType.SAME_INDIVIDUALS));
 		}
 	    }
 	}
@@ -472,7 +471,11 @@ public class Mapper {
                                      String individual2, 
                                      boolean areSame) 
     throws Xml2OwlMappingException {
-	 System.out.println("[XML2OWL]   Creating identity assertion ...");
+        if (areSame) {
+            System.out.println("[XML2OWL]   Creating same individual assertion ...");
+        } else {
+            System.out.println("[XML2OWL]   Creating different individual assertion ...");
+        }
 	 System.out.println("[XML2OWL]     individual1: " + individual1);
 	 System.out.println("[XML2OWL]     individual2: " + individual2);
 	 OWLNamedIndividual owlIndividual1 = 
