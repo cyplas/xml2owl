@@ -1,6 +1,4 @@
-package si.uni_lj.fri.xml2owl.map.application;
-
-import si.uni_lj.fri.xml2owl.map.*;
+package si.uni_lj.fri.xml2owl.map;
 
 /** Stand-alone XMl2OWL application. */
 public class MapApplication {

@@ -1,8 +1,7 @@
-package si.uni_lj.fri.xml2owl.map.application;
+package si.uni_lj.fri.xml2owl.map;
 
 import org.apache.commons.io.FileUtils;
 import java.io.File;
-import si.uni_lj.fri.xml2owl.map.*;
 import si.uni_lj.fri.xml2owl.util.*;
 
 /** Bridge of Application with data, reading from and writing to files. */
