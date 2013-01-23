@@ -23,8 +23,6 @@ public class XmlStringConvertor {
 
     /** Convert a String to an XdmNode. */
     public XdmNode stringToNode(String string) throws SaxonApiException {
-	// Make the String a full XML file
-	string = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + string;
 	ByteArrayInputStream stream = 
 	    new ByteArrayInputStream(string.getBytes());
 	XdmNode document = 
