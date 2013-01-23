@@ -9,7 +9,7 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLException;
 
 import si.uni_lj.fri.xml2owl.util.*;
-import si.uni_lj.fri.xml2owl.rules.service.Xml2OwlRulesException;
+import si.uni_lj.fri.xml2owl.rules.Xml2OwlRulesException;
 
 /** The XML2OWL mapping service. */
 public class MapService {

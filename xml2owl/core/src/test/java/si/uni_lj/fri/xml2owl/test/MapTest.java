@@ -15,7 +15,7 @@ public class MapTest {
 
     private void testMapOnBookSource(String source) throws Exception {
         System.out.println("Running testMap() on " + source + " ...");
-        application.run("../../data/books", "owl.xml", "mimovrste/rules.xml", "mimovrste/xml.xml");
+        application.run("../../data/books", "owl.xml", source + "/rules.xml", source + "/xml.xml");
     }
 
 }
