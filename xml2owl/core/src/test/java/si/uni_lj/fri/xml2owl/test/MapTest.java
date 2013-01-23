@@ -1,6 +1,6 @@
 package si.uni_lj.fri.xml2owl.test;
 
-import si.uni_lj.fri.xml2owl.map.application.MapApplication;
+import si.uni_lj.fri.xml2owl.map.MapApplication;
 
 public class MapTest {
 
@@ -15,7 +15,7 @@ public class MapTest {
 
     private void testMapOnBookSource(String source) throws Exception {
         System.out.println("Running testMap() on " + source + " ...");
-        application.run("../../data/books", source);
+        application.run("../../data/books", "owl.xml", "mimovrste/rules.xml", "mimovrste/xml.xml");
     }
 
 }

@@ -8,8 +8,7 @@ import si.uni_lj.fri.xml2owl.rules.service.types.*;
 class RulesApplicationDataManager {
 
     /** The FileManager used to get the input for some of the operations. */ 
-    public static final DataManager dataManager = 
-	new FileManager("test/rules", ".xml");
+    public static final DataManager dataManager = new FileManager();
 
     /** Add a ruleset. */   
     public AddRequest makeAddRequest() throws Xml2OwlDataException {

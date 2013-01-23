@@ -8,23 +8,10 @@ import java.sql.*;
 /** An implementation of DataManager which uses the file system for storage.  */  
 public class FileManager implements DataManager {
 
-    /** The path where the files should be stored. */
-    public final String path;
-
-    /** The suffix (e.g., ".xml") to attach onto the names provided. */
-    public final String suffix;
-
-    /** Constructor. */
-    public FileManager(String path, String suffix) {
-	this.path = path;
-	this.suffix = suffix;
-    }
-
     /** Check if named file exists. */
     public boolean exists(String name) throws Xml2OwlDataException {
-	String fullName = makeName(name);
-	System.out.println("[XML2OWL] Checking for file: " + fullName + " ...");
-	File file = new File(fullName);
+	System.out.println("[XML2OWL] Checking for file: " + name + " ...");
+	File file = new File(name);
         try {
             return file.exists();
         } 
@@ -35,9 +22,8 @@ public class FileManager implements DataManager {
 
     /** Returns contents of named file. */
     public String read(String name) throws Xml2OwlDataException {
-	String fullName = makeName(name);
-	System.out.println("[XML2OWL] Reading file: " + fullName + " ...");
-        File file = new File(fullName);
+	System.out.println("[XML2OWL] Reading file: " + name + " ...");
+	File file = new File(name);
         if (!file.exists()) {
             return null;
         } else {
@@ -54,9 +40,8 @@ public class FileManager implements DataManager {
     public boolean write(String name, String contents, boolean overwrite) 
         throws Xml2OwlDataException {
         boolean success = false;
-	String fullName = makeName(name);
-	System.out.println("[XML2OWL] Writing file: " + fullName + " ...");
-        File file = new File(fullName);
+	System.out.println("[XML2OWL] Writing file: " + name + " ...");
+        File file = new File(name);
 	if (file.exists() && !overwrite) {
             return false;
         } else {
@@ -72,20 +57,14 @@ public class FileManager implements DataManager {
 
     /** Delete named file. */
     public boolean delete(String name) throws Xml2OwlDataException {
-	String fullName = makeName(name);
-	System.out.println("[XML2OWL] Deleting file: " + fullName + " ...");
-        File file = new File(fullName);
+	System.out.println("[XML2OWL] Deleting file: " + name + " ...");
+        File file = new File(name);
         try { 
             return file.delete();
         }
         catch (Exception e) {
             throw new Xml2OwlDataException("Couldn't delete data named " + name);
         }
-    }
-
-    /** Produce the full filename from the name provided. */
-    private String makeName(String name) {
-	return (path + "/" + name + suffix);
     }
 
 }

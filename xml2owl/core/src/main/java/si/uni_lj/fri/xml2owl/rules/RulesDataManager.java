@@ -7,8 +7,7 @@ import si.uni_lj.fri.xml2owl.util.*;
 class RulesDataManager {
 
     /** The FileManager used to store and access rulesets. */
-    public static final DataManager dataManager = 
-        new FileManager("data/rules", ".xml");
+    public static final DataManager dataManager = new FileManager();
 
     /** Find if there are rules associated with the name provided. */   
     public boolean findRuleset(String name) throws Xml2OwlDataException {

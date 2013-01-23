@@ -6,12 +6,13 @@ public class MapApplication {
     /** Process the XML2OWL mappings, using an ApplicationDataManager
      * to help with data input and output from the filesystem. *
      * mapping work using the data. */ 
-    public static void run (String directory, String source) throws Exception {
+    public static void run (String commonPath, String owlFile, String rulesFile, String dataFile) throws Exception {
      
 	System.out.println("[XML2OWL] Beginning of XML2OWL program output." );
 	
 	MapService service = new MapService();
-	MapApplicationDataManager manager = new MapApplicationDataManager(directory, source);
+	MapApplicationDataManager manager = 
+            new MapApplicationDataManager(commonPath, owlFile, rulesFile, dataFile);
 
 	// rig the request, call the service, and save the owl
 	MapRequest request = manager.makeRequest();
@@ -24,7 +25,7 @@ public class MapApplication {
 
     /** Application entry point, which just calls run(). */
     public static void main (String[] args) throws Exception {
-	run(args[0], args[1]);
+	run(args[0], args[1], args[2], args[3]);
     }
 
 }
