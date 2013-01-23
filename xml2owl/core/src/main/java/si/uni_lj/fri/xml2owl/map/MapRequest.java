@@ -11,7 +11,7 @@ public class MapRequest {
     }
 
     public void setData(String data) {
-        this.data = value;
+        this.data = data;
     }
 
     public String getOwl() {

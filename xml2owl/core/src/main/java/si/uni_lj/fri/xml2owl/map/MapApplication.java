@@ -8,7 +8,7 @@ public class MapApplication {
      * from the filesystem. mapping work using the data. */ 
     public static void run (String commonPath, String owlFile, String rulesFile, String dataFile) throws Exception {
      
-	System.out.println("[XML2OWL] Beginning of XML2OWL program output." );
+	System.out.println("[XML2OWL] Beginning of XML2OWL mapping program output." );
 	
 	MapService service = new MapService();
 	MapApplicationDataManager manager = 
@@ -19,7 +19,7 @@ public class MapApplication {
 	MapResponse response = service.map(request);
 	manager.processResponse(response);
 
-	System.out.println("[XML2OWL] End of XML2OWL program output." );
+	System.out.println("[XML2OWL] End of XML2OWL mapping program output." );
 
     }
 

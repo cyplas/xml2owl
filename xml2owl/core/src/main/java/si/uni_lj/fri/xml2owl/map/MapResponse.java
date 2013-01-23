@@ -9,7 +9,7 @@ public class MapResponse {
     }
 
     public void setOwl(String owl) {
-        this.owl = value;
+        this.owl = owl;
     }
 
 }
