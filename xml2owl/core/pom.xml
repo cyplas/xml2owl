@@ -110,6 +110,25 @@
           <show>private</show>
         </configuration>
       </plugin>
+        <plugin>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.7</version>
+          <executions>
+            <execution>
+              <id>install-in-webapp</id>
+              <phase>install</phase>
+              <configuration>
+                <target>
+                    <copy file="target/xml2owl-core-1.0-SNAPSHOT.jar" 
+                          todir="../protege/lib/"/>
+                </target>
+              </configuration>
+              <goals>
+                <goal>run</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
     </plugins>  
   </build>  
 

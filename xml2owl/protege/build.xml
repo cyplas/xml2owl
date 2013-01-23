@@ -285,6 +285,7 @@
 	
    <target name = "clean">
      <delete dir = "${build}"/>
+     <delete file = "${lib}/xml2owl-core-1.0-SNAPSHOT.jar"/>
    </target>
 
 
