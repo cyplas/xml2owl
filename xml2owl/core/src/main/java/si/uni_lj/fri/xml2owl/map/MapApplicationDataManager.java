@@ -1,18 +1,24 @@
 package si.uni_lj.fri.xml2owl.map;
 
-import org.apache.commons.io.FileUtils;
 import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+
 import si.uni_lj.fri.xml2owl.util.*;
 
 /** Bridge of Application with data, reading from and writing to files. */
 public class MapApplicationDataManager {
     
+    /** Prefix path shared by owl, rules and data files. */
     private String commonPath;
 
+    /** Location of OWL file, relative to commonPath. */
     private String owlFile;
 
+    /** Location of rules file, relative to commonPath. */
     private String rulesFile;
 
+    /** Location of XML data file, relative to commonPath. */
     private String dataFile;
 
     /** Manages accesses to and from the data. */
@@ -27,7 +33,7 @@ public class MapApplicationDataManager {
         dataManager = new FileManager();
     }
 
-    /** Create the Request. */ 
+    /** Create the request. */ 
     public MapRequest makeRequest() throws Xml2OwlDataException {
 	MapRequest request = new MapRequest();
 	request.setOwl(dataManager.read(owlFile));
@@ -36,7 +42,7 @@ public class MapApplicationDataManager {
 	return request;
     }
 	
-    /** Process the Response. */  
+    /** Process the response. */  
     public void processResponse(MapResponse response) throws Xml2OwlDataException {
 	String owl = response.getOwl();
         dataManager.write(owlFile, owl, true);

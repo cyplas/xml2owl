@@ -1,9 +1,10 @@
 package si.uni_lj.fri.xml2owl.util;
 
-import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.*;
 import java.sql.*;
+
+import org.apache.commons.io.FileUtils;
 
 /** An implementation of DataManager which uses the file system for storage.  */  
 public class FileManager implements DataManager {

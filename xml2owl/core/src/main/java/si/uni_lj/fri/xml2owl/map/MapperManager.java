@@ -1,20 +1,19 @@
 package si.uni_lj.fri.xml2owl.map;
 
-import si.uni_lj.fri.xml2owl.util.*;
-import si.uni_lj.fri.xml2owl.rules.RulesValidator;
-import si.uni_lj.fri.xml2owl.rules.Xml2OwlRuleValidationException;
+import java.util.*;
 
+import net.sf.saxon.s9api.*;
+import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.io.OWLObjectRenderer;
+import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxObjectRenderer;
 import org.semanticweb.owlapi.util.InferredOntologyGenerator;
 import org.semanticweb.owlapi.util.InferredAxiomGenerator;
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
 import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
-
-import org.semanticweb.owlapi.io.OWLObjectRenderer;
-import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxObjectRenderer;
  
-import java.util.*;
-import org.semanticweb.owlapi.model.*;
-import net.sf.saxon.s9api.*;
+import si.uni_lj.fri.xml2owl.util.*;
+import si.uni_lj.fri.xml2owl.rules.RulesValidator;
+import si.uni_lj.fri.xml2owl.rules.Xml2OwlRuleValidationException;
 
 /** This class handles the data, rules and Mapper and defers to the
  * Mapper to map each rule. */

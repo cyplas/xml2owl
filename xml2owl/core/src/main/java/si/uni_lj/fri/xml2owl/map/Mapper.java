@@ -1,12 +1,13 @@
 package si.uni_lj.fri.xml2owl.map;
 
-import si.uni_lj.fri.xml2owl.util.*;
-
 import java.net.*;
 import java.util.*;
-import org.semanticweb.owlapi.model.*;
+
 import net.sf.saxon.s9api.*;
+import org.semanticweb.owlapi.model.*;
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
+
+import si.uni_lj.fri.xml2owl.util.*;
 
 /** Maps rules to an OWLOntology, modifying and updating it. */
 public class Mapper {

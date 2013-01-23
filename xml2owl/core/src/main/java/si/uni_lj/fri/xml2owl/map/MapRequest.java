@@ -10,7 +10,7 @@ public class MapRequest {
         return data;
     }
 
-    public void setData(String value) {
+    public void setData(String data) {
         this.data = value;
     }
 
@@ -18,16 +18,16 @@ public class MapRequest {
         return owl;
     }
 
-    public void setOwl(String value) {
-        this.owl = value;
+    public void setOwl(String owl) {
+        this.owl = owl;
     }
 
     public String getRules() {
         return rules;
     }
 
-    public void setRules(String value) {
-        this.rules = value;
+    public void setRules(String rules) {
+        this.rules = rules;
     }
 
 }

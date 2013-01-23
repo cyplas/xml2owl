@@ -8,7 +8,7 @@ public class MapResponse {
         return owl;
     }
 
-    public void setOwl(String value) {
+    public void setOwl(String owl) {
         this.owl = value;
     }
 

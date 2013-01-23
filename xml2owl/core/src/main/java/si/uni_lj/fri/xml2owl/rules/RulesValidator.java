@@ -1,11 +1,13 @@
 package si.uni_lj.fri.xml2owl.rules;
 
-import net.sf.saxon.s9api.*;
-import javax.xml.transform.stream.StreamSource;
 import java.util.*;
 import java.io.*;
 import javax.xml.validation.*;
+import javax.xml.transform.stream.StreamSource;
+
+import net.sf.saxon.s9api.*;
 import org.xml.sax.SAXException;
+
 import si.uni_lj.fri.xml2owl.util.XmlStringConvertor;
 import si.uni_lj.fri.xml2owl.util.XPathEvaluator;
 

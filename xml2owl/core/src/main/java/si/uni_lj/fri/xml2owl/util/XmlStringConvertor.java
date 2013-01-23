@@ -1,8 +1,9 @@
 package si.uni_lj.fri.xml2owl.util;
 
 import java.io.ByteArrayInputStream;
-import net.sf.saxon.s9api.*;
 import javax.xml.transform.stream.StreamSource;
+
+import net.sf.saxon.s9api.*;
 
 /** Utility class which converts between String and XdmNode. */
 public class XmlStringConvertor {

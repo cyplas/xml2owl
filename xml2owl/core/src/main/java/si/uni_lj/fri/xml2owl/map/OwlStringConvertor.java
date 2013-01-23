@@ -2,6 +2,7 @@ package si.uni_lj.fri.xml2owl.map;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+
 import org.semanticweb.owlapi.model.*;
 
 /** Utility class which converts between String and OWLOntology. */

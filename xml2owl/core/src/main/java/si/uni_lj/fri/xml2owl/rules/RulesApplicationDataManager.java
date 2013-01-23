@@ -6,6 +6,7 @@ import si.uni_lj.fri.xml2owl.util.*;
  * local files. */ 
 class RulesApplicationDataManager {
 
+    /** Location of rules file. */
     private String rulesFile;
 
     /** Manages accesses to and from the data. */
