@@ -34,14 +34,14 @@
 
   <dependencies>
     <dependency>
-      <groupId>commons-email</groupId>
-      <artifactId>commons-email</artifactId>
-      <version>1.1</version>
-    </dependency>
-    <dependency>
       <groupId>si.uni_lj.fri.xml2owl</groupId>
       <artifactId>xml2owl-core</artifactId>
       <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-email</groupId>
+      <artifactId>commons-email</artifactId>
+      <version>1.1</version>
     </dependency>
     <dependency>
       <groupId>net.sf.saxon</groupId>
@@ -78,11 +78,11 @@
       <artifactId>jgrapht</artifactId>
       <version>0.8.3</version>
     </dependency>
-<dependency>
+    <dependency>
 	<groupId>com.sun.msv.datatype.xsd</groupId>
 	<artifactId>xsdlib</artifactId>
 	<version>20060615</version>
-</dependency>
+    </dependency>
     <dependency>
       <groupId>pellet</groupId>
       <artifactId>pellet-core</artifactId>
