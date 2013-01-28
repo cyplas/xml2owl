@@ -51,27 +51,25 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
     protected void initialiseOWLView() throws Exception {
 
         controlPanel = new XML2OWLControlButtonPanel(this);
-        dataComponent = new XML2OWLTextAreaComponent(this,"Data");
         rulesComponent = new XML2OWLTextAreaComponent(this,"Rules");
+        dataComponent = new XML2OWLTextAreaComponent(this,"Data");
+        JSplitPane bodyPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT,rulesComponent,dataComponent);
+        bodyPane.setResizeWeight(0.5);
 
-        setLayout(new FlowLayout());
-        add(controlPanel);
-        add(dataComponent);
-        add(rulesComponent);
+        setLayout(new BorderLayout());
+        add(controlPanel,BorderLayout.NORTH);
+        add(bodyPane,BorderLayout.CENTER);
 
         Processor xmlProcessor = new Processor(false);
         modelManager = getOWLModelManager();
         owlManager = modelManager.getOWLOntologyManager();
         xmlConvertor = new XmlStringConvertor(xmlProcessor);
         mapperManager = new MapperManager(xmlProcessor);
-
-        System.out.println("XML2OWL View Component initialized with a bang!");
     }
 
     /** Carry out the mapping and update the active OWL ontology based on the
         current contents of the data and rules text components. */
     public void mapRules() { 
-        System.out.println("mapRules: go!"); 
         try {
             OWLOntology owl = modelManager.getActiveOntology();
             XdmNode xml = xmlConvertor.stringToNode(dataComponent.getValue());
@@ -82,7 +80,6 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
         catch (Exception e) {
             showException("XML2OWL mapping exception",e.getMessage());
         }
-        System.out.println("mapRules: done."); 
     }
     
     /** Undo the last set of mapping changes. */ 
@@ -90,7 +87,6 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
         OWLOntology owl = modelManager.getActiveOntology();
         mapperManager.unmap(owlManager, owl);
         modelManager.refreshRenderer();
-        System.out.println("undoOwl: done"); 
     }
 
     /** Validate the ruleset currently given in the rules component. */
@@ -103,11 +99,10 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
         catch (Xml2OwlRuleValidationException e) {
             showException("XML2OWL rule validation exception",e.getMessage());
         }
-        System.out.println("validateRules done"); 
     }
 
     /** Display an exception in mapping or rule validation in a new frame. */
-    private void showException(String title, String message) {
+    protected void showException(String title, String message) {
         JFrame exceptionFrame = new JFrame(title);
         JTextArea messageTextArea = new JTextArea(message,12,40);
         messageTextArea.setEditable(false);

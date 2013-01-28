@@ -52,11 +52,12 @@ public class XML2OWLTextAreaComponent extends JPanel implements ActionListener {
             buttonPanel.add(validateButton);
         }
         
-        textarea = new JTextArea(16,40);
+        textarea = new JTextArea();
         JScrollPane scrollPane = new JScrollPane(textarea);
 
-        add(buttonPanel);
-        add(scrollPane);
+        setLayout(new BorderLayout());
+        add(buttonPanel, BorderLayout.NORTH);
+        add(scrollPane, BorderLayout.CENTER);
     }
  
     /** Event handler for the Open and Validate buttons. */
@@ -83,10 +84,8 @@ public class XML2OWLTextAreaComponent extends JPanel implements ActionListener {
                 setValue(FileUtils.readFileToString(file));
             } 
             catch (IOException e) {
-                System.out.println("IO Exception in opening file.");
+                controller.showException("File system error", e.getMessage());
             }
-            System.out.println("You chose to open this file: " +
-                               chooser.getSelectedFile().getName());
         }
     }
 
