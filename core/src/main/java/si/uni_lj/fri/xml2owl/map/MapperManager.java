@@ -173,6 +173,7 @@ public class MapperManager {
 	String currentMessage = prefix + exception.getMessage();
         System.out.println(currentMessage);
 	if (abort) {
+            abort = false; // so next map attempt is not blocked  
 	    throw new Xml2OwlMapException(currentMessage);
         }
     }
