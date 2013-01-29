@@ -83,10 +83,8 @@ public class XML2OWLTextAreaComponent extends JPanel implements ActionListener {
                 setValue(FileUtils.readFileToString(file));
             } 
             catch (IOException e) {
-                System.out.println("IO Exception in opening file.");
+                controller.showException("File system error", e.getMessage());
             }
-            System.out.println("You chose to open this file: " +
-                               chooser.getSelectedFile().getName());
         }
     }
 

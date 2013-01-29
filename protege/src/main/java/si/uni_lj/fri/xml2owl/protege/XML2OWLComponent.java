@@ -10,7 +10,6 @@ import net.sf.saxon.s9api.XdmNode;
 import javax.swing.*;
 import java.awt.*;
 
-//import org.apache.log4j.Logger;
 import org.protege.editor.owl.model.OWLModelManager;
 import org.protege.editor.owl.ui.view.AbstractOWLViewComponent;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -71,7 +70,6 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
     /** Carry out the mapping and update the active OWL ontology based on the
         current contents of the data and rules text components. */
     public void mapRules() { 
-        System.out.println("mapRules: go!"); 
         try {
             OWLOntology owl = modelManager.getActiveOntology();
             XdmNode xml = xmlConvertor.stringToNode(dataComponent.getValue());
@@ -80,9 +78,8 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
             modelManager.refreshRenderer();
         } 
         catch (Exception e) {
-            showException("XML2OWL mapping exception",e.getMessage());
+            showException("XML2OWL mapping error",e.getMessage());
         }
-        System.out.println("mapRules: done."); 
     }
     
     /** Undo the last set of mapping changes. */ 
@@ -90,7 +87,6 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
         OWLOntology owl = modelManager.getActiveOntology();
         mapperManager.unmap(owlManager, owl);
         modelManager.refreshRenderer();
-        System.out.println("undoOwl: done"); 
     }
 
     /** Validate the ruleset currently given in the rules component. */
@@ -101,13 +97,12 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
             JOptionPane.showMessageDialog(this,"Validation successful!","XML2OWL rules validation",JOptionPane.WARNING_MESSAGE);
         } 
         catch (Xml2OwlRuleValidationException e) {
-            showException("XML2OWL rule validation exception",e.getMessage());
+            showException("XML2OWL rule validation error",e.getMessage());
         }
-        System.out.println("validateRules done"); 
     }
 
     /** Display an exception in mapping or rule validation in a new frame. */
-    private void showException(String title, String message) {
+    protected void showException(String title, String message) {
         JFrame exceptionFrame = new JFrame(title);
         JTextArea messageTextArea = new JTextArea(message,12,40);
         messageTextArea.setEditable(false);
