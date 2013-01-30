@@ -780,7 +780,7 @@ public class Mapper {
                 if (dynamic) {
                     return dataEvaluator.findString(relativeNode, expression);
                 } else {
-                    return expression;
+                    return dataEvaluator.findString(null,expression);
                 }
             }
         }

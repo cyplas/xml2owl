@@ -12,7 +12,7 @@
     <namespace prefix="slx" name="http://www.blah.com"/>
   </namespaces>
 
-  <prefixIRI>http://www.fri.uni-lj.si/xml2owl/books.owl#</prefixIRI>
+  <prefixIRI>'http://www.fri.uni-lj.si/xml2owl/books.owl#'</prefixIRI>
 
   <mapToOWLIndividual referenceName="booksWithIsbn10">
     <query>/books/slx:knjiga[fn:matches(isbn,'^[0-9X]{10}?$')]</query>
@@ -24,9 +24,19 @@
     <expression>fn:concat('isbn13=',isbn)</expression>
   </mapToOWLIndividual>
 
+  <mapToOWLIndividual referenceName="siddhartha">
+    <expression>'Siddhartha'</expression>
+  </mapToOWLIndividual>
+
+  <mapToOWLIndividual referenceName="alchemist">
+    <expression>'Alchemist'</expression>
+  </mapToOWLIndividual>
+
   <collectOWLIndividuals referenceName="books">
     <referenceToIndividual refName="booksWithIsbn10"/>
     <referenceToIndividual refName="booksWithIsbn13"/>
+    <referenceToIndividual refName="siddhartha"/>
+    <referenceToIndividual refName="alchemist"/>
   </collectOWLIndividuals>
 
   <mapToOWLObjectPropertyAssertion>
