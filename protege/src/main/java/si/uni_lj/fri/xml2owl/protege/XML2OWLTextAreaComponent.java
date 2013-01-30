@@ -52,11 +52,12 @@ public class XML2OWLTextAreaComponent extends JPanel implements ActionListener {
             buttonPanel.add(validateButton);
         }
         
-        textarea = new JTextArea(16,40);
+        textarea = new JTextArea();
         JScrollPane scrollPane = new JScrollPane(textarea);
 
-        add(buttonPanel);
-        add(scrollPane);
+        setLayout(new BorderLayout());
+        add(buttonPanel, BorderLayout.NORTH);
+        add(scrollPane, BorderLayout.CENTER);
     }
  
     /** Event handler for the Open and Validate buttons. */

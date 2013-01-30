@@ -50,21 +50,20 @@ public class XML2OWLComponent extends AbstractOWLViewComponent {
     protected void initialiseOWLView() throws Exception {
 
         controlPanel = new XML2OWLControlButtonPanel(this);
-        dataComponent = new XML2OWLTextAreaComponent(this,"Data");
         rulesComponent = new XML2OWLTextAreaComponent(this,"Rules");
+        dataComponent = new XML2OWLTextAreaComponent(this,"Data");
+        JSplitPane bodyPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT,rulesComponent,dataComponent);
+        bodyPane.setResizeWeight(0.5);
 
-        setLayout(new FlowLayout());
-        add(controlPanel);
-        add(dataComponent);
-        add(rulesComponent);
+        setLayout(new BorderLayout());
+        add(controlPanel,BorderLayout.NORTH);
+        add(bodyPane,BorderLayout.CENTER);
 
         Processor xmlProcessor = new Processor(false);
         modelManager = getOWLModelManager();
         owlManager = modelManager.getOWLOntologyManager();
         xmlConvertor = new XmlStringConvertor(xmlProcessor);
         mapperManager = new MapperManager(xmlProcessor);
-
-        System.out.println("XML2OWL View Component initialized with a bang!");
     }
 
     /** Carry out the mapping and update the active OWL ontology based on the
