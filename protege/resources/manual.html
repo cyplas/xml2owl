@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <title>XML2OWL Plugin</title>
+</head>
+
+<body>
+
+  <h1 align="center">XML2OWL Plugin:</h1>
+  <h2 align="center">Mapping new XML data to existing OWL ontologies</h2>
+
+  <h3>Introduction</h3>
+
+  The XML2OWL plugin allows for the semi-automatic mapping of XML data
+  to an existing OWL ontology. New individuals and associated
+  assertions are added based on pre-existing classes and
+  properties. The mappings are determined by user-specified rules
+  according to a particular XML schema.
+
+  This plugin is particularly intended for when the user wants to
+  integrate lots of data from one or more sources into the same OWL
+  ontology, wants to have control over how the mapping is carried
+  out, and is comfortable writing a basic XML document (unless someone
+  else has already written one for him).
+
+  <h3>Usage example</h3>
+
+  Suppose that you run an online bookstore and want to store your data
+  in book and author data in an OWL repository. You already have your
+  OWL ontology structure defined, and you have an agreement with five
+  different publishers to send you new book information on a regular
+  basis in XML. You would like to automate the automatic mapping of
+  the incoming data into your OWL ontology while allowing each
+  publisher to send XML data according to their own XML schema. Once
+  you have prepared 5 rule mapping files (one for each publisher), you
+  could then use the XML2OWL plugin to automatically map the data
+  into your ontology every time you get a new data file from one of
+  the publishers.
+
+  The figures below give a partial example. Figure 1 shows the book
+  class in your pre-existing ontology in Protege. Figure 2 gives an
+  example of a short datafile from the publisher Penguin. Figure 3
+  lists a rule file which maps the datafiles from Penguin to your
+  ontology, and Figure 4 shows one of the new individuals resulting
+  from this example mapping.
+
+   - Figure 1: a screenshot of an OWL ontology class<br>
+   - Figure 2: a short XML data example <br>
+   - Figure 3: a short corresponding example rules file<br>
+   - Figure 4: a screenshot of one of the new individuals having been created<br>
+
+  <h3>Authoring rules documents</h3>
+
+   - general attributes, prefixes, namespaces<br>
+   - individuals, references and collections<br>
+   - classes<br>
+   - data properties<br>
+   - object properties<br>
+   - same/different<br>
+
+  <h3>Conclusion</h3>
+   - summarise and conclude 
+
+</body>
+
+</html>
+   
