@@ -52,12 +52,213 @@
   <h3>Authoring rules documents</h3>
 
   XML2OWL rules documents must adhere to the <a href="rules.xsd">rules
-  XML schema</a>. Such documents define some general parameters and
-  then provide rules for mapping XML data documents into new OWL
-  individuals and assertions. The rules use XPath 2.0 expressions to
-  identify nodes and construct IRI expressions for the OWL
-  entities. This section describes the meaning and relationships of
-  the elements of a rules document in detail.
+  XML schema</a>. This section describes the meaning and relationships
+  of the elements of a rules document in detail.
+
+  Rules document contain different kinds of elements.  Most of a rules
+  document consists of mapping rules, of course. There are distinct
+  rule types for the different kinds of OWL axioms: individual
+  definitions, class assertions, data property assertions, object
+  property assertions, same individual assertions, and different
+  assertions. In addition, special rules are provided to allow for
+  reusing new individuals across multiple rules (individual
+  references) and for grouping individuals from multiple definitions
+  together (individual collections). Finally, there are elements for
+  defining XML namepaces and a global prefix IRI.<p/>
+
+  <h4>General rule structure</h4>
+
+  The structure of the axiom rules have roughly the same
+  template. First of all, they specify key attributes, such as
+  individual reference names or flags indicating whether a property
+  assertion is positive or negative. Second, they define mapping
+  parts, with one mapping part for each part of an axiom. For example,
+  a data property assertion has 3 mapping parts: one for the
+  individual in question, one for the property name, and one for the
+  property value. Third, there may be dependencies between the mapping
+  parts. For instance, the same class assertion rule may result in
+  different classes for different individuals, if it defines the class
+  mapping part as dependent on the individual mapping part. <p/>
+
+  The general template for a mapping part consists of three parts: a
+  query, a prefix, and an expression. The optional query specifies an
+  XPath query which identifies the nodes from the incoming XML
+  document that correspond to that part. If the query is included,
+  then the prefix and expression are XPath expressions evaluated
+  against the nodes obtained from the query. For each node, the two
+  results are then concatenated to dynamically produce the IRI of the
+  OWL axiom part corresponding to the mapping part. If the query is
+  ommitted, then the prefix and expression are static strings, which
+  are concatenated to define onex IRI. The prefix is also optional; if
+  it is ommitted, the prefix is obtained from the global prefix,
+  defined separately. Note that although this is the general template
+  for a mapping part, some types of mapping parts deviate from it a
+  little, such as a data property value part, which doesn't result in
+  an IRI (details below).<p/>
+
+  <ul>
+    <li>mapping part template
+      <ul>
+        <li>&lt;query&gt;: an optional XPath query which determines
+        the nodes associated with the entity part.
+        <li>&lt;prefixIRI&gt;: an optional element whose evaluation
+        results in a prefix for the entity's IRI; it is either static
+        or dynamic, depending on whether a query is specified; if not
+        specified, it defaults to the result of the global prefixIRI
+        element 
+        <li>&lt;expression&gt;: an optional element whose evaluation
+        results in the rest for the entity's IRI; it too is either
+        static or dynamic, depending on whether a query is specified
+      </ul>
+  </ul>
+
+  In the case of individual definition mapping parts, it is also
+  possible to use a reference to a previously defined individual
+  definition mapping part. This allows for the reuse of the same
+  individual definition mapping part over multiple rules. In this
+  case, instead of providing an inline part with query, prefix and
+  expression, a reference is inserted, identified by a reference
+  name. See below for details. <p/>
+
+  By default, mapping part queries are executed relative to the
+  incoming document's root node. However, mapping part dependencies
+  allow for the queries of one mapping part to depend on another
+  (e.g., the class of an individual may depend on XML data attached to
+  that individual). Dependencies specify a dependent part and an
+  independent part, and the possible values depend on the rule type.
+  During mapping, the independent query is processed first, and then
+  the dependent part is processed relative to each resulting node from
+  the independent query. Note that an individual reference cannot be
+  used as the independent part of a dependency, because its query has
+  been processed and is no longer available. <p/>
+
+  <ul>
+    <li>mapping part dependencies
+      <ul>
+        <li><i>independent</i>: indicates the independent mapping part
+        in the dependency
+        <li><i>dependent</i>: indicates the dependent mapping part
+        in the dependency
+      </ul>
+  </ul>
+
+  <h5>Individual definitions</h5>
+  
+  OWL individuals can be defined with the &lt;mapToOWLIndividual&gt;
+  element. It can contain &lt;query&gt;, &lt;prefixIRI&gt; and
+  &lt;expression&gt; elements. <p/>
+
+  If a &lt;query&gt; is included, then the definition is dynamic: the
+  query specifies an XPath query which is applied to the document root
+  node, and one individual is derived for each resulting node. If the
+  prefixIRI is provided, then it works the same as in the global case,
+  except that if dynamic, it is evaluated relative to the node
+  obtained from the query. If the &lt;expression&gt; is also included,
+  then it is an XPath expression which is applied to the results of
+  the query to generate the individual's IRI. If the
+  &lt;expression&lt; is not included, then an IRI is generated for
+  each node from the query through a unique naming mechanism. The
+  resulting individuals' full IRIs are derived by concatenating the
+  results of the &lt;prefixIRI&gt; and &lt;expression&gt; elements. <p/>
+ 
+  If the &lt;query&gt; is not included, then the definition is static:
+  it defines one individual, based on an explicit IRI specified in the
+  &lt;expression&gt; element. As in the dynamic case, it is prepended
+  by the result of the &lt;prefixIRI&gt; element, but in this case of
+  this element cannot be dynamic. <p/>
+
+  <ul>
+    <li>&lt;mapToOWLIndividual&gt;
+      <ul>
+        <li><i>referenceName</i>: an optional reference name for the
+          individuals
+        <li>&lt;query&gt;: an optional XPath query, evaluated against
+          the document root node.
+        <li>&lt;prefixIRI&gt;: an optional element, which works the
+          same as the global &lt;prefixIRI&gt; element and overrides it
+          if specified.
+        <li>&lt;expression&gt;: either an XPath expression
+          (if the query is provided) evaluated against the nodes
+          obtained from the query or a static string (otherwise). It's
+          optional if the query is provided.
+      </ul>
+  </ul>
+  
+  <h5>Individual references</h5>
+
+  <h5>Collections of individuals</h5>
+
+  The &lt;collectOWLIndividuals&gt; element can be used to gather an
+  arbitrary number of individual (or, recursively, collection)
+  references into one set. It specifies a reference name for the
+  collection of all the elements in the set. <p/>
+
+  <ul>
+    <li>&lt;collectOWLIndividuals&gt;
+      <ul>
+        <li><i>referenceName</i>: a reference name for the set of
+          references listed
+        <li>&lt;referenceToIndividual&gt;: a reference to a previously
+          defined individual
+          <ul>
+            <li><i>refName</i>: name of the previously defined
+              reference
+          </ul>
+      </ul>
+  </ul>
+
+  <h5>Class assertions</h5>
+
+  Class assertions are added with the &lt;mapToOWLClassAssertion&gt;
+  element. The element contains an individual part and a class
+  part. At least one of the parts must be dynamic. <p/>
+
+  The individual part can be either an inline or a reference to a
+  previous definition or collection. If inline, it is defined with the
+  &lt;individual&gt; element, and is of the same type as
+  &lt;mapToOWLindividual&gt;. If a reference, it is set with the
+  &lt;referenceToIndividual&gt; element, and is of the same type as
+  the &referenceToIndividual&gt; components of
+  &lt;collectOWLIndividuals&gt;.<p/>
+
+  The class part has &lt;query&gt;, &lt;prefixIRI and
+  &lt;expression&gt; elements. They work the same as for
+  &lt;mapToOWLIndividual&gt;, except that the &lt;expression&gt;
+  element is required.<p/>
+
+  It's also possible for there to be a dependency between the two
+  parts. In that case, the &lt;query&gt; of the dependent part is
+  evaluated relative to each of the resulting nodes of the
+  &lt;query&gt; of the independent part.<p/>
+
+  <ul>
+    <li>class assertion definition
+      <ul>
+        <li>individual part
+        <li>class part
+      </ul>
+      </ul>
+
+  <h5>Data property assertions</h5>
+
+  Data property assertions are added with the
+  &lt;mapToOWLDataPropertyAssertion&gt; element. The element contains
+  three parts: an individual part, a data property name part, and a
+  data property value part.<p/>
+
+  The individual part works the same as the individual part in a class
+  assertion mapping.<p/>
+
+  The data property name part works the same as the class part in a
+  class assertion mapping.<p/>
+
+  The data property value part works similar to the class part in a
+  class assertion mapping, but with two differences. (datatype and no
+  iri).
+
+  <h5>Object property assertions</h5>
+
+  <h5>Same/Different individual assertions</h5>
 
   <h4>Top level</h4>
 
@@ -114,50 +315,9 @@
       </ul>
   </ul>
 
-  <h4>Individuals</h4>
-  
-  OWL individuals can be defined with the &lt;mapToOWLIndividual&gt;
-  element. The elements can provide static or dynamic definitions. If
-  they are dynamic, they can result in multiple individuals. The
-  &lt;collectOWLIndividuals&gt; element can be used to gather the sets
-  of individuals generated by &lt;mapToOWLIndividual&gt; into one
-  group. &lt;mapToOWLIndividual&lt; and &lt;collectOWLIndividuals&gt;
-  can be given a reference name, which can then be used to refer to
-  the associated individuals in subsequent mapping rules.
+  <h4>Rules</h4>
 
-  <ul>
-    <li>&lt;mapToOWLIndividual&gt;
-      <ul>
-        <li><i>referenceName</i>: an optional reference name for the
-        individuals
-        <li>&lt;query&gt;: an optional XPath query which is evaluated
-        against the XML data's root node to identify nodes
-        corresponding to individuals
-        <li>&lt;prefixIRI&gt;: determines a prefix IRI to be prepended
-        to the result of the &lt;expression&gt; for the final IRI; if
-        it is not provided, the global &lt;prefixIRI&gt; directly
-        under &lt;ontologyMappingElements&gt; is used instead.
-          <ul>
-            <li><i>dynamic</i>Works just as the <i>dynamic</i>
-            attribute of the global &lt;prefixIRI&gt;, except that if
-            dynamic, the expression is evaluated against the node from
-            the query element.
-          </ul>
-        <li>&lt;expression&gt;: an XPath expression which is processed
-        against each node resulting from the query to yield the IRI
-        ...
-      </ul>
-  </ul>
-
-  <h4>Class assertions</h4>
-
-  <h4>Data property assertions</h4>
-
-  <h4>Object property assertions</h4>
-
-  <h4>Same/Different individual assertions</h4>
-
-  <h3>Summary</h3>
+  <h4>Summary</h4>
 
 </body>
 
