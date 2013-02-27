@@ -1,7 +1,13 @@
 <html>
 
 <head>
+
   <title>XML2OWL Plugin</title>
+
+  <style type="text/css">
+    xmp { font-size : 15px}
+  </style>
+
 </head>
 
 <body style="width:700px">
@@ -44,7 +50,12 @@
   ontology, and Figure 4 shows one of the new individuals resulting
   from this example mapping.
 
-  OWL ontology:
+  <h4>OWL ontology</h4>
+
+  The following is a basic OWL ontology for the example. There are two
+  classes, three data properties and two object properties. New
+  mappings will result in new individuals in the ontology, along with
+  class, data property and object property assertions.
 
   <ul>
     <li>Classes
@@ -65,10 +76,16 @@
       </ul>
   </ul>
 
-  Example data:
+  <h4>Sample datafile</h4>
+
+  Here is a short sample datafile that may be received by the online
+  bookstore and needs to be mapped into the OWL ontology. The examples
+  in the rest of this manual correspond to this example file. 
 
   <xmp>
+    <?xml version="1.0" encoding="UTF-8"?>
     <books>
+      <source>Amazon</source>
       <book>
         <isbn>0034223427</isbn>
         <contributor role="author">James Joyce</contributor>
@@ -78,27 +95,27 @@
       </book>
       <book>
         <isbn>4324324999</isbn>
-        <author>Albert Camus</author>
+        <contributor role="author">Albert Camus</contributor>
         <title>The outsider</title>
         <publisher>Vintage</publisher>
         <year>2007</year>
       </book>
       <book>
         <isbn>8342432877</isbn>
-        <author>Leo Tolstoy</author>
+        <contributor role="editor">Leo Tolstoy</contributor>
         <title>War and peace</title>
         <publisher>Penguin</publisher>
         <year>2012</year>
       </book>
       <book>
         <isbn>7432432239</isbn>
-        <author>Albert Camus</author>
+        <contributor role="author">Albert Camus</contributor>
         <title>The pest</title>
         <publisher>Dover</publisher>
         <year>2001</year>
       </book>
     </books>
-</xmp>
+  </xmp>
 
   <h3>Overview</h3>
 
@@ -164,6 +181,14 @@
       </ul>
   </ul>
 
+  <h5>Example</h5>
+
+  <xmp>
+    <namespaces>
+      <namespace prefix="shop" name="http://www.myshop.com">
+    </namespaces>
+  </xmp>
+
   <h4>Prefix IRI</h4> 
 
   An optional &lt;prefixIRI&gt; element can be used to define a
@@ -178,9 +203,15 @@
     <li>&lt;prefixIRI&gt;: string or XPath expression
       <ul>
         <li><i>dynamic</i>: boolean (default "false")
-        </li>
       </ul>
   </ul>
+
+  <xmp>
+    <prefixIRI dynamic="true">fn:concat('http://www.myshop.com/',/books/source,'#')</prefix>
+  </xmp>
+
+For our example, this would result in a default prefix IRI of
+"http://www.myshop.com/Amazon#".
 
   <h3>Mapping rules</h3>
 
