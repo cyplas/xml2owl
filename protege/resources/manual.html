@@ -15,7 +15,35 @@
   <h1 align="center">XML2OWL Plugin:</h1>
   <h2 align="center">Mapping new XML data to existing OWL ontologies</h2>
 
-  <h3>Introduction</h3>
+  <ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#usage">Usage example</a></li>
+    <ul>
+      <li><a href="#ontology">OWL ontology</a></li>
+      <li><a href="#sample">Sample datafile</a></li>
+    </ul>
+    <li><a href="#top">Top level</a></li>
+    <li><a href="#configuration">Configuration elements</a></li>
+    <ul>
+      <li><a href="#namespaces">Namespaces</a></li>
+      <li><a href="#prefix">Prefix IRI</a></li>
+    </ul>
+    <li><a href="#rules">Mapping rules</a></li>
+    <ul>
+      <li><a href="#individualPart">Individual parts</a></li>
+      <ul>
+        <li><a href="#individualDefinition">Individual definitions</a></li>
+        <li><a href="#individualReference">Individual references</a></li>
+        <li><a href="#individualCollection">Collections of individuals</a></li>
+      </ul>
+      <li><a href="#classAssertion">Class assertions</a></li>
+      <li><a href="#dataPropertyAssertion">Data property assertions</a></li>
+      <li><a href="#objectPropertyAssertion">Object property assertions</a></li>
+      <li><a href="#identityAssertion">Same/different individual assertions</a></li>
+    </ul>
+  </ul>
+
+  <h3 id="intro">Introduction</h3>
 
   The XML2OWL plugin allows for the semi-automatic mapping of XML data
   to an existing OWL ontology. New individuals and associated
@@ -29,7 +57,7 @@
   out, and is comfortable writing a basic XML document (unless someone
   else has already written one for him).
 
-  <h3>Usage example</h3>
+  <h3 id="usage">Usage example</h3>
 
   Suppose that you run an online bookstore and want to store your data
   in book and author data in an OWL repository. You already have your
@@ -50,7 +78,7 @@
   ontology, and Figure 4 shows one of the new individuals resulting
   from this example mapping.
 
-  <h4>OWL ontology</h4>
+  <h4 id="ontology">OWL ontology</h4>
 
   The following is a basic OWL ontology for the example. There are two
   classes, three data properties and two object properties. New
@@ -76,7 +104,7 @@
       </ul>
   </ul>
 
-  <h4>Sample datafile</h4>
+  <h4 id="sample">Sample datafile</h4>
 
   Here is a short sample datafile that may be received by the online
   bookstore and needs to be mapped into the OWL ontology. The examples
@@ -117,7 +145,7 @@
     </books>
   </xmp>
 
-  <h3>Overview</h3>
+  <h3 id="overview">Overview</h3>
 
   XML2OWL rules documents must adhere to the <a href="rules.xsd">rules
   XML schema</a>. This section describes the meaning and relationships
@@ -134,7 +162,7 @@
   together (individual collections). Finally, there are elements for
   defining XML namepaces and a global prefix IRI.<p/>
 
-  <h3>Top level</h3>
+  <h3 id="top">Top level</h3>
 
   The top-level element under which all other elements are included is
   the &lt;ontologyMappingElements&gt; element. This element also has
@@ -157,13 +185,13 @@
       </ul>
   </ul>
 
-  <h3>Configuration elements</h3>
+  <h3 id="configuration">Configuration elements</h3>
 
   Configuration elements consist of namespace declarations in the
   &lt;namespaces&gt; element and a global prefix IRI setting in the
   &lt;prefixIRI&gt; element. All configuration elements are optional.
 
-  <h4>Namespaces</h4>
+  <h4 id="namespaces">Namespaces</h4>
   
   An optional &lt;namespaces&gt; element can define any number of
   namespaces. Namespaces should be defined for the extra namespaces
@@ -181,7 +209,7 @@
       </ul>
   </ul>
 
-  <h5>Example</h5>
+  <h5 id="namespaces-example">Example</h5>
 
   <xmp>
     <namespaces>
@@ -189,7 +217,7 @@
     </namespaces>
   </xmp>
 
-  <h4>Prefix IRI</h4> 
+  <h4 id="prefix">Prefix IRI</h4> 
 
   An optional &lt;prefixIRI&gt; element can be used to define a
   default prefix to be prepended to the OWL entity IRIs generated
@@ -206,6 +234,8 @@
       </ul>
   </ul>
 
+  <h5 id="prefix-example">Example</h5>
+
   <xmp>
     <prefixIRI dynamic="true">fn:concat('http://www.myshop.com/',/books/source,'#')</prefix>
   </xmp>
@@ -213,7 +243,7 @@
 For our example, this would result in a default prefix IRI of
 "http://www.myshop.com/Amazon#".
 
-  <h3>Mapping rules</h3>
+  <h3 id="rules">Mapping rules</h3>
 
   The structure of the axiom rules have roughly the same
   template. First of all, they specify key attributes, such as
@@ -324,7 +354,7 @@ For our example, this would result in a default prefix IRI of
       </ul>
   </ul>
   
-  <h6>Examples</h6>
+  <h6 id="individualDefinition-examples">Examples</h6>
 
   <xmp>
     <mapToOWLIndividual referenceName="booksDynamic" type="new">
@@ -368,7 +398,7 @@ For our example, this would result in a default prefix IRI of
       </ul>
   </ul>
 
-  <h6>Example</h6>
+  <h6 id="individualDefinition-example">Example</h6>
 
   <xmp>
     <referenceToIndividual refName="booksDynamic"/>
@@ -396,7 +426,7 @@ For our example, this would result in a default prefix IRI of
       </ul>
   </ul>
 
-  <h6>Example</h6>
+  <h6 id="individualCollection-example">Example</h6>
 
   <xmp>
     <collectOWLIndividuals referenceName="books">
@@ -407,7 +437,7 @@ For our example, this would result in a default prefix IRI of
 
   This results in no direct changes to the ontology
 
-  <h4>Class assertions</h4>
+  <h4 id="classAssertion">Class assertions</h4>
 
   Class assertions are added with the &lt;mapToOWLClassAssertion&gt;
   element. The element contains an individual part and a class
@@ -456,7 +486,7 @@ For our example, this would result in a default prefix IRI of
     <li>Book('isbn0343223423')
   </ul>
 
-  <h4>Data property assertions</h4>
+  <h4 id="dataPropertyAssertion">Data property assertions</h4>
 
   Data property assertions are added with the
   &lt;mapToOWLDataPropertyAssertion&gt; element. The element contains
@@ -533,7 +563,7 @@ For our example, this would result in a default prefix IRI of
     <li>hasYear('isbn7432432239',2001)
   </ul>
 
-  <h4>Object property assertions</h4>
+  <h4 id="objectPropertyAssertion">Object property assertions</h4>
 
   Object property assertions are added with the
   &lt;mapToOWLObjectPropertyAssertion&gt; element. The element
@@ -625,7 +655,7 @@ For our example, this would result in a default prefix IRI of
     <li>Contributor('contributorLeoTolstoy')
   </ul>
 
-  <h4>Same/Different individual assertions</h4>
+  <h4 id="identityAssertion">Same/Different individual assertions</h4>
 
   Same individual assertions and different individual assertions have
   an identical internal structure and are added with the
@@ -676,8 +706,6 @@ For our example, this would result in a default prefix IRI of
   <ul>
     <li>differentIndividuals('isbn0034223427','isbn4324324999','isbn8342432877','isbn7432432239','isbn0343223423')
   </ul>
-
-  <h4>Summary</h4>
 
 </body>
 
