@@ -146,13 +146,15 @@
   <mapToOWLDataPropertyAssertion>
     <referenceToIndividual refName="offers"/>
     <propertyName>
-      <expression>'hasSeller'</expression>
+      <query>prodajalec/@english</query>
+      <expression>fn:concat('has',fn:upper-case(fn:substring(.,1,1)),fn:substring(.,2))</expression>
     </propertyName>
     <propertyValue>
       <query>.</query>
       <expression>prodajalec</expression>
     </propertyValue>
     <dependency independent="individual" dependent="propertyValue"/>
+    <dependency independent="individual" dependent="propertyName"/>
   </mapToOWLDataPropertyAssertion>
 
   <mapToOWLDataPropertyAssertion>

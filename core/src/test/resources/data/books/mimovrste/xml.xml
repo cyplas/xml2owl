@@ -6,7 +6,7 @@
    <avtor>E. L. James</avtor>
    <zalozba>Učila</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>14,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -15,7 +15,7 @@
    <avtor>E. L. James</avtor>
    <zalozba>Učila</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>14,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -24,7 +24,7 @@
    <avtor>Sophie Kinsella</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>12,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -33,7 +33,7 @@
    <avtor>Tracy Chevalier</avtor>
    <zalozba>Učila</zalozba>
    <leto>2009</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>17,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -42,7 +42,7 @@
    <avtor>David Nicholls</avtor>
    <zalozba>Videotop</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>17,91 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -51,7 +51,7 @@
    <avtor>Gareth Hanrahan</avtor>
    <zalozba>Tehniška založba Slovenije</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>20,79 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -60,7 +60,7 @@
    <avtor>Alexandra Potter</avtor>
    <zalozba>Videotop</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>15,42 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -69,7 +69,7 @@
    <avtor>Jane Costello</avtor>
    <zalozba>Učila</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>12,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -78,7 +78,7 @@
    <avtor>Paul Krugman</avtor>
    <zalozba>Modrijan</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>18,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -87,7 +87,7 @@
    <avtor>Lou Paget</avtor>
    <zalozba>Učila</zalozba>
    <leto>2006</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>16,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -96,7 +96,7 @@
    <avtor>Vicki Myron</avtor>
    <zalozba>Modrijan</zalozba>
    <leto>2010</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>17,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -105,7 +105,7 @@
    <avtor>Paulo Coelho</avtor>
    <zalozba>Učila</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>10,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -114,7 +114,7 @@
    <avtor>Nora Roberts</avtor>
    <zalozba>Meander</zalozba>
    <leto>2010</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>15,89 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -123,7 +123,7 @@
    <avtor>Tasha Alexander</avtor>
    <zalozba>Učila</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>10,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -132,7 +132,7 @@
    <avtor>Marie NDiaye</avtor>
    <zalozba>Modrijan</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>14,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -141,7 +141,7 @@
    <avtor>Valentino Rossi z Enricom Borghijem</avtor>
    <zalozba>Učila</zalozba>
    <leto>2007</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>19,92 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -150,7 +150,7 @@
    <avtor>Anthony Bourdain</avtor>
    <zalozba>Totaliteta</zalozba>
    <leto>2009</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>19,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -159,7 +159,7 @@
    <avtor>Lisa Jewell, Allison Pearson, Cecelia Ahern</avtor>
    <zalozba>Učila</zalozba>
    <leto>2010</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>18,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -168,7 +168,7 @@
    <avtor>Nora Roberts</avtor>
    <zalozba>Meander</zalozba>
    <leto>2009</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>30,60 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -177,7 +177,7 @@
    <avtor>Jenny Colgan</avtor>
    <zalozba>Učila</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>10,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -186,7 +186,7 @@
    <avtor>Miro Štebe</avtor>
    <zalozba>Didakta</zalozba>
    <leto>2005</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>14,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -195,7 +195,7 @@
    <avtor>Thomas Brezina</avtor>
    <zalozba>Mohorjeva družba</zalozba>
    <leto>2000</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>13,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -204,7 +204,7 @@
    <avtor>Tracy Quan, Sonia Rossi, Bruna Surfistinha</avtor>
    <zalozba>Učila</zalozba>
    <leto>2009</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>15,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -213,7 +213,7 @@
    <avtor>Nora Roberts</avtor>
    <zalozba>Meander</zalozba>
    <leto/>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>13,19 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -222,7 +222,7 @@
    <avtor>Ernesto Rafael "Che" Guevara de la Serna</avtor>
    <zalozba>Karantanija</zalozba>
    <leto>2008</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>25,20 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -231,7 +231,7 @@
    <avtor>Lindsey Kelk</avtor>
    <zalozba>Videotop</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>15,21 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -240,7 +240,7 @@
    <avtor>Vanessa Bates</avtor>
    <zalozba>Meander</zalozba>
    <leto>2008</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>9,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -249,7 +249,7 @@
    <avtor>Hans Pölzer</avtor>
    <zalozba>Karantanija</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>11,00 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -258,7 +258,7 @@
    <avtor>Silvin Eiletz</avtor>
    <zalozba>Mohorjeva družba</zalozba>
    <leto>2008</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>27,50 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -267,7 +267,7 @@
    <avtor>Jože Dežman, Hanzi Filipič</avtor>
    <zalozba>Mohorjeva družba</zalozba>
    <leto>2007</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>25,65 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -276,7 +276,7 @@
    <avtor>Sophie Kinsella</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>10,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -285,7 +285,7 @@
    <avtor>Greg Behrendt, Liz Tuccillo</avtor>
    <zalozba>Primus</zalozba>
    <leto>2009</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>19,71 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -294,7 +294,7 @@
    <avtor>Adele Parks</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>12,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -303,7 +303,7 @@
    <avtor>Janez Strnad</avtor>
    <zalozba>Modrijan</zalozba>
    <leto>2004</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>14,50 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -312,7 +312,7 @@
    <avtor>P. C. Cast &amp; Kristin Cast, L. J. Smith</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>20,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -321,7 +321,7 @@
    <avtor>Walter Isaacson</avtor>
    <zalozba>Učila</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>29,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -330,7 +330,7 @@
    <avtor>Janez Strnad</avtor>
    <zalozba>Modrijan</zalozba>
    <leto>2005</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>20,00 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -339,7 +339,7 @@
    <avtor>Gordon Thomas</avtor>
    <zalozba>Učila</zalozba>
    <leto>2010</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>14,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -348,7 +348,7 @@
    <avtor>Janez Strnad</avtor>
    <zalozba>Modrijan</zalozba>
    <leto>2008</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>25,00 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -357,7 +357,7 @@
    <avtor>Rita Monaldi, Francesco Sorti, Javier Sierra, Raymond Khoury</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>19,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -366,7 +366,7 @@
    <avtor>Stephen King</avtor>
    <zalozba>Učila</zalozba>
    <leto>2004, 2006,2009</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>19,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -375,7 +375,7 @@
    <avtor>Sherry Thomas</avtor>
    <zalozba>Avrora</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>17,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -384,7 +384,7 @@
    <avtor>Thomas Brezina</avtor>
    <zalozba>Mohorjeva družba</zalozba>
    <leto>2008</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>16,15 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -393,7 +393,7 @@
    <avtor>Candace Bushnell</avtor>
    <zalozba>Učila</zalozba>
    <leto>2008,2009,2010</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>19,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -402,7 +402,7 @@
    <avtor>Adele Parks</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>12,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -411,7 +411,7 @@
    <avtor>Jane Costello</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>12,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -420,7 +420,7 @@
    <avtor>Rachel Gibson</avtor>
    <zalozba>Meander</zalozba>
    <leto>2009</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>26,10 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -429,7 +429,7 @@
    <avtor>Jennifer Crusie</avtor>
    <zalozba>Meander</zalozba>
    <leto>2010</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>13,19 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -438,7 +438,7 @@
    <avtor>Viki Grošelj</avtor>
    <zalozba>Didakta</zalozba>
    <leto>2009</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>37,91 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -447,7 +447,7 @@
    <avtor>Dr. Albinca Pesek</avtor>
    <zalozba>Rokus</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>17,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -456,7 +456,7 @@
    <avtor>Marian Keyes, Sophie Kinsella</avtor>
    <zalozba>Učila</zalozba>
    <leto>2009, 2010</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>20,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -465,7 +465,7 @@
    <avtor>Cecelia Ahern</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>12,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -474,7 +474,7 @@
    <avtor>Allison Pearson</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>12,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -483,7 +483,7 @@
    <avtor>Orhan Pamuk</avtor>
    <zalozba>Sanje</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>15,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -492,7 +492,7 @@
    <avtor>Gustave Flaubert</avtor>
    <zalozba>Modrijan</zalozba>
    <leto>2010</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>13,20 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -501,7 +501,7 @@
    <avtor>LJ Smith</avtor>
    <zalozba>Učila</zalozba>
    <leto>2012</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>12,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -510,7 +510,7 @@
    <avtor>Ante Mahkota</avtor>
    <zalozba>Didakta</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>37,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -519,7 +519,7 @@
    <avtor>Thomas Brezina</avtor>
    <zalozba>Mohorjeva družba</zalozba>
    <leto>2003</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>13,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -528,7 +528,7 @@
    <avtor>France Balantič</avtor>
    <zalozba>Buča</zalozba>
    <leto>2008</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>8,50 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -537,7 +537,7 @@
    <avtor>Jennifer Crusie</avtor>
    <zalozba>Meander</zalozba>
    <leto/>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>9,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -546,7 +546,7 @@
    <avtor>Lev Nikolajevič Tolstoj</avtor>
    <zalozba>Založba Tuma</zalozba>
    <leto>2009</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>7,99 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -555,7 +555,7 @@
    <avtor>Lisa Jewell</avtor>
    <zalozba>Učila</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>10,90 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -564,7 +564,7 @@
    <avtor>Carmen Martín Gaite</avtor>
    <zalozba>Modrijan</zalozba>
    <leto>2011</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>31,20 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -573,7 +573,7 @@
    <avtor>Vanessa Bates</avtor>
    <zalozba>Meander</zalozba>
    <leto>2008</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>13,79 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -582,7 +582,7 @@
    <avtor>Barbara Lenarčič</avtor>
    <zalozba>Modrijan</zalozba>
    <leto>2010</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>15,70 €</cena>
 </sl:knjiga>
 <sl:knjiga>
@@ -591,7 +591,7 @@
    <avtor>Christopher Paolini</avtor>
    <zalozba>Grlica</zalozba>
    <leto>2008</leto>
-   <prodajalec>Mimovrste</prodajalec>
+   <prodajalec english="seller">Mimovrste</prodajalec>
    <cena>35,91 €</cena>
 </sl:knjiga>
 </books>

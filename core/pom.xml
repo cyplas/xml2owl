@@ -127,6 +127,19 @@
                 <goal>run</goal>
               </goals>
             </execution>
+            <execution>
+              <id>schema-to-protege</id>
+              <phase>install</phase>
+              <configuration>
+                <target>
+                    <copy file="src/main/resources/xsd/rules.xsd" 
+                          todir="../protege/resources"/>
+                </target>
+              </configuration>
+              <goals>
+                <goal>run</goal>
+              </goals>
+            </execution>
           </executions>
         </plugin>
     </plugins>  
