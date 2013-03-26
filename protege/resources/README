@@ -1,0 +1,15 @@
+<html>
+
+<head>
+  <title>XML2OWL Protégé Plugin</title>
+</head> 
+
+<body>
+  The XML2OWL plugin for Protégé allows for the semi-automatic mapping
+  of new XML data to an existing OWL ontology, mediated by
+  user-specified mapping rules. Full documentation is available on its
+  <a href="#">Protégé plugin page</a>.
+</body>
+
+</html>
+

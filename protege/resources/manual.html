@@ -54,6 +54,7 @@
         <li><a href="#identityAssertion">Same/different individual assertions</a></li>
       </ul>
     </ul>
+    <li><a href="#reasoner">Reasoner inferences</a></li>
   </ul>
 
   <h3 id="intro">Introduction</h3>
@@ -62,7 +63,9 @@
   mapping of XML data to an existing OWL ontology. New individuals and
   associated assertions are added based on pre-existing classes and
   properties. The mappings are determined by user-specified rules
-  according to the <a href="rules.xsd">XML2OWL rules schema</a>.</p>
+  according to the <a href="rules.xsd">XML2OWL rules schema</a>. Once
+  rule processing is complete, a reasoner is invoked for carrying out
+  further inferences and executing SWRL rules.</p>
 
   <p>Rule documents contain different kinds of elements.  Most of a
   rules document consists of mapping rules, of course. There are
@@ -825,6 +828,12 @@
     <li>differentIndividuals('isbn0034223427','isbn4324324999','isbn8342432877','isbn7432432239','isbn0343223423')
   </ul>
 
+  <h3>Reasoner inferences</h3>
+
+  Once the mapping rules are processed, XML2OWL invokes the Pellet
+  reasoner to draw inferences and execute the ontology's SWRL rules,
+  and then incorporate the resulting axioms into the ontology.
+  
 </body>
 
 </html>
