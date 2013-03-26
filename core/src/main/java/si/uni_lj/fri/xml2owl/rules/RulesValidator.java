@@ -121,12 +121,14 @@ public class RulesValidator {
         System.out.println("[XML2OWL] Verifying supported languages ...");
 	String expressionLanguage = 
             evaluator.findString(rules, "@expressionLanguage");
-	if (!supportedExpressionLanguages.contains(expressionLanguage)) {
+	if (expressionLanguage != null &&
+            !supportedExpressionLanguages.contains(expressionLanguage)) {
 	    throw new Xml2OwlRuleValidationException
                 ("Unsupported expression language: " + expressionLanguage);
 	} 
 	String queryLanguage = evaluator.findString(rules, "@queryLanguage");
-	if (!supportedQueryLanguages.contains(queryLanguage)) {
+	if (queryLanguage != null &&
+            !supportedQueryLanguages.contains(queryLanguage)) {
 	    throw new Xml2OwlRuleValidationException
                 ("Unsupported query language: " + queryLanguage);
 	} 

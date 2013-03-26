@@ -35,8 +35,8 @@
 	    <xsd:element name="mapToOWLDifferentAssertion" type="tMapToOWLSameOrDifferentAssertion"/>
 	  </xsd:choice>
 	</xsd:sequence>			
-	<xsd:attribute name="expressionLanguage" type="xsd:anyURI"/>	
-	<xsd:attribute name="queryLanguage" type="xsd:anyURI"/>	
+	<xsd:attribute name="expressionLanguage" type="xsd:anyURI" default="urn:fri-x2o:sublang:xpath2.0"/>
+	<xsd:attribute name="queryLanguage" type="xsd:anyURI" default="urn:fri-x2o:sublang:xpath2.0"/>
 	<xsd:attribute name="strict" type="xsd:boolean" default="false"/>
       </xsd:extension>
     </xsd:complexContent>		
