@@ -2,7 +2,7 @@
 
 <head>
 
-  <title>XML2OWL Protégé Plugin</title>
+  <title>XML2OWL</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <style type="text/css">
     xmp { font-size : 15px}
@@ -18,7 +18,7 @@
 
 <body style="width:800">
 
-  <h1 align="center">XML2OWL Plugin for Protégé</h1>
+  <h1 align="center">XML2OWL</h1>
   <h2 align="center">Mapping new XML data to existing OWL ontologies</h2>
 
   <ul>
@@ -55,6 +55,7 @@
       </ul>
     </ul>
     <li><a href="#reasoner">Reasoner inferences</a></li>
+    <li><a href="#jar">XML2OWL without Protégé</a></li>
   </ul>
 
   <h3 id="intro">Introduction</h3>
@@ -65,7 +66,8 @@
   properties. The mappings are determined by user-specified rules
   according to the <a href="rules.xsd">XML2OWL rules schema</a>. Once
   rule processing is complete, a reasoner is invoked for carrying out
-  further inferences and executing SWRL rules.</p>
+  further inferences and executing SWRL rules. Note that XML2OWL can
+  also be used without Protégé, as described <a href="#jar">here</a>.
 
   <p>Rule documents contain different kinds of elements.  Most of a
   rules document consists of mapping rules, of course. There are
@@ -86,29 +88,8 @@
 
   <h3 id="interface">User interface</h3>
 
-  The XML2OWL mapper window (accessible through the XML2OWL tab) has
-  three areas: Rules, Data and Control. After the contents of a rules
-  file and data file are put into the Rules and Data areas,
-  respectively, the Control area initiates the mapping and the OWL
-  ontology is updated accordingly.
-
-  <p><img src="plugin.png" width="800"/></p>
-
-  The contents of a rules file are pasted into the Rules
-  textarea. They can be typed or pasted manually, or the Open button
-  can be used to insert the contents of a file from the
-  filesystem. The rules file can then be validated against
-  the <a href="rules.xsd">XML2OWL rules schema</a> with the Validate
-  button (this is not necessary, however, as it happens anyway as the
-  first step in mapping).
-
-  The contents of a data file are pasted into the Data textarea in
-  exactly the same way as for the rules.
-
-  The Control area has two buttons. When the Map button is clicked,
-  the mapping program applies the rules to the data and adds the
-  resulting new individuals and assertions to the OWL ontology. The
-  last mapping can be undone by clicking on the Undo button.
+  XML2OWL can be used as a command-line tool, as a Java library, or as
+  a Protégé plugin. (Elaborate ...)   
 
   <h3 id="usage">Use case</h3>
 
@@ -828,12 +809,19 @@
     <li>differentIndividuals('isbn0034223427','isbn4324324999','isbn8342432877','isbn7432432239','isbn0343223423')
   </ul>
 
-  <h3>Reasoner inferences</h3>
+  <h3 id="reasoner">Reasoner inferences</h3>
 
   Once the mapping rules are processed, XML2OWL invokes the Pellet
   reasoner to draw inferences and execute the ontology's SWRL rules,
   and then incorporate the resulting axioms into the ontology.
   
+  <h3 id="jar">XML2OWL without Protégé</h3>
+
+  The XML2OWL Protégé plugin is implemented in Java as a core jar
+  along with Protégé-specific front-end components. The core can be
+  used inside any Java program, and can be found (along with javadocs)
+  in the core directory in the distribution.
+
 </body>
 
 </html>

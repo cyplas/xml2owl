@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+  <title>XML2OWL Plugin for Protégé</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+    xmp { font-size : 15px}
+    h1 { font-size: 2.67em}
+    h2 { font-size: 2.00em}
+    h3 { font-size: 1.56em}
+    h4 { font-size: 1.33em}
+    h5 { font-size: 1.11em}
+    h6 { font-size: 1.00em}
+  </style>
+
+</head>
+
+<body style="width:800">
+
+  <h1>XML2OWL Plugin for Protégé</h1>
+
+  This page documents the XML2OWL plugin's Protégé user interface. For
+  instructions on the mapping mechanism and rule authoring, see the
+  main <a href="manual.html">manual</a>.
+
+  The XML2OWL mapper window (accessible through the XML2OWL tab) has
+  three areas: Rules, Data and Control. After the contents of a rules
+  file and data file are put into the Rules and Data areas,
+  respectively, the Control area initiates the mapping and the OWL
+  ontology is updated accordingly.
+
+  <p><img src="plugin.png" width="800"/></p>
+
+  The contents of a rules file are pasted into the Rules
+  textarea. They can be typed or pasted manually, or the Open button
+  can be used to insert the contents of a file from the
+  filesystem. The rules file can then be validated against
+  the <a href="rules.xsd">XML2OWL rules schema</a> with the Validate
+  button (this is not necessary, however, as it happens anyway as the
+  first step in mapping).
+
+  The contents of a data file are pasted into the Data textarea in
+  exactly the same way as for the rules.
+
+  The Control area has two buttons. When the Map button is clicked,
+  the mapping program applies the rules to the data and adds the
+  resulting new individuals and assertions to the OWL ontology. The
+  last mapping can be undone by clicking on the Undo button.
+
+</body>
+
+</html>

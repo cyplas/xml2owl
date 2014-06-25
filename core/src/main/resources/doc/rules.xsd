@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            xmlns="http://www.fri.uni-lj.si/xml2owl" 
+            targetNamespace="http://www.fri.uni-lj.si/xml2owl" 
+            elementFormDefault="qualified" 
+            blockDefault="#all">
+
+  <xsd:element name="ontologyMappingElements" type="tOntologyMappingElements"/>
+  
+  <xsd:complexType name="tExpression" mixed="true">
+    <xsd:attribute name="type" type="xsd:QName" default="xsd:string" />
+  </xsd:complexType>
+
+  <xsd:complexType name="tPrefixIRI" mixed="true">
+    <xsd:attribute name="dynamic" type="xsd:boolean" default="false"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="tReferenceName">
+    <xsd:attribute name="refName" type="xsd:NCName" use="required"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="tOntologyMappingElements">		
+    <xsd:complexContent>
+      <xsd:extension base="tExtensibleElements">
+	<xsd:sequence>
+          <xsd:element name="namespaces" type="tNamespaces" minOccurs="0"/>
+	  <xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
+	  <xsd:choice maxOccurs="unbounded">					
+	    <xsd:element name="mapToOWLIndividual" type="tMapToOWLIndividual"/>
+	    <xsd:element name="collectOWLIndividuals" type="tCollectOWLIndividuals"/>
+	    <xsd:element name="mapToOWLClassAssertion" type="tMapToOWLClassAssertion"/>
+	    <xsd:element name="mapToOWLDataPropertyAssertion" type="tMapToOWLDataPropertyAssertion"/>
+	    <xsd:element name="mapToOWLObjectPropertyAssertion" type="tMapToOWLObjectPropertyAssertion"/>			
+	    <xsd:element name="mapToOWLSameAssertion" type="tMapToOWLSameOrDifferentAssertion"/>
+	    <xsd:element name="mapToOWLDifferentAssertion" type="tMapToOWLSameOrDifferentAssertion"/>
+	  </xsd:choice>
+	</xsd:sequence>			
+	<xsd:attribute name="expressionLanguage" type="xsd:anyURI" default="urn:fri-x2o:sublang:xpath2.0"/>
+	<xsd:attribute name="queryLanguage" type="xsd:anyURI" default="urn:fri-x2o:sublang:xpath2.0"/>
+	<xsd:attribute name="strict" type="xsd:boolean" default="false"/>
+      </xsd:extension>
+    </xsd:complexContent>		
+  </xsd:complexType>  
+
+  <xsd:complexType name="tNamespaces">
+    <xsd:complexContent>
+      <xsd:extension base="tExtensibleElements">
+        <xsd:sequence>
+          <xsd:element name="namespace" type="tNamespace" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="tNamespace">
+    <xsd:attribute name="prefix" type="xsd:NCName" use="required"/>
+    <xsd:attribute name="name" type="xsd:anyURI" use="required"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="tCollectOWLIndividuals">
+    <xsd:complexContent>
+      <xsd:extension base="tExtensibleElements">
+        <xsd:sequence>
+          <xsd:element name="referenceToIndividual" type="tReferenceName" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        <xsd:attribute name="referenceName" type="xsd:NCName"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="tMapToOWLIndividual">  		
+    <xsd:complexContent>
+      <xsd:extension base="tExtensibleElements">	  		
+	<xsd:sequence>
+	  <xsd:choice>
+	    <xsd:sequence>
+	      <xsd:element name="query" type="xsd:string"/>
+	      <xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
+	      <xsd:element name="expression" type="tExpression" minOccurs="0"/>
+	    </xsd:sequence>
+	    <xsd:sequence>
+	      <xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
+	      <xsd:element name="expression" type="tExpression"/>	
+	    </xsd:sequence>						
+	  </xsd:choice>					
+	</xsd:sequence>       
+	<xsd:attribute name="referenceName" type="xsd:NCName" use="optional"/>	
+	<xsd:attribute name="type" default="unknown">
+	  <xsd:simpleType>
+	    <xsd:restriction base="xsd:string">
+	      <xsd:enumeration value="new"/>
+	      <xsd:enumeration value="existing"/>
+	      <xsd:enumeration value="unknown"/>
+	    </xsd:restriction>
+	  </xsd:simpleType>
+	</xsd:attribute>	
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="tMapToOWLDataPropertyAssertion">  
+    <xsd:complexContent>
+      <xsd:extension base="tExtensibleElements">	
+	<xsd:sequence>	 
+	  <xsd:choice>
+	    <xsd:element name="individual" type="tMapToOWLIndividual"/>
+	    <xsd:element name="referenceToIndividual" type="tReferenceName"/>
+	  </xsd:choice>  							
+	  
+	  <xsd:element name="propertyName">
+	    <xsd:complexType>
+	      <xsd:sequence>
+		<xsd:element name="query" type="xsd:string" minOccurs="0"/>						
+		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>	
+		<xsd:element name="expression" type="tExpression"/>	  
+	      </xsd:sequence>
+	    </xsd:complexType>
+	  </xsd:element>							
+	  
+	  <xsd:element name="propertyValue">
+	    <xsd:complexType>
+	      <xsd:sequence>
+		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
+		<xsd:element name="expression" type="tExpression"/>
+	      </xsd:sequence>
+	    </xsd:complexType>
+	  </xsd:element>
+
+	  <xsd:element name="dependency" type="tOWLPropertyDependency" minOccurs="0" maxOccurs="2"/>
+
+	</xsd:sequence>
+	
+	<xsd:attribute name="type" default="positive">
+	  <xsd:simpleType>
+	    <xsd:restriction base="xsd:string">
+	      <xsd:enumeration value="positive"/>
+	      <xsd:enumeration value="negative"/>
+	    </xsd:restriction>
+	  </xsd:simpleType>
+	</xsd:attribute>
+
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="tMapToOWLObjectPropertyAssertion">  
+    <xsd:complexContent>
+      <xsd:extension base="tExtensibleElements">	
+	<xsd:sequence>	 		
+	  
+	  <!-- Domain individual-->
+	  <xsd:choice>
+	    <xsd:element name="domainIndividual" type="tMapToOWLIndividual"/>
+	    <xsd:element name="referenceToDomainIndividual" type="tReferenceName"/>	
+	  </xsd:choice>   	
+	  
+	  <!-- Object Property -->
+	  <xsd:element name="propertyName">
+	    <xsd:complexType>
+	      <xsd:sequence>
+		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
+		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>	
+		<xsd:element name="expression" type="tExpression"/>	  
+	      </xsd:sequence>
+	    </xsd:complexType>
+	  </xsd:element>			
+	  
+	  <!-- Range individual-->
+	  <xsd:choice>
+	    <xsd:element name="rangeIndividual" type="tMapToOWLIndividual"/>
+	    <xsd:element name="referenceToRangeIndividual" type="tReferenceName"/>	
+	  </xsd:choice>   
+	  
+	  <xsd:element name="dependency" type="tOWLPropertyDependency" minOccurs="0" maxOccurs="2"/>
+
+	</xsd:sequence>				
+	
+	<xsd:attribute name="type" default="positive">
+	  <xsd:simpleType>
+	    <xsd:restriction base="xsd:string">
+	      <xsd:enumeration value="positive"/>
+	      <xsd:enumeration value="negative"/>
+	    </xsd:restriction>
+	  </xsd:simpleType>
+	</xsd:attribute>	
+	
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType> 
+
+  <xsd:complexType name="tMapToOWLSameOrDifferentAssertion">  
+    <xsd:complexContent>
+      <xsd:extension base="tExtensibleElements">	
+	<xsd:sequence>
+	  <xsd:choice> 
+	    <xsd:element name="individual1" type="tMapToOWLIndividual"/>
+	    <xsd:element name="referenceToIndividual1" type="tReferenceName"/> 			
+	  </xsd:choice> 		
+	  <xsd:choice minOccurs="0"> 
+	    <xsd:element name="individual2" type="tMapToOWLIndividual"/>
+	    <xsd:element name="referenceToIndividual2" type="tReferenceName"/>				 	
+	  </xsd:choice> 	
+	  <xsd:element name="dependency" type="tOWLIdentityDependency" minOccurs="0"/>
+	</xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <xsd:complexType name="tMapToOWLClassAssertion">
+    <xsd:complexContent>
+      <xsd:extension base="tExtensibleElements">	
+	<xsd:sequence>
+	  <xsd:choice>
+	    <xsd:element name="individual" type="tMapToOWLIndividual"/>
+	    <xsd:element name="referenceToIndividual" type="tReferenceName"/>					
+	  </xsd:choice>   	 
+	  <xsd:element name="class">
+	    <xsd:complexType>
+	      <xsd:sequence>
+		<xsd:element name="query" type="xsd:string" minOccurs="0"/>
+ 		<xsd:element name="prefixIRI" type="tPrefixIRI" minOccurs="0"/>
+		<xsd:element name="expression" type="tExpression"/>
+	      </xsd:sequence>							
+	    </xsd:complexType>
+	  </xsd:element>		
+	  <xsd:element name="dependency" type="tOWLClassDependency" minOccurs="0"/>
+	</xsd:sequence>
+      </xsd:extension>	
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:simpleType name="tOWLClassDependencyElement">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="individual"/>
+      <xsd:enumeration value="class"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="tOWLClassDependency">
+    <xsd:attribute name="independent" type="tOWLClassDependencyElement" use="required"/>
+    <xsd:attribute name="dependent" type="tOWLClassDependencyElement" use="required"/>
+  </xsd:complexType>
+
+  <xsd:simpleType name="tOWLPropertyDependencyElement">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="individual"/>
+      <xsd:enumeration value="propertyName"/>
+      <xsd:enumeration value="propertyValue"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="tOWLPropertyDependency">
+    <xsd:attribute name="independent" type="tOWLPropertyDependencyElement" use="required"/>
+    <xsd:attribute name="dependent" type="tOWLPropertyDependencyElement" use="required"/>
+  </xsd:complexType> 
+
+  <xsd:simpleType name="tOWLIdentityDependencyElement">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="individual1"/>
+      <xsd:enumeration value="individual2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="tOWLIdentityDependency">
+    <xsd:attribute name="independent" type="tOWLIdentityDependencyElement" use="required"/>
+    <xsd:attribute name="dependent" type="tOWLIdentityDependencyElement" use="required"/>
+  </xsd:complexType> 
+
+  <xsd:complexType name="tExtensibleElements">
+    <xsd:sequence>
+      <xsd:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:anyAttribute namespace="##other"/>
+  </xsd:complexType>
+
+</xsd:schema>
