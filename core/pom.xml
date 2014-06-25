@@ -2,9 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>si.uni_lj.fri.xml2owl</groupId>
-  <artifactId>xml2owl-core</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <parent>
+      <groupId>si.uni_lj.fri.cyp</groupId>
+      <artifactId>xml2owl</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </parent>
+
+  <artifactId>core</artifactId>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <properties>
@@ -119,7 +124,7 @@
               <phase>install</phase>
               <configuration>
                 <target>
-                    <copy file="target/xml2owl-core-1.0-SNAPSHOT.jar" 
+                    <copy file="target/core-1.0.0.jar" 
                           todir="../protege/lib/"/>
                 </target>
               </configuration>
