@@ -5,11 +5,11 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns:tns="http://www.fri.uni-lj.si/xml2owl">
 
-  <prefixIRI>http://www.fri.uni-lj.si/xml2owl/books.owl#</prefixIRI>
+  <prefixIRI>'http://www.fri.uni-lj.si/xml2owl/books.owl#'</prefixIRI>
 
   <mapToOWLIndividual type="unknown" referenceName="booksWithIsbn10">
-    <prefixIRI dynamic="true">fn:concat('http://www.fri.uni-lj.si/xml2owl/booksFrom',/books/novel[1]/year,'.owl#')</prefixIRI>
     <query>/books/novel[fn:matches(isbn10,'^[0-9X]{10}?$')]</query>
+    <prefixIRI dynamic="true">fn:concat('http://www.fri.uni-lj.si/xml2owl/booksFrom',/books/novel[1]/year,'.owl#')</prefixIRI>
     <expression>fn:concat('isbn10=',isbn10)</expression>
   </mapToOWLIndividual>
 
@@ -18,7 +18,7 @@
     <expression>fn:concat('isbn13=',isbn13)</expression>
   </mapToOWLIndividual>
 
-  <mapToOWLIndividual type="existing" referenceName="iceFire">
+  <mapToOWLIndividual type="unknown" referenceName="iceFire">
     <expression>'isbn10=0345529057'</expression>
   </mapToOWLIndividual>    
 
