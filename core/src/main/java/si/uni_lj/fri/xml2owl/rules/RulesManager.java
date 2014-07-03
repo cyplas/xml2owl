@@ -22,8 +22,8 @@ public class RulesManager {
         return response;
     }
 
-    /** Handle possible exceptions thrown during validation. */ 
-    private void handleException(Exception exception) 
+    /** Handle possible exceptions thrown during validation. */
+    private void handleException(Exception exception)
         throws Xml2OwlRulesException {
 	String prefix = "[XML2OWL] ";
 	if (exception instanceof Xml2OwlRuleValidationException) {
@@ -33,7 +33,7 @@ public class RulesManager {
 	} else if (exception instanceof SaxonApiException) {
 	    prefix += "Saxon exception: ";
 	} else {
-	    prefix += "Unrecognised blah exception: ";
+	    prefix += "Unrecognised exception: ";
 	}
 	String message = prefix + exception.getMessage() + "\n";
         System.out.println(message);
