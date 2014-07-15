@@ -120,13 +120,27 @@
           <version>1.7</version>
           <executions>
             <execution>
-              <id>reinitialise-owl-file</id>
+              <id>clean-owl-file</id>
               <phase>clean</phase>
               <configuration>
                 <target>
                   <copy file="src/test/resources/data/books/owl_orig.xml"
                         tofile="src/test/resources/data/books/owl.xml"
                         overwrite="true"/>
+                </target>
+              </configuration>
+              <goals>
+                <goal>run</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>generate-owl-file</id>
+              <phase>generate-resources</phase>
+              <configuration>
+                <target>
+                  <copy file="src/test/resources/data/books/owl_orig.xml"
+                        tofile="src/test/resources/data/books/owl.xml"
+                        overwrite="false"/>
                 </target>
               </configuration>
               <goals>
