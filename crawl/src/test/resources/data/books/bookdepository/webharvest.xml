@@ -5,9 +5,6 @@
   <!-- custom download functions -->
   <include path="../functions.xml"/>
 
-  <!-- root of directory tree where all downloaded and processed data is stored --> 
-  <var-def name="rootDirectory">/home/cyp/fri/jdeveloper/xml2owl/src/main/resources/test/harvest/books</var-def>
-
 <!-- download book data from bookdepository -->
   <call name="download">
     <call-param name="directory"><template>${rootDirectory}/bookdepository</template></call-param>

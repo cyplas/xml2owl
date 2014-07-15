@@ -3,6 +3,8 @@
 <config>
  
   <var-def name="blank">''</var-def>
+  <var-def name="rootDirectory">/home/cyp/fri/jdeveloper/xml2owl/src/main/resources/test/harvest/books</var-def>
+
 
   <script language="javascript"><![CDATA[
     function sleep(milliseconds) {

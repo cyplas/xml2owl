@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+w<?xml version="1.0" encoding="UTF-8"?>
 
 <config>
 
   <!-- custom download functions -->
   <include path="../functions.xml"/>
-
-  <!-- root of directory tree where all downloaded and processed data is stored --> 
-  <var-def name="rootDirectory">/home/cyp/fri/jdeveloper/xml2owl/src/main/resources/test/harvest/books</var-def>
 
   <!-- download book data from doria -->
   <call name="download">
