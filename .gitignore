@@ -1,7 +1,6 @@
 *~
 target
 build
-owl.xml
 catalog-*.xml
 xml2owl*.jar
 protege/resources/rules.xsd
