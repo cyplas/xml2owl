@@ -84,12 +84,38 @@
       and is comfortable writing a basic XML document (unless someone else
       has already written one).</p>
 
-  <h3 id="interface">User interface</h3>
+  <p>XML2OWL also has two extensions, although both are currently
+    incomplete works in
+    progress. The <a href="../../../../../protege/resources/doc/index.html">XML2OWL
+    plugin for Protégé</a> will allow for usage of XML2OWL through
+    Protégé, a well-known front-end tool for
+    OWL. The <a href="../../../../../crawl/src/main/resources/doc/index.html">webcrawler
+    extension</a> extracts XML data from HTML webpages based on
+    user-provided Webharvest configuration files and generates an
+    xml.xml file suitable for input to XML2OWL.</p>
 
-  XML2OWL is a command-line Java program. It expects
+  <h3 id="installation">Installation and usage</h3>
 
-  XML2OWL can be used as a command-line tool, as a Java library, or as
-  a Protégé plugin. (Elaborate ...)
+  <P>Installation is prepared for Maven. To install the core XML2OWL
+    and run an included test, execute
+
+    <xmp>  % mvn install</xmp> 
+
+    from the core subdirectory. To skip the test, add "-DskipTests=true".</P>
+
+  <P>Successful installation will generate a standalone Java jar,
+  including all needed dependencies, called
+  xml2owl-core-1.0.0-jar-with-dependencies.jar in core/target. This
+  can then be run on your own XML files. The Java program expects four
+  arguments: a directory relative to which the other files are
+  located, the existing OWL ontology file to be enriched, the XML2OWL
+  XML rules file prepared by the user, and the data file to be
+  used. </p>
+
+  <p>For example, in order to run the included bookdepository test
+  manually, you can run:</p>
+
+  <xmp>  % java -jar target/xml2owl-core-1.0.0-jar-with-dependencies.jar src/test/resources/data/books owl.xml bookdepository/rules.xml bookdepository/xml.xml </xmp>
 
   <h3 id="usage">Use case</h3>
 
@@ -814,24 +840,6 @@
   Once the mapping rules are processed, XML2OWL invokes the Pellet
   reasoner to draw inferences and execute the ontology's SWRL rules,
   and then incorporate the resulting axioms into the ontology.
-
-  <h3 id="jar">XML2OWL extensions</h3>
-
-  The XML2OWL Protégé plugin is implemented in Java as a core jar
-  along with Protégé-specific front-end components. The core can be
-  used inside any Java program, and can be found (along with javadocs)
-  in the core directory in the distribution.
-
-  XML2OWL is a Java software tool allowing for iterative, flexible,
-  semi-automatic mapping of XML data to an existing OWL ontology.
-
-  and can be used as a Protégé plugin, a
-  stand-alone command-line program, or a library inside a larger Java
-  program.
-
-  <ul>
-    <li><a href="manual.html">Documentation</a>
-  </ul>
 
 </body>
 
