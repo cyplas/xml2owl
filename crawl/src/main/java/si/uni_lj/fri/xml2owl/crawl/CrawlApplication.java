@@ -17,7 +17,7 @@ public class CrawlApplication {
         run(args[0],args[1],args[2],args[3],args[4],Boolean.valueOf(args[5]),Boolean.valueOf(args[6]));
     }
 
-    /** Download the datafiles and generate the XML input for XML2OWL. */
+    /** Download the datafiles, maybe generate the XML input for XML2OWL, and maybe run XML2OWL. */
     public static void run (String commonPath, String webharvestFile, String downloadDirectory, String owlFile, String rulesFile, boolean harvest, boolean map) {
         try {
             if (harvest) {
