@@ -20,25 +20,51 @@
 
   <h1>XML2OWL Plugin for Protégé</h1>
 
-  <P>REFER TO MAIN DOCUMENTATION APPROPRIATELY</P>
+  <p style="color:red"><b>NOTE</b>: CURRENTLY THERE IS SOMETHING WRONG IN THE CONFIGURATION
+  AND BUILD SO THAT THE PLUGIN DOES <i>NOT</i> INSTALL CORRECTLY.</p>
 
-  <h2>Introduction</h2>
+<ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#interface">User interface</a></li>
+</ul>
 
-  This page documents the XML2OWL plugin's Protégé user interface. For
+  <h3 id="intro">Introduction</h3>
+
+  <p>The Protégé plugin for XML2OWL allows users to use the Protégé
+  program and its GUI interface (instead of the command-line) to run
+  XML2OWL.</p>
+
+  <p>This page documents the XML2OWL plugin's Protégé user interface. For
   instructions on the mapping mechanism and rule authoring, see the
-  main <a href="manual.html">manual</a>.
+  <a href="../../../core/src/main/resources/doc/index.html">core
+  manual</a>.</p>
 
-  <h2>Installation</h2>
+  <h3 id="installation">Installation</h3>
 
-  <P>WRITE THIS</P>
+  <p>Building and installation is done with Ant, following the
+  Protégé guidelines. Make sure your PROTEGE_HOME variable is set
+  appropriately. Then build and install with ant, 
 
-  <h2>User interface</h2>
+  <xmp> % mvn install</xmp>,
 
-  The XML2OWL mapper window (accessible through the XML2OWL tab) has
-  three areas: Rules, Data and Control. After the contents of a rules
-  file and data file are put into the Rules and Data areas,
-  respectively, the Control area initiates the mapping and the OWL
-  ontology is updated accordingly.
+  from the protege directory.
+
+  <h3 id="usage">Usage</h3>
+
+  When you next run Protégé, the XML2OWL plugin should be mentioned
+  among others while loading. Once the Protégé window opens, XML2OWL
+  should have two menu entries, both in the Window menu hierarchy: the
+  XML2OWL view is accessible under Window -> Views -> Ontology Views,
+  and an XML2OWL tab can be found under Window -> Tabs.
+
+  <h3 id="interface">User interface</h3>
+
+  The XML2OWL mapper window has three areas: Rules, Data and
+  Control. After the contents of a rules file and data file are put
+  into the Rules and Data areas, respectively, the Control area
+  initiates the mapping and the OWL ontology is updated accordingly.
 
   <p><img src="plugin.png" width="800"/></p>
 
