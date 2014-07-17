@@ -48,13 +48,17 @@
 
   <h3 id="usage">Usage</h3>
 
-    <p>The Java program expects six arguments: a directory relative
-    to which the other files are located, the Webharvest configuration
-    file, the directory to download HTML sources to, the existing OWL
-    ontology file to be enriched, the XML2OWL XML rules file prepared
-    by the user, a flag indicating whether to do a fresh
-    download first, and another flag indicating whether to run XML2OWL
-    once the XML is generated.</p>
+    <p>The Java program expects seven arguments:</p>
+
+    <ul>
+      <li><b>commonPath</b>: a directory relative to which the other files are located</li>
+      <li><b>webharvestFile</b>: the Webharvest configuration file</li>
+      <li><b>downloadDirectory</b>: the directory to download HTML sources to</li>
+      <li><b>owlFile</b>: the existing OWL ontology file to be enriched</li>
+      <li><b>rulesFile</b>: the XML2OWL XML rules file prepared by the user</li>
+      <li><b>harvest</b>: a flag indicating whether to do a fresh download first</li>
+      <li><b>map</b>: a flag indicating whether to run XML2OWL on the generated XML datafile</li>
+    </ul>
 
 <p>For example, in order to run the included bookdepository test
     manually without immediately running XML2OWL on the result,
