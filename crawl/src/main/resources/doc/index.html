@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+  <title>XML2OWL with Web Crawler</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+    xmp { font-size : 15px}
+    h1 { font-size: 2.67em}
+    h2 { font-size: 2.00em}
+    h3 { font-size: 1.56em}
+    h4 { font-size: 1.33em}
+    h5 { font-size: 1.11em}
+    h6 { font-size: 1.00em}
+  </style>
+
+</head>
+
+<body style="width:800">
+
+  <h1>XML2OWL with Web Crawler</h1>
+
+  <p style="color:red"><b>NOTE</b>: THIS CODE IS EXPERIMENTAL AND NOT
+  ROBUST. ERRORS ARE LIKELY AND CODE CONTRIBUTIONS ARE WELCOME.</p>
+
+<ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+</ul>
+
+  <h3 id="intro">Introduction</h3>
+
+  <P>Normal usage
+      of <a href="../../../../../core/src/main/resources/doc/index.html">XML2OWL</a>
+      requires the user to provide XML data files. However, for many
+      data sources, only HTML is available.  Therefore, this component
+      first extracts XML data files from HTML sources (with the help
+      of the <a href="http://web-harvest.sourceforge.net/">Webharvest
+      library</a>), which can then be used as input to XML2OWL. This
+      greatly expands the scope of potential XML2OWL usage.</P>
+
+  <h3 id="installation">Installation</h3>
+
+  <p>The web crawler component is installed with Maven. From the crawl
+  directory, run "mvn install", which includes a demo run. To skip the
+  demo, run "mvn install -DskipTests=true" instead.</p>
+
+  <h3 id="usage">Usage</h3>
+
+    <p>The Java program expects six arguments: a directory relative
+    to which the other files are located, the Webharvest configuration
+    file, the directory to download HTML sources to, the existing OWL
+    ontology file to be enriched, the XML2OWL XML rules file prepared
+    by the user, a flag indicating whether to do a fresh
+    download first, and another flag indicating whether to run XML2OWL
+    once the XML is generated.</p>
+
+<p>For example, in order to run the included bookdepository test
+    manually without immediately running XML2OWL on the result,
+    run:</p>
+
+    <xmp> % java -jar target/xml2owl-crawl-1.0.0-jar-with-dependencies.jar src/test/resources/data/books bookdepository/webharvest.xml bookdepository/downloads owl.xml bookdepository/rules.xml true false</xmp>
+
+</body>
+
+</html>
