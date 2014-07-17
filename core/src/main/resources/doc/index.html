@@ -22,8 +22,9 @@
 
 <ul>
     <li><a href="#intro">Introduction</a></li>
-    <li><a href="#installation">Installation and usage</a></li>
-    <li><a href="#usage">Use case</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#useCase">Use case</a></li>
     <ul>
         <li><a href="#ontology">OWL ontology</a></li>
         <li><a href="#dataSample">Sample data file</a></li>
@@ -93,7 +94,7 @@
     user-provided Webharvest configuration files and generates an
     xml.xml file suitable for input to XML2OWL.</p>
 
-<h3 id="installation">Installation and usage</h3>
+<h3 id="installation">Installation</h3>
 
 <P>Installation is prepared for Maven. To install the core XML2OWL
     and run an included test, execute
@@ -105,11 +106,14 @@
 <P>Successful installation will generate a standalone Java jar,
     including all needed dependencies, called
     xml2owl-core-1.0.0-jar-with-dependencies.jar in core/target. This
-    can then be run on your own XML files. The Java program expects four
-    arguments: a directory relative to which the other files are
-    located, the existing OWL ontology file to be enriched, the XML2OWL
-    XML rules file prepared by the user, and the data file to be
-    used. </p>
+    can then be run with your own XML files. 
+
+<h3 id="usage">Usage</h3>
+
+    <p>The Java program expects four arguments: a directory relative
+    to which the other files are located, the existing OWL ontology
+    file to be enriched, the XML2OWL XML rules file prepared by the
+    user, and the data file to be used. </p>
 
 <p>For example, in order to run the included bookdepository test
     manually, you can run:</p>
@@ -117,7 +121,7 @@
     <xmp> % java -jar target/xml2owl-core-1.0.0-jar-with-dependencies.jar src/test/resources/data/books owl.xml
     bookdepository/rules.xml bookdepository/xml.xml</xmp>
 
-<h3 id="usage">Use case</h3>
+<h3 id="useCase">Use case</h3>
 
 <p>Suppose that you run an online bookstore and want to store your
     data in book and author data in an OWL repository. You already have
