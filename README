@@ -1,0 +1,17 @@
+XML2OWL allows for the semi-automatic mapping of XML data to an
+existing OWL ontology. New individuals and associated assertions are
+added based on pre-existing classes and properties. The mappings are
+determined by user-specified rules according to the XML2OWL rules
+schema provided. Once rule processing is complete, a reasoner is
+invoked for carrying out further inferences and executing SWRL
+rules. XML2OWL is particularly suitable for when the user needs to
+integrate lots of XML data from one or more sources into the same OWL
+ontology and wants to have control over how the mapping is carried
+out.
+
+The repository also contains two extensions (a Protégé plugin and a
+web crawler pre-processing module), but neither of these is yet
+complete.
+
+See the documentation in core/src/main/resources/doc/index.html for
+installation and usage instructions.
