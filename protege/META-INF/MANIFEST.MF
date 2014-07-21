@@ -46,4 +46,5 @@ Import-Package: org.osgi.framework,
  javax.xml.transform.stream,
  javax.xml.transform.sax,
  javax.xml.transform.dom,
- javax.xml.validation
+ javax.xml.validation,
+ si.uni_lj.fri.xml2owl

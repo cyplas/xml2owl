@@ -207,7 +207,7 @@
 
    <target name="use.existing.manifest" depends="init" unless="use.bundlor">
      <copy tofile="${manifest}" 
-           file="META-INF/MANIFEST.MF" overwrite="true"/>
+           file="META-INF/MANIFEST.MF" overwrite="false"/>
      <manifest file="${manifest}" 
                mode = "update">
         <attribute name="Built-By" value = "${user.name}"/>
