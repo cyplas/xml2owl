@@ -13,5 +13,4 @@ The repository also contains two extensions (a Protégé plugin and a
 web crawler pre-processing module), but neither of these is yet
 complete.
 
-See the documentation in core/src/main/resources/doc/index.html for
-installation and usage instructions.
+See src/site/resources/index.html for user documentation.
